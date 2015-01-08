@@ -1,4 +1,6 @@
 # Site navigation links
+- title: Início
+  url: index.md
 
 - title: Sobre
   url: /sobre/
