@@ -2,7 +2,7 @@
 
 title:            Felipe Sousa
 locale:           en_US
-url:              
+url:              http://felipesousa.github.io/
 
 
 # Jekyll configuration
@@ -15,6 +15,9 @@ sass:
   style: compressed
 gems:
   - jekyll-sitemap
+
+
+comments: true 
 
 kramdown:
   auto_ids: true
