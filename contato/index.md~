@@ -1,0 +1,20 @@
+---
+layout: page
+title: Contato
+tags: [about, personal]
+modified: 2015-01-03T20:53:07.573882-04:00
+comments: true
+---
+
+
+<div style="width: auto; max-width: 400px;">
+
+    <div class="github-widget" data-repo="felipesousa/Projeto-Pessoal"></div>
+	<br />
+	<div class="github-widget" data-repo="felipesousa/Projeto-Pessoal"></div>
+    <br>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript" src="../assets/js/jquery.githubwidget.js"></script>

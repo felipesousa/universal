@@ -1,0 +1,13 @@
+# Site navigation links
+
+- title: Sobre
+  url: /about/
+
+- title: Postagens
+  url: /posts/
+
+- title: Projetos
+  url: /project/
+
+- title: Contato
+  url: /contact/
