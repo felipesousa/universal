@@ -17,8 +17,6 @@ gems:
   - jekyll-sitemap
 
 
-comments: true 
-
 kramdown:
   auto_ids: true
   footnote_nr: 1
