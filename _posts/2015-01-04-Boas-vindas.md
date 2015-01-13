@@ -4,7 +4,7 @@ title: Boas vindas
 excerpt: "Sejam bem vindos ao meu blog!"
 modified: 2015-01-04
 tags: [hello, first]
-comments: true
+comments: false
 image:
   feature: sample-image-5.jpg
 ---
