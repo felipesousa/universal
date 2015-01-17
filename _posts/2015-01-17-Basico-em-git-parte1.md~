@@ -57,7 +57,7 @@ Essa mensagem mostra que ainda não é necessário executar mais nem um comando,
 
 Agora vamos adicionar o arquivos `teste.txt` na pasta e vamos dar novamente um `git status`. Confira o que apareceu.
 
- {% highlight text %}
+ {% highlight  %}
 
 On branch master
 
