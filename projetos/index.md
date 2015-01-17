@@ -12,6 +12,9 @@ image:
 <div style="width: auto; max-width: 900px;">
 	<div class="github-widget" data-repo="felipesousa/felipesousa.github.io"></div>
 	<br />
+	<div class="github-widget" data-repo="felipesousa/Foundation-Beginners
+"></div>
+	<br />
     <div class="github-widget" data-repo="felipesousa/devgroupio"></div>
 	<br />
 	<div class="github-widget" data-repo="felipesousa/brasil"></div>
