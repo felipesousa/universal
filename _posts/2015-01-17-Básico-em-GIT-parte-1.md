@@ -12,7 +12,7 @@ image:
 
 Bem, visto que é super importante o uso de Controle de Versões em projetos para organizá-lo de forma mais correta, ver a evolução do projeto com o tempo, etc. Resolvi falar um pouco sobre GIT, um dos Sistemas de Controle de Versão que vem se destacando pela sua facilidade e eficiência em vários ambientes, seja trabalhando individualmente ou em grupo, GIT sempre auxilia da forma mais simples, ajudando no processo, organização e progresso do projeto.
 
-O artigo vai ser dividido em duas partes. A primeira sendo como trabalhar com GIT em um projeto individual, e o outro em um projeto coletivo. 
+O artigo vai ser dividido em partes. A primeira sendo como configurar, iniciar, adicionar arquivos, commitar e como excluir arquivos com GIT em um projeto individual. 
 
 > Git é um sistema de controle de versão distribuído e um sistema de gerenciamento de código fonte, com ênfase em velocidade. O Git foi inicialmente projetado e desenvolvido por Linus Torvalds para o desenvolvimento do kernel Linux, mas foi adotado por muitos outros projetos. 
 
@@ -36,6 +36,68 @@ Vamos supor que eu vou começar o projeto no caminho `Documentos/teste/` que que
 
 Esse comando vai criar uma pasta `.git` no seu diretório. 
 
+{% highlight text %}
 
+Initialized empty Git repository in /Documentos/teste/.git/
+
+{% endhighlight %}
+
+Após isso vamos dar um `git status`, esse comando vai ver status do seu projeto, e vai dizer se precisa executar outro comando. Vamos supor que sua projeto está vazio, quando executamos o `git status` a mensagem [que aparece é a seguinte. 
+
+{% highlight text %}
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+{% endhighlight %}
+
+Essa mensagem mostra que ainda não é necessário executar mais nem um comando, é como que seu repositório estivesse correto, ou nada de errado. 
+
+Agora vamos adicionar o arquivos `teste.txt` na pasta e vamos dar novamente um `git status`. Confira o que apareceu.
+
+ {% highlight  %}
+
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        teste.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+{% endhighlight %}
+
+Com essa mensagem o GIT informou que existem arquivos que precisam ser adicionados no sistema paa serem versionados. Para adicionar arquivos para serem versionado podemos usar algumas maneiras. Usando o comando `git add arquivo.ext`, podemos adicionar somente o arquivo em sí. Mais vamos supor que queiramos adicionar 10 arquivos.txt de uma vez, ficar digitando o nome e o tipo do arquivo pode se tornar cansativo. para isso podemos adicionar o comando `git add '*.txt'`, com isso ele vai adicionar todos os arquivos .txt, outra maneira *e mais prática* para adicionar os arquivos é usando o comando `git add .`, com isso ele vai adicionar todos os arquivos de todas as extensões que estão pendentes.
+
+No exemplo vamos usar o comando `git add .`, após isso vamos novamente dar um `git status` e vejamos o que acontece.
+
+{% highlight text %}
+	
+On branch master
+Initial commit
+	Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	        new file:   teste.txt
+
+{% endhighlight %}
+
+Com a mensagem o GIT nos informou que existem arquivos a serem *commitados*, commitar arquivo(s) nada mais é do que comentar o que foi mudado ou o que foi adicionado naquele(s) arquivo(s). Para commitar é muito simples, basta adicionar `git commit -m "Descrição"`, onde o que está entre *aspas* será o que vamos descrever com a alteração. Veja o exemplo: 
+
+{% highlight text %}
+[master (root-commit) 194a281] adicionando o arquivo teste.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 teste.txt
+{% endhighlight %}
+
+A mensagem mostra que o arquivo foi commitado com sucesso! Pronto, agora já sabemos como adicionar arquivos e comenta-los. 
+
+E se por acaso você queira apagar algum arquivo para que ele não exista mais no meu projeto? Simples! Basta executar o comando `git rm arquivo.ext`, com isso ele vai apagar o arquivo dos seu projeto. 
+
+Bem, com esse artigo inicial aprendemos o básico de Git, tais como, como configurar o ambiente, como iniciar um respositório para que ele possa começar a ser versionado, adicionar arquivos, commitar arquivos e deletá-los. Até a próxima! :) 
 
 
