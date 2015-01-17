@@ -18,7 +18,7 @@ O artigo vai ser dividido em partes. A primeira sendo como configurar, iniciar, 
 
 ### Instalar GIT
 
-Antes de começar, é necessário instalar o GIT na sua máquina, (você pode baixar clicando aqui)[http://git-scm.com/downloads], após o download realize a instalação, após isso já estamos com tudo pronto para iniciar com Git.
+Antes de começar, é necessário instalar o GIT na sua máquina, [você pode baixar clicando aqui](http://git-scm.com/downloads), após o download realize a instalação, após isso já estamos com tudo pronto para iniciar com Git.
 
 ### Começando com o GIT
 
