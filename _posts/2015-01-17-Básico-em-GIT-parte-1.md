@@ -6,7 +6,7 @@ modified: 2015-01-17
 tags: [aulas, git]
 comments: true
 image:
-  feature: sample-image-5.jpg
+  feature: gitpost.jpg
 ---
 
 
