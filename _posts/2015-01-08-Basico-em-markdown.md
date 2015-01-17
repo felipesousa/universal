@@ -34,7 +34,7 @@ Blockquotes é um trecho de código que fica dentro de um mini bloco. Para adici
 > Exemplo de Blockquote, veja que o trecho se concentra em um pequeno bloco. 
 {% endhighlight %}
 
-#### Resultado
+#### Resultado:
 
 > Exemplo de Blockquote, veja que o trecho se concentra em um pequeno bloco. 
 
