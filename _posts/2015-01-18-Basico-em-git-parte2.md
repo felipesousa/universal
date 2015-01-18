@@ -10,7 +10,7 @@ image:
 ---
 
 
-Bem, voltando com a segunda parte o artigo sobre GIT, vamos aprender sobre como verificar as mudanças realizadas nos arquivos, aprender como verificar os logs do projeto e como desfazer algumas ações. Caso chegou até aqui é porque ja conferiu a Primeira parte do artigo, caso não clique no link e confira.
+Bem, voltando com a segunda parte o artigo sobre GIT, vamos aprender sobre como verificar as mudanças realizadas nos arquivos, aprender como verificar os logs do projeto e como desfazer algumas ações. Caso chegou até aqui é porque ja conferiu a Primeira parte do artigo, caso não procure na aba Postagens.
 
 Primeiramente vamos dar um recapitulada no post anterior, lá aprendemos a adicionar, commitar, e excluir arquivos do controle do GIT. 
 
