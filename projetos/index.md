@@ -12,6 +12,8 @@ image:
 <div style="width: auto; max-width: 900px;">
 	<div class="github-widget" data-repo="felipesousa/felipesousa.github.io"></div>
 	<br />
+	<div class="github-widget" data-repo="felipesousa/fortal-model"></div>
+	<br />
 	<div class="github-widget" data-repo="felipesousa/Git-for-beginners"></div>
 	<br />
 	<div class="github-widget" data-repo="felipesousa/Foundation-Beginners
