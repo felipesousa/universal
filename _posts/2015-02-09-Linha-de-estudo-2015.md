@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Minha linha de estudo para 2015  
-excerpt: "Linha de Estudo: O que ou não focar!" 
+excerpt: "Um Help: O que ou não focar!" 
 modified: 2015-02-09
 comments: true
 image:
