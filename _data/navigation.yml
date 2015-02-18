@@ -1,12 +1,15 @@
 # Site navigation links
+- title: Home
+	url: /
+
 - title: Sobre
-  url: /sobre/
+  url: sobre/
 
 - title: Postagens
-  url: /postagens/
+  url: postagens/
 
 - title: Projetos
-  url: /projetos/
+  url: projetos/
 
 - title: Contato
-  url: /contato/
+  url: contato/
