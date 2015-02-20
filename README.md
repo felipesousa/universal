@@ -1,1 +1,2 @@
-my personal blog 
+## Felipe Sousa - Front End Developer
+
