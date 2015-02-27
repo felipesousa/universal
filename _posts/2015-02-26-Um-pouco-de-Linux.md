@@ -51,7 +51,7 @@ Claro que as vezes precisamos de um recurso ali, outro aqui, mais nada que uma b
 
 <br />
 
-Outra característica que me encanta no mundo Open Source, é a dedicação e a preucupação da comunidade em ajudar usuários que estão aprendendo, ou então ajudar em um problema, é interessante de ver e bonito. Isso de certa forma se torna uma "exclusividade" para o Linux, não dizendo que entre os usuários de Mac ou de Windows não exista uma preucupação em ajudar ou coisa do tipo, porém, a participação dos usuários Linux para com a comunidade é visível e surpreende.
+Outra característica que me encanta no mundo Open Source, é a dedicação e a preucupação da comunidade em ajudar usuários que estão aprendendo, ou então ajudar em um problema, é interessante de ver e se torna gratificante e estimula a colaboração com a comunidade. Isso de certa forma se torna uma "exclusividade" para o Linux, não dizendo que entre os usuários de Mac ou de Windows não exista uma preucupação em ajudar ou coisa do tipo, porém, a participação dos usuários Linux para com a comunidade é visível e surpreende.
 
 <br />
 
