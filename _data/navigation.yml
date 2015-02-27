@@ -1,6 +1,6 @@
 # Site navigation links
 - title: Home
-  url: 
+  url:
 
 - title: Sobre
   url: sobre/
@@ -11,5 +11,3 @@
 - title: Projetos
   url: projetos/
 
-- title: Contato
-  url: contato/
