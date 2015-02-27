@@ -55,5 +55,4 @@ Outra característica que me encanta no mundo Open Source, é a dedicação e a 
 
 <br />
 
-É isso, o mundo Open Source é realmente lindo. E o melhor, é de graça. ♥
-
+É isso, o mundo Open Source é realmente lindo. E o melhor, é de graça. ♥ #VivaOLinux
