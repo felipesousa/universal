@@ -8,6 +8,9 @@ image:
   feature: sample-image-12.jpg
 ---
 #### Prazer, me chamo Felipe Sousa, tenho 17 anos, estou concluindo o ensino médio, e sou estudante na área de desenvolvimento web, mais precisamente na área de *Front end Developer*, esse é meu blog e nele pretendo falar de vaŕias coisas, tais como falar sobre uma ferramenta, falar um pouco sobre experiências próprias e muito mais.
+
+<br />
+
 #### O que faço:
 * Desenvolvo projetos pessoais
 * Manutenção de sites

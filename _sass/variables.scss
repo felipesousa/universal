@@ -8,24 +8,31 @@ $code-font: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono
 $alt-font: $base-font;
 
 // COLOR ======================================================
-$bodycolor      : #fff;
-$body-color     : $bodycolor;
-$textcolor      : #333332;
-$text-color     : $textcolor;
-$border-color   : $text-color;
-$basecolor 		  : #343434;
-$compcolor 		  : spin($basecolor, 180);
-$bordercolor    : $basecolor;
-$white          : #fff;
-$black          : #111;
-$accentcolor    : $black;
+$bodycolor                                  : #fff;
+$body-color                                 : $bodycolor;
+$textcolor                                    : #333332;
+$text-color                                   : $textcolor;
+$border-color                               : $text-color;
+$basecolor 		              : #343434;
+$compcolor 		              : spin($basecolor, 180);
+$bordercolor                                 : $basecolor;
+$white                                          : #fff;
+$black                                          : #111;
+$accentcolor                                : $black;
 
 // Buttons
 $primary			: $black;
-$success			: #5cb85c;
+$success			: #2CA92C;
 $warning			: #dd8338;
-$danger				: #C64537;
-$info				  : #308cbc;
+$danger			: #C64537;
+$info				: #297AA4;
+
+// Buttons Hover
+$primary-hover                           : #292727;
+$success-hover                           : #41B942;
+$warning-hover                           : #EE9850;
+$danger-hover                             : #BF4E42;
+$info-hover                                  : #37799B;
 
 // Links
 $linkcolor 		    : #343434;
@@ -40,3 +47,4 @@ $small           : "only screen and (min-width: 37.5em)";
 $medium       : "only screen and (min-width: 48em)";
 $large            : "only screen and (min-width: 62em)";
 $x-large          : "only screen and (min-width: 86.375em)";
+
