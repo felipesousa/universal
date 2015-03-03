@@ -50,10 +50,10 @@ Pronto, com isso já temos instalado o Jekyll na versão **2.5.3**, o exemplo se
 Bem, após tudo instalado corretamente, vamos criar uma interface 'pastel' do jekyll, basta executarmos 2 comandos para termos um exemplo simples de uma página.
 Os comandos são:
 
-* Jekyll new <nome_da_pasta>
+* Jekyll new nome da pasta
 * jekyll server
 
-Vamos lá, com o primeiro comando, o jekyll vai criar a **estrutura básica** de uma página, onde esse <Nome_da_pasta> vai ser a pasta onde a estrutura vai ser criada, nesse exemplo vou criar a estrutura em uma pasta que vou chamar de *teste*,vamos ao exemplo:
+Vamos lá, com o primeiro comando, o jekyll vai criar a **estrutura básica** de uma página, onde esse Nome_da_pasta vai ser a pasta onde a estrutura vai ser criada, nesse exemplo vou criar a estrutura em uma pasta que vou chamar de *teste*,vamos ao exemplo:
 
 {% highlight text %}
     felipe@felipe-sousa:~/Documentos/projetos$  jekyll new teste
