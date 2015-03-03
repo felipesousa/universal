@@ -1,11 +1,11 @@
-hr { 
-	display: block; 
-	margin: 1em 0; 
+hr {
+	display: block;
+	margin: 1em 0;
 	padding: 0;
-	height: 1px; 
-	border: 0; 
+	height: 1px;
+	border: 0;
 	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #fff; 
+	border-bottom: 1px solid #fff;
 }
 /* Figures and images ==================================== */
 figure {
@@ -14,12 +14,12 @@ figure {
 article img {
 	max-width: 100%;
 	height: auto;
-	border-width: 0; 
-	vertical-align: middle; 
-	-ms-interpolation-mode: bicubic; 
+	border-width: 0;
+	vertical-align: middle;
+	-ms-interpolation-mode: bicubic;
 }
 svg:not(:root) {
-		overflow: hidden; 
+		overflow: hidden;
 }
 .half {
 	@include container;
@@ -64,7 +64,7 @@ svg:not(:root) {
     color: $white;
   }
   &:hover {
-    background-color: $white;
+    background-color: $primary-hover ;
     color: $primary;
   }
 }
@@ -76,7 +76,7 @@ svg:not(:root) {
     color: $white;
   }
   &:hover {
-    background-color: $white;
+    background-color: $success-hover ;
     color: $success;
   }
 }
@@ -88,7 +88,7 @@ svg:not(:root) {
     color: $white;
   }
   &:hover {
-    background-color: $white;
+    background-color: $warning-hover;
     color: $warning;
   }
 }
@@ -100,7 +100,7 @@ svg:not(:root) {
     color: $white;
   }
   &:hover {
-    background-color: $white;
+    background-color:$danger-hover;
     color: $danger;
   }
 }
@@ -112,7 +112,7 @@ svg:not(:root) {
     color: $white;
   }
   &:hover {
-    background-color: $white;
+    background-color: $info-hover ;
     color: $info;
   }
 }
