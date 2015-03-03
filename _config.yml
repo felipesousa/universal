@@ -24,7 +24,6 @@ kramdown:
   toc_levels: 1..6
   use_coderay: false
 
-
 # Site owner
 owner:
   name: Felipe Sousa
@@ -36,10 +35,10 @@ owner:
   facebook: felipe.simpsons
   google:
     plus: u/0/104290563189358000367
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
   github: felipesousa
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: #username

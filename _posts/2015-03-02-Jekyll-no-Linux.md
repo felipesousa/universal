@@ -5,8 +5,7 @@ excerpt:  "Aprenda a como utilizar Jekyll no Linux"
 modified: 2015-03-02
 tags: [linux, jekyll, basico, elementary, ruby, gems]
 comments: true
-image:
-  feature:
+image: jekyll.jpg
 ---
 > Aprenda a como instalar, configurar e utilizar o gerador de páginas estáticas Jekyll na plataforma Linux.
 
