@@ -5,7 +5,8 @@ excerpt:  "Aprenda a como utilizar Jekyll no Linux"
 modified: 2015-03-02
 tags: [linux, jekyll, basico, elementary, ruby, gems]
 comments: true
-image: jekyll.jpg
+image:
+   feature: jekyll.jpg
 ---
 > Aprenda a como instalar, configurar e utilizar o gerador de páginas estáticas Jekyll na plataforma Linux.
 
@@ -28,7 +29,7 @@ Segundo podemos ver, a versão do Ruby atual instalada é a **1.9.3**, é import
 
 A partir de agora, vire best friend forever do seu terminal, pois é a partir dele que iremos instalar e utilizar as funções do Jekyll, e de qualquer outra Gem que você venha futuramente a utilizar.  Para instalar o Jekyll é simples basta ir no terminal e digitar o seguinte comando: `gem install jekyll`, caso precise de permissão execute `sudo gem install jekyll`, no segundo caso será requerida uma senha, insira a senha do usuário **root** e prossiga com a instalação.
 
-**Atenção:** Caso durante a instalação seja informado algum erro, tente executar o comando `sudo gem install jekyll --source http://rubygems.org` e instale.
+**Atenção:** Caso durante a instalação seja informado algum erro, tente executar o comando **sudo gem install jekyll --source http://rubygems.org** e instale.
 {: .notice}
 
 Caso a instalação seja concluída com sucesso, execute o comando `gem list`, que vai listar as gem's instaladas na máquina, feito isso verifique a versão atual das gem's instaladas. No meu caso ocorreu o seguinte:
