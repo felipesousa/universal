@@ -61,7 +61,7 @@ Vamos lá, com o primeiro comando, o jekyll vai criar a **estrutura básica** de
     New jekyll site installed in /home/felipe/Documentos/projetos/teste.
 {% endhighlight %}
 
-A mensagem exibida diz que um novo site em jekyll foi criado no diretório`/home/felipe/Documentos/projetos/teste.`. Agora para vermos como está o exemplo criado localmente, basta acessar pelo terminal a pasta criada, para isso damos um `cd teste`, após isso basta executar o segundo comando `jekyll server`, com isso será exibida uma mensagem basicamente desta forma:
+A mensagem exibida diz que um novo site em jekyll foi criado no diretório **/home/felipe/Documentos/projetos/teste.**. Agora para vermos como está o exemplo criado localmente, basta acessar pelo terminal a pasta criada, para isso damos um `cd teste`, após isso basta executar o segundo comando `jekyll server`, com isso será exibida uma mensagem basicamente desta forma:
 
 {% highlight text %}
     jekyll server
