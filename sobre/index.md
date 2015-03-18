@@ -14,7 +14,7 @@ image:
 #### O que faço:
 * Desenvolvo projetos pessoais
 * Manutenção de sites
-* Estudo pra caramba
+
 
 #### Algumas habilidades:
 * HTML5
