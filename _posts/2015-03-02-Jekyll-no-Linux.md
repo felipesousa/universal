@@ -16,6 +16,9 @@ Jekyll é um gerador de páginas estáticas criado em Ruby. Geradores de página
 
 ##Ambiente de Instalação
 
+**Atenção:** É mecessário ter Node.js instalado na máquina para executar as funções .
+{: .notice}
+
 Bem, inicialmente para instalarmos Jekyll que é uma gem de Ruby, temos de primeiramente ter o Ruby instalado na nossa máquina. No caso do Linux, o Ruby já vem pré-instalado, para verificarmos a atual versão do Ruby que está instalada na máquina basta abrir o terminal e digitar `ruby -v`, onde o resultado será basicamente parecido com esse:
 <br />
 {% highlight text %}
