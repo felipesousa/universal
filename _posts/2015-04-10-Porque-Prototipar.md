@@ -1,10 +1,8 @@
 ---
 layout: post 
-title: A importancia dos protótipos
-excerpt: "Qual a importância do uso da prototipação em nossos projetos?!"
+title: A importância de prototipar
+excerpt: "Saiba um pouco sobre a boa prática de prototipar."
 modified: 2015-04-10T114:27:07.573882-04:00
-categories: Organização
-excerpt:
 tags: [prototype, organizacao]
 comments: true
 image:
