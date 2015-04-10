@@ -20,8 +20,9 @@ image:
 * HTML5
 * CSS3
 * JavaScript
+* Jekyll
+* Gulp.js
 * PHP e MySQL *(Básico)*
-* Sass *(Básico)*
 * Zurb Foundation
 * Sistema de Controle de Versão -  *Git e GitHub*
 
