@@ -13,7 +13,7 @@ image:
 
 A alguns meses, comecei a procurar arduamente processos que ajudam bastante no desenvolvimento e a organização de um projeto. Dentre vários, a prototipação foi uma delas, que visa de forma simples, ver um pouco do modelo antes de tudo. 
 
-## O que é Prototipar? 
+## O que é prototipar? 
 
 No geral, prototipar é quando desenhamos o modelo como desejamos criar a nossa aplicação, projeto, etc. O protótipo é como uma prévia do que vai ser a aplicacao no fim do desenvolvimento. 
 
@@ -29,7 +29,7 @@ Prototipar nos auxilia em vários setores, tanto na maior organização do nosso
 
 Esse passo é extremamente importante para não entrar em processos que não fazem parte do processo de prototipação, se liberte de qualquer tecnologia/ferramenta para criar o mesmo, recolha as informações e vá aos poucos montando seu protótipo, se prender a tecnologias, definir quais ferramentas vão ser usadas logo de imediato vão fazer com que o projeto "avance" bastante, sem ao menos ter começado de fato! 
 
-###Defina Lugares não Tamanhos
+###Defina os lugares não tamanhos
 
 Como de fato será um desenho, delimitar tamanhos, larguras, entre outros é uma péssima pedida, já que o projeto pode sofrer algumas alterações e voce consequentemente deverá mudar algo que provavelmente demorou para criar. O aconselhável é criar uma estrutura que possa ser modificada caso venha ser preciso a alteração, invista na praticidade, é pra isso que serve os protótipos. 
 
@@ -38,7 +38,7 @@ Como de fato será um desenho, delimitar tamanhos, larguras, entre outros é uma
 Fazer reuniões com a equipe é essencial para que possamos criar algo que seja fácil de entender e compreender. Caso seja um projeto pessoal, caso use GitHub, ou qualquer outra ferramenta para Deploy, crie uma documentação para explicar o foco ou o desejo para o futuro projeto, para caso alguem deseje contribuir, ficar mais simples de entender e colaborar. 
 
 
-###Do Rabisco ao Gráfico
+###do rabisco ao gráfico
 
 Não importa o que voce usará para iniciar, seja uma folha de caderno, guardanapo, (rs), o importante é que exista evolução quanto ao processo do seu protótipo. 
 
@@ -46,7 +46,7 @@ Não importa o que voce usará para iniciar, seja uma folha de caderno, guardana
 ![prototipo-rabisco-grafico](/images/post-prototipo-image.png)
 <br />
 
-###Alguns programas
+###Alguns programas..
 
 Existem diversas ferramentas que servem para criarmos um protótipo, dentre eles estão: 
 
