@@ -22,10 +22,6 @@ image:
 "></div>
 	<br />
     <div class="github-widget" data-repo="felipesousa/devgroupio"></div>
-	<br />
-	<div class="github-widget" data-repo="felipesousa/brasil"></div>
-	<br />
-	<div class="github-widget" data-repo="felipesousa/adesivos"></div>
 
 </div>
 
