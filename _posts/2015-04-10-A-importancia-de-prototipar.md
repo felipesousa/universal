@@ -38,7 +38,7 @@ Fazer reuniões com a equipe é essencial para que possamos criar algo que seja 
 
 ###do rabisco ao gráfico
 
-Não importa o que voce usará para iniciar, seja uma folha de caderno, guardanapo, (rs), o importante é que exista evolução quanto ao processo do seu protótipo. 
+Não importa o que você usará para iniciar, seja uma folha de caderno, guardanapo, (rs), o importante é que exista evolução quanto ao processo do seu protótipo. 
 
 <br />
 ![prototipo-rabisco-grafico](/images/post-prototipo-image.png)
@@ -55,7 +55,9 @@ Existem diversas ferramentas que servem para criarmos um protótipo, dentre eles
 
 <br /> 
 
-Existem muitos outros, cabe a voce testar qual mais lhe agrada, usar **Photoshop** ou até mesmo o **Paint** são opções, o que vale é criar algo bom, que seja útil e prático, espero ter ajudado com o artigo, os comentarios estão livres para tudo, até a próxima! 
+Existem muitos outros, cabe a você testar qual mais lhe agrada, usar **Photoshop** ou até mesmo o **Paint** são opções, o que vale é criar algo bom, que seja útil e prático!
+
+Bem, espero ter ajudado com o artigo, qualquer dúvida, criticas ou qualquer coisa a mais os comentarios estão livres pra tudo, um abraço e até a próxima! 
 
 
 
