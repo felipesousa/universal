@@ -26,6 +26,8 @@ De alguma forma eu queria ser grato, manter uma linhagem eu diria e ao mesmo tem
 
 ### Algumas habilidades: 
 
+<br />
+
 <div class="bars">
     <ul class="skills">
         <li><span style="width: 80%" class="bar-expand"></span><em>HTML </em></li>
