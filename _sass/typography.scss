@@ -151,7 +151,7 @@ pre {
 // -------------------------------------------------------
 
 .bars {
-  width: 70%;
+  width: 100%;
   float: left;
   padding: 0;
   text-align: left;
@@ -164,7 +164,7 @@ pre {
    position: relative;
     margin-bottom: 60px;
     background: #ccc;
-    height: 28px;
+    height: 20px;
     border-radius: 3px;
 }
 .bars li em {
@@ -185,7 +185,7 @@ pre {
    padding-right: 24px;
     background: #313131;
    display: inline-block;
-    height: 28px;
+    height: 20px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
