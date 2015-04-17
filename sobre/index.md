@@ -8,7 +8,7 @@ image:
   feature: sample-image-12.jpg
 ---
 
-Meu nome é Luis Felipe Cavalcante Sousa, nasci e moro em Fortaleza-CE, sou Desenvolvedor Front-End atualmente Freelancer, sou apaixonado pela web, pelo mundo open source, comecei com desenvolvimento com apenas 13 anos onde criava pequenos blog's no Blogger, depois de um tempo aumentei a minha curiosidade para saber como que de fato ocorria por trás da mágica toda!
+    Meu nome é Luis Felipe Cavalcante Sousa, nasci e moro em Fortaleza-CE, sou Desenvolvedor Front-End atualmente Freelancer, sou apaixonado pela web, pelo mundo open source, comecei com desenvolvimento com apenas 13 anos onde criava pequenos blog's no Blogger, depois de um tempo aumentei a minha curiosidade para saber como que de fato ocorria por trás da mágica toda!
 <br />
 A partir daí comecei a estudar sobre desenvolvimento e me apaixonei loucamente pelo Front-End, hoje cá estou eu, escrevendo artigos, compartilhando o que eu aprendi, com o blog pretendo aumentar o número de leitores - antigamente, apenas meu amigos ouviam o que eu aprendia - procurar muito mais cabeças loucas por conteúdo, que procuram aprender. 
 
