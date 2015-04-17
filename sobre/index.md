@@ -7,7 +7,6 @@ comments: false
 image:
   feature: sample-image-12.jpg
 ---
-![img](/images/bio-photo.jpg)
 
 Meu nome é Luis Felipe Cavalcante Sousa, nasci e moro em Fortaleza-CE, sou Desenvolvedor Front-End atualmente Freelancer, sou apaixonado pela web, pelo mundo open source, comecei com desenvolvimento com apenas 13 anos onde criava pequenos blog's no Blogger, depois de um tempo aumentei a minha curiosidade para saber como que de fato ocorria por trás da mágica toda!
 
@@ -30,14 +29,13 @@ De alguma forma eu queria ser grato, manter uma linhagem eu diria e ao mesmo tem
 * PHP
 * MYSQL
 * Ruby (Jekyll)
-* Photoshop
+* Design (Photoshop)
 
-Faminto por aprender novas ferramentas.. 
 
 ### Projetos Livres 
 
-* JNotes (Sistemas de Notas) 
-* Fortal-Model (Layout Model)
+* [JNotes](https://github.com/felipesousa/jnotes) 
+* [Fortal-Model](https://github.com/felipesousa/fortal-model)
 
-Para mais projetos -><a href="http://github.com/felipesousa" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+Para mais projetos -><a href='https://github.com/felipesousa/' ><i class="fa fa-fw fa-github">Github</i></a>
 
