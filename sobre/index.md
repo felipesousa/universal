@@ -26,16 +26,20 @@ De alguma forma eu queria ser grato, manter uma linhagem eu diria e ao mesmo tem
 
 ### Algumas habilidades: 
 
-* HTML (Semântica e Acessibilidade)
-* CSS (LESS, SASS)
-* JavaScript
-* Frameworks (Foundation)
-* Gulp.js
-* Git
-* PHP
-* MYSQL
-* Ruby (Jekyll)
-* Design (Photoshop)
+<div class="bars">
+    <ul class="skills">
+        <li><span style="width: 80%" class="bar-expand"></span><em>HTML </em></li>
+        <li><span style="width: 60%" class="bar-expand"></span><em>CSS (LESS, SASS)</em></li>
+        <li><span style="width: 45%" class="bar-expand"></span><em>JavaScript </em></li>
+        <li><span style="width: 65%" class="bar-expand"></span><em>Frameworks (Foundation)</em></li>
+        <li><span style="width: 60%" class="bar-expand"></span><em>Git </em></li>
+        <li><span style="width: 65%" class="bar-expand"></span><em>Gulp.js</em></li>
+        <li><span style="width: 50%" class="bar-expand"></span><em>PHP </em></li>
+        <li><span style="width: 45%" class="bar-expand"></span><em>MYSQL</em></li>
+        <li><span style="width: 70%" class="bar-expand"></span><em>Ruby (Jekyll)</em></li>
+        <li><span style="width: 50%" class="bar-expand"></span><em>Design (Photoshop)</em></li>
+    </ul>
+</div>
 
 ### Projetos Livres 
 
