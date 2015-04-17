@@ -41,10 +41,4 @@ De alguma forma eu queria ser grato, manter uma linhagem eu diria e ao mesmo tem
     </ul>
 </div>
 
-### Projetos Livres 
-
-* [JNotes](https://github.com/felipesousa/jnotes) 
-* [Fortal-Model](https://github.com/felipesousa/fortal-model)
-
-Para mais projetos -> <a href='https://github.com/felipesousa/' ><Github</a>
 
