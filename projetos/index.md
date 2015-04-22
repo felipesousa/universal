@@ -18,8 +18,7 @@ image:
 	<br />
 	<div class="github-widget" data-repo="felipesousa/Foundation-Beginners
 "></div>
-	<br />
-    <div class="github-widget" data-repo="felipesousa/devgroupio"></div>
+	
 
 </div>
 
