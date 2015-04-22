@@ -3,7 +3,7 @@ layout: page
 title: Projetos GitHub
 tags: [project]
 modified: 2015-01-03T20:53:07.573882-04:00
-comments: true
+comments: false
 image:
   feature: sample-image-8.jpg
 ---
