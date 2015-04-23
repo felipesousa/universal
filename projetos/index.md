@@ -8,7 +8,7 @@ image:
   feature: sample-image-8.jpg
 ---
 
-#### Meus repositórios e/ou forks no [GitHub](github.com/felipesousa)
+#### Meus repositórios e/ou forks no [GitHub](http://www.github.com/felipesousa)
 <div style="width: auto; max-width: 900px;">
 	<div class="github-widget" data-repo="felipesousa/felipesousa.github.io"></div>
 	<br />
