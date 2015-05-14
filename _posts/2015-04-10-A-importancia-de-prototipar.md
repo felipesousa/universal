@@ -9,7 +9,7 @@ image:
   feature: prototip-post.jpg
 ---
 
-A alguns meses, comecei a procurar arduamente processos que ajudam bastante no desenvolvimento e a organização de um projeto. Dentre vários, a prototipação foi uma delas, que visa de forma simples, ver um pouco do modelo antes de tudo. 
+Há alguns meses, comecei a procurar arduamente processos que ajudam bastante no desenvolvimento e a organização de um projeto. Dentre vários, a prototipação foi uma delas, que visa de forma simples, ver um pouco do modelo antes de tudo. 
 
 ## O que é prototipar? 
 
