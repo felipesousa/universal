@@ -24,19 +24,5 @@ De alguma forma eu queria ser grato, manter uma linhagem eu diria e ao mesmo tem
 
 <br />
 
-### Habilidades
-
-<div class="bars">
-    <ul class="skills">
-        <li><span style="width: 70%" class="bar-expand"></span><em>HTML </em></li>
-        <li><span style="width: 50%" class="bar-expand"></span><em>CSS</em></li>
-        <li><span style="width: 45%" class="bar-expand"></span><em>JavaScript </em></li>
-        <li><span style="width: 50%" class="bar-expand"></span><em>Git </em></li>
-        <li><span style="width: 50%" class="bar-expand"></span><em>Gulp.js</em></li>
-        <li><span style="width: 50%" class="bar-expand"></span><em>PHP </em></li>
-        <li><span style="width: 45%" class="bar-expand"></span><em>MYSQL</em></li>
-        <li><span style="width: 50%" class="bar-expand"></span><em>Design (Photoshop)</em></li>
-    </ul>
-</div>
 
 
