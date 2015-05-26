@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+            <title type="text">Felipe Sousa</title>
+        <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://felipesousa.github.io/feed.xml" />
+<link rel="alternate" type="text/html" href="http://felipesousa.github.io" />
+<updated>2015-05-26T19:56:02-03:00</updated>
+<id>http://felipesousa.github.io/</id>
+<author>
+  <name>Felipe Sousa</name>
+  <uri>http://felipesousa.github.io/</uri>
+  <email>felipzbr@gmail.com</email>
+</author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[A importância de prototipar]]></title>
+  <link rel="alternate" type="text/html" href="http://felipesousa.github.io/A-importancia-de-prototipar/" />
+  <id>http://felipesousa.github.io/A-importancia-de-prototipar</id>
+  <updated>2015-04-10T114:27:07.573882-04:00T00:00:00-00:00</updated>
+  <published>2015-04-10T00:00:00-03:00</published>
+  
+  <author>
+    <name>Felipe Sousa</name>
+    <uri>http://felipesousa.github.io</uri>
+    <email>felipzbr@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Há alguns meses, comecei a procurar arduamente processos que ajudam bastante no desenvolvimento e a organização de um projeto. Dentre vários, a prototipação foi uma delas, que visa de forma simples, ver um pouco do modelo antes de tudo. &lt;/p&gt;
+
+&lt;h2 id=&quot;o-que--prototipar&quot;&gt;O que é prototipar?&lt;/h2&gt;
+
+&lt;p&gt;No geral, prototipar é quando desenhamos o modelo como desejamos criar a nossa aplicação, projeto, etc. O protótipo é como uma prévia do que vai ser a aplicacao no fim do desenvolvimento. &lt;/p&gt;
+
+&lt;h3 id=&quot;okay-mais-porque-to-importante&quot;&gt;Okay! Mais porque tão importante?&lt;/h3&gt;
+
+&lt;p&gt;Prototipar nos auxilia em vários setores, tanto na maior organização do nosso projeto, mais também como serve de consulta para criarmos os códigos em si. Vamos a um exemplo, vamos supor que temos que criar uma página que vai conter nela dezenas de informações, e cada uma dessas informações devem estar em lugares diferentes na página, o desenvolvedor tendo uma visão gráfica de como vai ficar aquela informação ou o que quer que seja, vai ter mais facilidade em entender o layout, logo, terá mais facilidade de desenvolver. &lt;/p&gt;
+
+&lt;h3 id=&quot;o-que--necessrio-para-comecar-a-prototipar&quot;&gt;O que é necessário para comecar a prototipar?&lt;/h3&gt;
+
+&lt;p&gt;É claro que não basta ter uma ideia na cabeça e começar a desenhar de qualquer forma, antes de tudo isso devemos ter conhecimento total sobre o projeto, qual o foco do mesmo, etc. Recolher as informações é um passo importantíssimo para criar um Prototipo de &lt;strong&gt;QUALIDADE&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;h3 id=&quot;abstrao-de-qualquer-tecnologia&quot;&gt;Abstração de qualquer tecnologia&lt;/h3&gt;
+
+&lt;p&gt;Esse passo é extremamente importante para não entrar em processos que não fazem parte do processo de prototipação, se liberte de qualquer tecnologia/ferramenta para criar o mesmo, recolha as informações e vá aos poucos montando seu protótipo, se prender a tecnologias, definir quais ferramentas vão ser usadas logo de imediato vão fazer com que o projeto “avance” bastante, sem ao menos ter começado de fato! &lt;/p&gt;
+
+&lt;h3 id=&quot;defina-os-lugares-no-tamanhos&quot;&gt;Defina os lugares não tamanhos&lt;/h3&gt;
+
+&lt;p&gt;Como de fato será um desenho, delimitar tamanhos, larguras, entre outros é uma péssima pedida, já que o projeto pode sofrer algumas alterações e voce consequentemente deverá mudar algo que provavelmente demorou para criar. O aconselhável é criar uma estrutura que possa ser modificada caso venha ser preciso a alteração, invista na praticidade, é pra isso que serve os protótipos. &lt;/p&gt;
+
+&lt;h3 id=&quot;converse-com-a-equipe&quot;&gt;Converse com a equipe&lt;/h3&gt;
+
+&lt;p&gt;Fazer reuniões com a equipe é essencial para que possamos criar algo que seja fácil de entender e compreender. Caso seja um projeto pessoal, caso use GitHub, ou qualquer outra ferramenta para Deploy, crie uma documentação para explicar o foco ou o desejo para o futuro projeto, para caso alguem deseje contribuir, ficar mais simples de entender e colaborar. &lt;/p&gt;
+
+&lt;h3 id=&quot;do-rabisco-ao-grfico&quot;&gt;do rabisco ao gráfico&lt;/h3&gt;
+
+&lt;p&gt;Não importa o que você usará para iniciar, seja uma folha de caderno, guardanapo, (rs), o importante é que exista evolução quanto ao processo do seu protótipo. &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/post-prototipo-image.png&quot; alt=&quot;prototipo-rabisco-grafico&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;alguns-programas&quot;&gt;Alguns programas..&lt;/h3&gt;
+
+&lt;p&gt;Existem diversas ferramentas que servem para criarmos um protótipo, dentre eles estão: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://proto.io/&quot;&gt;Proto.io&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://popapp.in/&quot;&gt;POP&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pencil.evolus.vn/&quot;&gt;Pencil Project&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.axure.com/&quot;&gt;Axure&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;/p&gt;
+
+&lt;p&gt;Existem muitos outros, cabe a você testar qual mais lhe agrada, usar &lt;strong&gt;Photoshop&lt;/strong&gt; ou até mesmo o &lt;strong&gt;Paint&lt;/strong&gt; são opções, o que vale é criar algo bom, que seja útil e prático!&lt;/p&gt;
+
+&lt;p&gt;Bem, espero ter ajudado com o artigo, qualquer dúvida, criticas ou qualquer coisa a mais os comentarios estão livres pra tudo, um abraço e até a próxima! &lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://felipesousa.github.io/A-importancia-de-prototipar/&quot;&gt;A importância de prototipar&lt;/a&gt; was originally published by Felipe Sousa at &lt;a href=&quot;http://felipesousa.github.io&quot;&gt;Felipe Sousa&lt;/a&gt; on April 10, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Jekyll no Linux]]></title>
+  <link rel="alternate" type="text/html" href="http://felipesousa.github.io/Jekyll-no-Linux/" />
+  <id>http://felipesousa.github.io/Jekyll-no-Linux</id>
+  <updated>2015-03-02T00:00:00-00:00</updated>
+  <published>2015-03-02T00:00:00-03:00</published>
+  
+  <author>
+    <name>Felipe Sousa</name>
+    <uri>http://felipesousa.github.io</uri>
+    <email>felipzbr@gmail.com</email>
+  </author>
+  <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;Aprenda a como instalar, configurar e utilizar o gerador de páginas estáticas Jekyll na plataforma Linux.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;o-que--jekyll&quot;&gt;O que é Jekyll?&lt;/h2&gt;
+
+&lt;p&gt;Jekyll é um gerador de páginas estáticas criado em Ruby. Geradores de páginas estáticas são aquelas que não possuem um sistema por trás delas, um banco de dados por exemplo, páginas estaticas é uma boa pedida para caso queiramos criar sites simples, onde não temos a necessidade de ter uma interação forte com o usuário. Jekyll é uma boa pedida para caso queiramos criar um blog pessoal ou coisa do tipo, esse blog é um exemplo de site criado em Jekyll.&lt;/p&gt;
+
+&lt;h2 id=&quot;ambiente-de-instalao&quot;&gt;Ambiente de Instalação&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Atenção:&lt;/strong&gt; É necessário ter Node.js instalado na máquina para executar as funções.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+Bem, inicialmente para instalarmos Jekyll que é uma gem de Ruby, temos de primeiramente ter o Ruby instalado na nossa máquina. No caso do Linux, o Ruby já vem pré-instalado, para verificarmos a atual versão do Ruby que está instalada na máquina basta abrir o terminal e digitar &lt;code&gt;ruby -v&lt;/code&gt;, onde o resultado será basicamente parecido com esse:
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ruby 1.9.3p0 (2011-10-30 revision 33570) [x86_64-linux]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Segundo podemos ver, a versão do Ruby atual instalada é a &lt;strong&gt;1.9.3&lt;/strong&gt;, é importante lembrar que para instalarmos o Jekyll é importante ter uma versão igual ou superior a &lt;strong&gt;1.9.3&lt;/strong&gt;,  caso sua versão seja anterior a esta, atualize para evitar futuros possíveis erros de instalação de algumas GEM’S.&lt;/p&gt;
+
+&lt;h3 id=&quot;instalando-o-jekyll&quot;&gt;Instalando o Jekyll&lt;/h3&gt;
+
+&lt;p&gt;A partir de agora, vire best friend forever do seu terminal, pois é a partir dele que iremos instalar e utilizar as funções do Jekyll, e de qualquer outra Gem que você venha futuramente a utilizar.  Para instalar o Jekyll é simples basta ir no terminal e digitar o seguinte comando: &lt;code&gt;gem install jekyll&lt;/code&gt;, caso precise de permissão execute &lt;code&gt;sudo gem install jekyll&lt;/code&gt;, no segundo caso será requerida uma senha, insira a senha do usuário &lt;strong&gt;root&lt;/strong&gt; e prossiga com a instalação.&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Atenção:&lt;/strong&gt; Caso durante a instalação seja informado algum erro, tente executar o comando &lt;strong&gt;sudo gem install jekyll –source http://rubygems.org&lt;/strong&gt; e instale.&lt;/p&gt;
+
+&lt;p&gt;Caso a instalação seja concluída com sucesso, execute o comando &lt;code&gt;gem list&lt;/code&gt;, que vai listar as gem’s instaladas na máquina, feito isso verifique a versão atual das gem’s instaladas. No meu caso ocorreu o seguinte:
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;...
+    jekyll (2.5.3)
+    jekyll-coffeescript (1.0.1)
+    jekyll-gist (1.1.0)
+    ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pronto, com isso já temos instalado o Jekyll na versão &lt;strong&gt;2.5.3&lt;/strong&gt;, o exemplo segue o mesmo para instalar a maioria das gem’s.&lt;/p&gt;
+
+&lt;h2 id=&quot;mos-a-obra&quot;&gt;Mãos a Obra!&lt;/h2&gt;
+
+&lt;p&gt;Bem, após tudo instalado corretamente, vamos criar uma interface ‘pastel’ do jekyll, basta executarmos 2 comandos para termos um exemplo simples de uma página.
+Os comandos são:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jekyll new nome da pasta&lt;/li&gt;
+  &lt;li&gt;jekyll server&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vamos lá, com o primeiro comando, o jekyll vai criar a &lt;strong&gt;estrutura básica&lt;/strong&gt; de uma página, onde esse Nome_da_pasta vai ser a pasta onde a estrutura vai ser criada, nesse exemplo vou criar a estrutura em uma pasta que vou chamar de &lt;em&gt;teste&lt;/em&gt;,vamos ao exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;felipe@felipe-sousa:~/Documentos/projetos$  jekyll new teste
+    New jekyll site installed in /home/felipe/Documentos/projetos/teste.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A mensagem exibida diz que um novo site em jekyll foi criado no diretório &lt;strong&gt;/home/felipe/Documentos/projetos/teste.&lt;/strong&gt;. Agora para vermos como está o exemplo criado localmente, basta acessar pelo terminal a pasta criada, para isso damos um &lt;code&gt;cd teste&lt;/code&gt;, após isso basta executar o segundo comando &lt;code&gt;jekyll server&lt;/code&gt;, com isso será exibida uma mensagem basicamente desta forma:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;jekyll server
+    Configuration file: /home/felipe/Documentos/projetos/teste/_config.yml
+            Source: /home/felipe/Documentos/projetos/teste
+            Destination: /home/felipe/Documentos/projetos/teste/_site
+    Generating...
+                    done.
+
+            Configuration file: /home/felipe/Documentos/projetos/teste/_config.yml
+                    Server address: http://127.0.0.1:4000/
+                    Server running... press ctrl-c to stop.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pronto! Para vermos o exemplo basta irmos no navegador e digitarmos &lt;strong&gt;http://localhost:4000&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Resultado..
+ &lt;br /&gt;
+ &lt;img src=&quot;/images/jekyll-linux-exampler.png&quot; alt=&quot;jekyll-exampler&quot; /&gt;
+ &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Viu como é simples? Qualquer dúvida, crítica ou algum ponto importante que foi mal explicado ou que faltou no artigo, comenta que agradecerei muito! até a pŕoxima!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://felipesousa.github.io/Jekyll-no-Linux/&quot;&gt;Jekyll no Linux&lt;/a&gt; was originally published by Felipe Sousa at &lt;a href=&quot;http://felipesousa.github.io&quot;&gt;Felipe Sousa&lt;/a&gt; on March 02, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Um pouco de Linux]]></title>
+  <link rel="alternate" type="text/html" href="http://felipesousa.github.io/Um-pouco-de-Linux/" />
+  <id>http://felipesousa.github.io/Um-pouco-de-Linux</id>
+  <updated>2015-02-26T00:00:00-00:00</updated>
+  <published>2015-02-26T00:00:00-03:00</published>
+  
+  <author>
+    <name>Felipe Sousa</name>
+    <uri>http://felipesousa.github.io</uri>
+    <email>felipzbr@gmail.com</email>
+  </author>
+  <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;Há tempos queria escrever um pouco sobre Linux, sou fã do SO, a variedade e as opções são de encher os olhos, com isso, resolvi escrever um pouco sobre o dia a dia com o Linux.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Bem, como uma boa parte de quem usa sabe, o Linux não é super bem visto no mundo, muitos alegam dificuldade em usar, em instalar um programa, um driver, ou coisa do tipo. Essas causas sempre me deixaram com uma enorme dúvida de “&lt;strong&gt;Porque tanta gente diz que não presta, e existem apaixonados por ele e suas versões?&lt;/strong&gt;”. Isso me deixava angustiado e super curioso pra saber como era o tal do Bicho de Sete Cabeças que era o &lt;em&gt;LINUX&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Minha convivência com o SO não faz muito tempo, tenho pouco tempo de uso com Linux, apenas 2 anos, porém, é tempo suficiente para se apaixonar e mudar de conceito sobre o que é e como é ser um usuário Linux.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hoje em dia eu mudei completamente a minha visão de usuário para com SO’s, antigamente, como uma parte considerável da &lt;strong&gt;TERRA&lt;/strong&gt; eu usava Windows. Para muitas das minhas tarefas como um usuário comum estava de bom tamanho, porém, com o passar do tempo criei coragem e resolvi enfretar de vez o mundo do pinguin. o/&lt;/p&gt;
+
+&lt;h2 id=&quot;primeiras-impresses&quot;&gt;Primeiras Impressões&lt;/h2&gt;
+
+&lt;p&gt;Muita gente diz que a primeira impressão é a que fica, o que mais me chamou a atenção na primeira vez que peguei em um Linux foi a variedade. A primeira distro que eu vi e experimentei foi o Ubuntu 12.04, a versão não estava original, e sim, bastante modificada,  o que inicialmente me chamou bastante a atenção, pois estava bonito e super rápido.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Logo me veio a vontade de mexer pra saber até aonde eu poderia chegar com aquele sistema, porém claro, na época eu era um leigo e não sabia nem 0.1% do poder que o sistema tinha. Enfim, eu me encantei e dai então foi só alegria, rs. Claro que tive também diversas dores de cabeça a tentar instalar um programa, testar isso, criar aquilo, mais por fim, a experiência foi encantadora.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Desde então fui migrando de distro em distro tanto para saber qual era a que mais combinava comigo e também para variar o conhecimento em relação as distro’s. Durante mais ou menos nesses 2 anos, testei 7 delas.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dentre elas estão em sequência: Ubuntu, Linux Mint, Open Suse, Debian, Pear Linux, Fedora GNOME/KDE, e agora a Elementary OS, dentre todas as citadas a que mais tempo passei foi o Fedora GNOME, quase que 8 meses com a distro, me fez criar um afeto enorme e também aprender várias coisas sobre a mesma.  De uns tempos pra cá,  deu uma vontade angustiante de mudar de distro,  e com isso pesquisei uma distro interssante, e com isso mudei para a Elementary OS.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;elementary-os---simples-rpido-e-bonito&quot;&gt;Elementary OS - Simples, Rápido e Bonito&lt;/h2&gt;
+
+&lt;p&gt;Pelo pouco tempo que eu tenho com a nova distro já da pra ver que é super rápida, influente e totalmente personalizável - tal como qualquer outra distro - recursos, temas, widget’s, programas, fluidez, me fez logo de cara se apaixonar pela distro.  A distro é baseada no Ubuntu, o que torna mais simples de usar, possui um sistema de tweaks próprio que auxilia muito mais na personalização.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Atualmente aposentei totalmente o Windows, usava-o somente para manipulações simples de imagens - &lt;em&gt;Photoshop&lt;/em&gt; - só que dai resolvi migrar de vez para o Linux.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Claro que as vezes precisamos de um recurso ali, outro aqui, mais nada que uma boa pesquisa não resolva, hoje não consigo mais viver sem Linux, me auxilia muito fortemente quando estou desenvolvendo, tanto pela praticidade, quanto pela facilidade de encontrar ferramentas, e pela quantidade de opções.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Outra característica que me encanta no mundo Open Source, é a dedicação e a preucupação da comunidade em ajudar usuários que estão aprendendo, ou então ajudar em um problema, é interessante de ver e se torna gratificante e estimula a colaboração com a comunidade. Isso de certa forma se torna uma “exclusividade” para o Linux, não dizendo que entre os usuários de Mac ou de Windows não exista uma preucupação em ajudar ou coisa do tipo, porém, a participação dos usuários Linux para com a comunidade é visível e surpreende.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;É isso, o mundo Open Source é realmente lindo. E o melhor, é de graça. ♥ #VivaOLinux ♥&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://felipesousa.github.io/Um-pouco-de-Linux/&quot;&gt;Um pouco de Linux&lt;/a&gt; was originally published by Felipe Sousa at &lt;a href=&quot;http://felipesousa.github.io&quot;&gt;Felipe Sousa&lt;/a&gt; on February 26, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Minha linha de estudo para 2015]]></title>
+  <link rel="alternate" type="text/html" href="http://felipesousa.github.io/Linha-de-estudo-2015/" />
+  <id>http://felipesousa.github.io/Linha-de-estudo-2015</id>
+  <updated>2015-02-09T00:00:00-00:00</updated>
+  <published>2015-02-09T00:00:00-03:00</published>
+  
+  <author>
+    <name>Felipe Sousa</name>
+    <uri>http://felipesousa.github.io</uri>
+    <email>felipzbr@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Hello! Bem pessoal hoje eu vou falar um pouco sobre o que a muito tempo era pra ter feito, uma linhagem de estudo, recebi essa dica de um amigo desensenvolvedor a um tempo, visto que isso me traria alguns benefícios, tanto de organização, quanto a entendimento de determinada ferramenta, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;  &lt;/p&gt;
+
+&lt;p&gt;Até ai tudo show, mais porque criar um artigo inteiro pra fazer isso? Simples! Como sempre escrevemos algo acreditando que alguém vá ler, e no meu caso &lt;strong&gt;Desenvolvedores&lt;/strong&gt; e todo o resto, rs. Pensei em uma forma interessante de pedir um &lt;em&gt;help&lt;/em&gt; a todos que visitem o blog, e que estão lendo este post! Mais como? Como alguém vai me ajudar sem saber um nível? Sem saber o que eu sei ou o que eu pretendo estudar?! &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sempre leio artigos onde sempre uma grande parcela fala, &lt;strong&gt;APRENDA HTML/CSS/JS que o resto você aprende de acordo com sua necessidade&lt;/strong&gt;, o que eu sou totalmente de acordo, pois para ser um bom entendedor de muitas outras coisas &lt;em&gt;Frameworks, Pré-processadores, Geradores, etc&lt;/em&gt; temos de aprender no mínimo o básico, saber como funciona por trás de tudo aquilo, e &lt;strong&gt;NÃO&lt;/strong&gt;, não uso Jquery :) rs.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pronto, depois de tanto ler artigos sobre eu realmente entendi que  o que importa é começar pelo simples. Estudei (e ainda estudo), todo essa basicão. Claro que alguém que foca em ser um Desenvolvedor nã deve se prender a apenas com os principais. Assim sendo fui aprender linguagens e ferramentas &lt;em&gt;Back-end&lt;/em&gt;, mais como não é o foco da postagem, vamos prosseguir. Pois bem, esse ano de 2015 eu pretendo focar principalmente em JavaScript, vendo que basicamente hoje em “tudo” existe JavaScript, e por ser primordial se quisermos ser desenvolvedores capacitados. &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pois bem, comecei a estudar o tal do JS, só que ai é que tá. A minha real dúvida, é o que fazer depois de se aprender o basicão, eu já visitei uma pá de sites onde se diziam “Cursos Completos” e etc, mais vejo que falta muito mais a se aprender.. Fui recomendado em ler os Livros “JavaScript:  O Guia Definitivo”, e o “The Good Parts JavaScript”, de ambos sempre vi feedbacks interessantes e tudo mais..&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gostaria saber de vocês, o que realmente é importante aprender de imediato, &lt;em&gt;fora o básico&lt;/em&gt; da linguagem, gostaria de saber também a maneira pela qual aprenderam a linguagem, se foi por livro, vídeo, lendo artigos, tutoriais, etc. E se possível indicar alguns conteúdos legais! Obrigado e agradeço a todos que de alguma forma irão contribuir. :) &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bons estudos! &lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://felipesousa.github.io/Linha-de-estudo-2015/&quot;&gt;Minha linha de estudo para 2015&lt;/a&gt; was originally published by Felipe Sousa at &lt;a href=&quot;http://felipesousa.github.io&quot;&gt;Felipe Sousa&lt;/a&gt; on February 09, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Pensamentos sobre uma vida mutante]]></title>
+  <link rel="alternate" type="text/html" href="http://felipesousa.github.io/Pensamentos-de-uma-vida-mutante/" />
+  <id>http://felipesousa.github.io/Pensamentos-de-uma-vida-mutante</id>
+  <updated>2015-01-29T00:00:00-00:00</updated>
+  <published>2015-01-29T00:00:00-03:00</published>
+  
+  <author>
+    <name>Felipe Sousa</name>
+    <uri>http://felipesousa.github.io</uri>
+    <email>felipzbr@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Ha uns dias comecei a pensar comigo mesmo sobre as oportunidades, sobre o que podemos fazer, podemos seguir, enfim, escolhas que podemos seguir ao longo da vida. As vezes eu penso o quanto estamos sujeitos a sermos mudados, porem, mudanças so acontecem se você der chances para que elas aconteçam, você não vai aprender uma linguagem nova se ficar parado, sem estudar, não vai conseguir empregos bons se não for atrás, se você não for capacitado pra assumir, não vai ser bom se não for posto a prova. &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Algo que considero crucial para quem quer ser desenvolvedor, ou qualquer coisa, é ser autodidata, buscar aprender sobre aquilo, se interessar, ver ao menos do que se trata e super importante para começar a subir na vida. Dai muita gente se pergunta “O que que esse muleque de 16 anos pensa que e pra falar isso?!”, brother, pra você que pensa isso lhe pergunto, &lt;strong&gt;o que me impede de falar isso?&lt;/strong&gt;, creio que pensar assim me deixa em vantagem pra galera que pensa que no mundo tudo vem único e exclusivamente por sorte ou sem esforço. &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Amo estudar novas ferramentas, amo tecnologia, amo desenvolver, analisar codigo de outro desenvolvedor, fazer coisas que muitos desenvolvedores faz, &lt;strong&gt;tomar café&lt;/strong&gt;, etc, e isso foi um dos motivos pra eu criar esse blog, seguir passos de alguém que tem conhecimento, de pessoas que me inspiram e são destaque e referência no que fazem, tenho como sonho e meta se tornar um bom desenvolvedor, chegar algum dia a ser como os meu ídolos são, inspirar pessoas, ser alguém que um dia vai inspirar alguém a fazer alguma coisa, seja criar um blog, um artigo, ou coisa do tipo.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como todo mundo tenho sonhos, quero um dia ser um viajante, um bom profissional, alguém que vai ser livre pra fazer o que quiser, quando quiser, e se quiser o/. &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;As vezes eu penso &lt;strong&gt;“velho, eu to maluco, como que eu escrevo coisas que outras pessoas vão ler e vão dar suas opiniões, suas críticas e tudo mais! “&lt;/strong&gt;, por esses dias eu andei lendo sobre &lt;a href=&quot;https://medium.com/@felquis/aprenda-portugues-antes-de-ter-um-blog-a2647d913a45&quot;&gt;um artigo&lt;/a&gt; do &lt;a href=&quot;http://felquis.com/&quot;&gt;Felquis Gimenes&lt;/a&gt; que fala sobre comentários &lt;em&gt;RIDÍCULOS&lt;/em&gt; que as pessoas dizem em algumas postagens, criticando, reclamando de balela, falando coisas que degradam os autores daquele post, algo que de certa forma atingem em mais escalas desenvolvedores iniciantes, o que me deixa com o pé atrás a cada artigo novo que lanço, porém volto o pensamento &lt;strong&gt;“Como vou saber se estou bom se não colocar a cara pra bater?”&lt;/strong&gt;, a partir dai vem aquela coragem de se testar, dai então tudo flui. &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Espero com isso incentivar alguém que esteja iniciando com seu blog, ou coisa do tipo, a fazer o que tiver vontade, a ser o que quer, estude, se mate de estudar, algum dia seu conhecimento será necessário, não se prenda a ninguém pra aprender, estude sozinho, até quando estiver cansado, vá a encontros, crie amizades com pessoas que estejam disponíveis a ajudar, é isso! Até o próximo artigo, os comentários estão livre para opiniões, críticas, o que for! Obrigado.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://felipesousa.github.io/Pensamentos-de-uma-vida-mutante/&quot;&gt;Pensamentos sobre uma vida mutante&lt;/a&gt; was originally published by Felipe Sousa at &lt;a href=&quot;http://felipesousa.github.io&quot;&gt;Felipe Sousa&lt;/a&gt; on January 29, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Controle de Versão GIT - Parte 2]]></title>
+  <link rel="alternate" type="text/html" href="http://felipesousa.github.io/Basico-em-git-parte2/" />
+  <id>http://felipesousa.github.io/Basico-em-git-parte2</id>
+  <updated>2015-01-18T00:00:00-00:00</updated>
+  <published>2015-01-18T00:00:00-03:00</published>
+  
+  <author>
+    <name>Felipe Sousa</name>
+    <uri>http://felipesousa.github.io</uri>
+    <email>felipzbr@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Bem, voltando com a segunda parte o artigo sobre GIT, vamos aprender sobre como verificar as mudanças realizadas nos arquivos, aprender como verificar os logs do projeto e como desfazer algumas ações. Caso chegou até aqui é porque ja conferiu a Primeira parte do artigo, caso não procure na aba Postagens.&lt;/p&gt;
+
+&lt;p&gt;Primeiramente vamos dar um recapitulada no post anterior, lá aprendemos a adicionar, commitar, e excluir arquivos do controle do GIT. &lt;/p&gt;
+
+&lt;h3 id=&quot;verificar-modificaes-com-git&quot;&gt;Verificar modificações com GIT&lt;/h3&gt;
+&lt;p&gt;Agora vamos aprender como verificar as diferenças de um arquivo que está para ser adicionado. Vamos usar o mesmo exemplo. Vamos supor que temos um arquivo em um repositório e o modificamos, quando damos um &lt;code&gt;git status&lt;/code&gt;, para ver o status do projeto, aparece a seguinte mensagem. &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;On branch master
+Changes not staged for commit:
+  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed)
+  (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory)
+
+	modified:   teste.txt
+
+no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Segundo o GIT, ele nos informa que existem modificações no arquivo e que é preciso adicionar e commitar o mesmo. Mas, se quiséssemos ver as mudanças, como que faríamos? qual comando usariamos? A partir de agora, você vai aprender algo super importante sobre GIT, o GIT é dividido em 3 áreas principais, sendo era a &lt;strong&gt;Working Directory&lt;/strong&gt;, &lt;strong&gt;Stage Area&lt;/strong&gt; e &lt;strong&gt;Git Directory&lt;/strong&gt;, o &lt;strong&gt;Working Directory&lt;/strong&gt; é a sua parte de trabalho, arquivos nesse estágio estão pronto para serem adicionados, após adicioandos os arquivos vão para a segunda área, sendo ela a &lt;strong&gt;Stage Area&lt;/strong&gt;, arquivos aqui, estão prontos para serem commitados, após commitados vão para o última área, a &lt;strong&gt;Git Directory&lt;/strong&gt;, que são seus arquivos versionados e etc. &lt;/p&gt;
+
+&lt;p&gt;Porque é importante aprender sobre essas áreas? Simples! Dependendo de cada área o comando pra verificar as modificações se altera. Vamos supor que eu tenho arquivos a serem &lt;em&gt;adicionados&lt;/em&gt;, logo eles estão na área &lt;code&gt;Working Directory&lt;/code&gt;, o comando para verificar as alterações no arquivo é o &lt;code&gt;git diff&lt;/code&gt;, se aplicado no exemplo acima, ficaria desta forma. &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ git diff 
+
+diff --git a/teste.txt b/teste.txt
+index e69de29..8ca3766 100644
+--- a/teste.txt
++++ b/teste.txt
+@@ -0,0 +1 @@
+
++Exemplo de verificação.. :)
+
+\ No newline at end of file&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Para entender o que foi modificado, temos que entender os &lt;em&gt;simbolos&lt;/em&gt;, o simbolo de &lt;code&gt;+&lt;/code&gt;, significa as linhas que foram adicionados, já o de &lt;code&gt;-&lt;/code&gt;, significa que determinada(s) linha(s), foram retiradas. Pronto, sabendo disso podemos deduzir que no arquivo &lt;code&gt;teste.txt&lt;/code&gt;foi adicionado a linha &lt;em&gt;+Exemplo de verificação.. :)&lt;/em&gt;. &lt;/p&gt;
+
+&lt;p&gt;Mais vamos supor que já tenhamos adicionado o(s) arquivos(s) e faltando apenas commitar, no caso estamos na &lt;strong&gt;Stage Area&lt;/strong&gt;, o comando para verificar as modificações é &lt;code&gt;git diff --staged&lt;/code&gt;. O mesmo vai ocorrer como no exemplo anterior.&lt;/p&gt;
+
+&lt;p&gt;E vamos supor, acidentalmente você(acredite isso acontece muito!) adiciona arquivos que estavam na &lt;strong&gt;Working Directory&lt;/strong&gt;, pra &lt;strong&gt;Stage Area&lt;/strong&gt;, o que fazer? simples, o GIT nos oferece o comando &lt;code&gt;git reset HEAD arquivo.ext&lt;/code&gt;, esse comando tira o(s) último(s) arquivo(s), que estavam na &lt;strong&gt;Stage Area&lt;/strong&gt; e voltam para o &lt;strong&gt;Working Directory&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vamos adicionar arquivos para a &lt;strong&gt;Stage Area&lt;/strong&gt; veja o exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ git status
+	On branch master
+Changes not staged for commit:
+  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed)
+  (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory)
+
+	modified:   teste.txt
+
+no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;)
+
+//
+
+$ git add .
+//
+
+$ git status
+
+On branch master
+Changes to be committed:
+  (use &amp;quot;git reset HEAD &amp;lt;file&amp;gt;...&amp;quot; to unstage)
+
+	modified:   teste.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pronto, arquivos estão na &lt;strong&gt;Stage Area&lt;/strong&gt;, vamos adicionar o comando &lt;code&gt;git reset HEAD .&lt;/code&gt;, para voltarmos ao &lt;strong&gt;Working Directory&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ git reset HEAD .
+
+Unstaged changes after reset:
+M	teste.txt
+
+// Após feito isso vamos dar um git status.
+
+$ git status
+
+On branch master
+Changes not staged for commit:
+  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed)
+  (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory)
+
+	modified:   teste.txt
+
+no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pronto, os arquivos voltaram para o nivel inicial.&lt;/p&gt;
+
+&lt;h3 id=&quot;logs-com-git&quot;&gt;Log’s com GIT&lt;/h3&gt;
+
+&lt;p&gt;Logs em GIT são marcados a partir dos seus commits, existem algumas forma de verificar os logs do seu projeto, o comando &lt;code&gt;git log&lt;/code&gt; mostra de uma forma bem simples os seus commits, com a data, o autor e o nome do commit. Vamos executar o comando e ver o exemplo: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ git log
+
+commit f448501027e2693af63e892a9bbb371a4ed55745
+Author: Felipe Sousa &amp;lt;felipzbr@gmail.com&amp;gt;
+Date:   Sun Jan 18 11:39:22 2015 -0300
+
+    initial commit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;No meu caso, esse repositório nao possui muitos commits, então o seu &lt;em&gt;log&lt;/em&gt; foi bem pequeno, mostrando apenas 1 commit. &lt;/p&gt;
+
+&lt;p&gt;Mais vamos supor que você está em um projeto gigante com varios meses de trabalho, verificar o log, olhando commit por commit se torna cansativo e estressante. Para esse ocasião o GIT tem o comando, &lt;code&gt;git log --pretty=oneline&lt;/code&gt;, esse comando vai apenas mostrar os nomes do commits um por um em linha, veja o exemplo: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ git log --pretty=oneline
+
+f448501027e2693af63e892a9bbb371a4ed55745 initial commit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Como visto, ele mostrou os meus commits em linha, como apenas exite 1 commit, ele o listou somente.&lt;/p&gt;
+
+&lt;p&gt;Pronto, simples e fácil verificar o log do seu projeto com GIT.&lt;/p&gt;
+
+&lt;p&gt;Por hora é só, nesse parte do artigo aprendemos como ver as  modificações de arquivos, aprendemos sobre os estágios do GIT e aprendemos a verificar os logs do projeto. Obrigado e até a proxima! &lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://felipesousa.github.io/Basico-em-git-parte2/&quot;&gt;Controle de Versão GIT - Parte 2&lt;/a&gt; was originally published by Felipe Sousa at &lt;a href=&quot;http://felipesousa.github.io&quot;&gt;Felipe Sousa&lt;/a&gt; on January 18, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Controle de Versão GIT - Parte 1]]></title>
+  <link rel="alternate" type="text/html" href="http://felipesousa.github.io/Basico-em-git-parte1/" />
+  <id>http://felipesousa.github.io/Basico-em-git-parte1</id>
+  <updated>2015-01-17T00:00:00-00:00</updated>
+  <published>2015-01-17T00:00:00-03:00</published>
+  
+  <author>
+    <name>Felipe Sousa</name>
+    <uri>http://felipesousa.github.io</uri>
+    <email>felipzbr@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Bem, visto que é super importante o uso de Controle de Versões em projetos para organizá-lo de forma mais correta, ver a evolução do projeto com o tempo, etc. Resolvi falar um pouco sobre GIT, um dos Sistemas de Controle de Versão que vem se destacando pela sua facilidade e eficiência em vários ambientes, seja trabalhando individualmente ou em grupo, GIT sempre auxilia da forma mais simples, ajudando no processo, organização e progresso do projeto.&lt;/p&gt;
+
+&lt;p&gt;O artigo vai ser dividido em partes. A primeira sendo como configurar, iniciar, adicionar arquivos, commitar e como excluir arquivos com GIT em um projeto individual. &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Git é um sistema de controle de versão distribuído e um sistema de gerenciamento de código fonte, com ênfase em velocidade. O Git foi inicialmente projetado e desenvolvido por Linus Torvalds para o desenvolvimento do kernel Linux, mas foi adotado por muitos outros projetos. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;instalar-git&quot;&gt;Instalar GIT&lt;/h3&gt;
+
+&lt;p&gt;Antes de começar, é necessário instalar o GIT na sua máquina, &lt;a href=&quot;http://git-scm.com/downloads&quot;&gt;você pode baixar clicando aqui&lt;/a&gt;, após o download realize a instalação, após isso já estamos com tudo pronto para iniciar com Git.&lt;/p&gt;
+
+&lt;h3 id=&quot;comeando-com-o-git&quot;&gt;Começando com o GIT&lt;/h3&gt;
+
+&lt;p&gt;Dependendo do seu SO, o GIT pode ser encontrado no caso de Linux e MAC no própio terminal de ambos, bastando executar os comandos a partir do mesmo, já no Windows, vem um programa que simula um terminal, e será por ele que você pode iniciar os comandos. Estou usando Linux, no meu caso, os comandos serão executados a partir do meu terminal.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A partir de agora todos os exemplos serão executados no terminal.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Primeiro temos que realizar 2 configurações básicas no GIT. Insira no seu terminal &lt;em&gt;ou programa&lt;/em&gt; o seguinte comando. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git config --global user.name &quot;your_username&quot;&lt;/code&gt;, onde &lt;code&gt;your_username&lt;/code&gt;, você deve substituir pelo seu nome. Depois de ter configurado seu nome, adicione o comando &lt;code&gt;$ git config --global user.email youremail@example.com&lt;/code&gt;, e edite o &lt;code&gt;youremail@example.com&lt;/code&gt; pelo seu email, após feito isso, podemos começar de vez a versionar nossos projetos, &lt;em&gt;uffa&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vamos supor que eu vou começar o projeto no caminho &lt;code&gt;Documentos/teste/&lt;/code&gt; que quero começar a controlar as versões dele, para isso, basta executar o comando &lt;code&gt;git init&lt;/code&gt; dentro do diretório.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git init - iniciar o versionamento pelo git.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esse comando vai criar uma pasta &lt;code&gt;.git&lt;/code&gt; no seu diretório. &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Initialized empty Git repository in /Documentos/teste/.git/&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Após isso vamos dar um &lt;code&gt;git status&lt;/code&gt;, esse comando vai ver status do seu projeto, e vai dizer se precisa executar outro comando. Vamos supor que sua projeto está vazio, quando executamos o &lt;code&gt;git status&lt;/code&gt; a mensagem [que aparece é a seguinte. &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use &amp;quot;git add&amp;quot; to track)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Essa mensagem mostra que ainda não é necessário executar mais nem um comando, é como que seu repositório estivesse correto, ou nada de errado. &lt;/p&gt;
+
+&lt;p&gt;Agora vamos adicionar o arquivos &lt;code&gt;teste.txt&lt;/code&gt; na pasta e vamos dar novamente um &lt;code&gt;git status&lt;/code&gt;. Confira o que apareceu.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;On branch master
+
+Initial commit
+
+Untracked files:
+  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to include in what will be committed)
+
+        teste.txt
+
+nothing added to commit but untracked files present (use &amp;quot;git add&amp;quot; to track)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Com essa mensagem o GIT informou que existem arquivos que precisam ser adicionados no sistema paa serem versionados. Para adicionar arquivos para serem versionado podemos usar algumas maneiras. Usando o comando &lt;code&gt;git add arquivo.ext&lt;/code&gt;, podemos adicionar somente o arquivo em sí. Mais vamos supor que queiramos adicionar 10 arquivos.txt de uma vez, ficar digitando o nome e o tipo do arquivo pode se tornar cansativo. para isso podemos adicionar o comando &lt;code&gt;git add '*.txt'&lt;/code&gt;, com isso ele vai adicionar todos os arquivos .txt, outra maneira &lt;em&gt;e mais prática&lt;/em&gt; para adicionar os arquivos é usando o comando &lt;code&gt;git add .&lt;/code&gt;, com isso ele vai adicionar todos os arquivos de todas as extensões que estão pendentes.&lt;/p&gt;
+
+&lt;p&gt;No exemplo vamos usar o comando &lt;code&gt;git add .&lt;/code&gt;, após isso vamos novamente dar um &lt;code&gt;git status&lt;/code&gt; e vejamos o que acontece.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;On branch master
+Initial commit
+	Changes to be committed:
+  (use &amp;quot;git rm --cached &amp;lt;file&amp;gt;...&amp;quot; to unstage)
+	        new file:   teste.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Com a mensagem o GIT nos informou que existem arquivos a serem &lt;em&gt;commitados&lt;/em&gt;, commitar arquivo(s) nada mais é do que comentar o que foi mudado ou o que foi adicionado naquele(s) arquivo(s). Para commitar é muito simples, basta adicionar &lt;code&gt;git commit -m &quot;Descrição&quot;&lt;/code&gt;, onde o que está entre &lt;em&gt;aspas&lt;/em&gt; será o que vamos descrever com a alteração. Veja o exemplo: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;[master (root-commit) 194a281] adicionando o arquivo teste.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 teste.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A mensagem mostra que o arquivo foi commitado com sucesso! Pronto, agora já sabemos como adicionar arquivos e comenta-los. &lt;/p&gt;
+
+&lt;p&gt;E se por acaso você queira apagar algum arquivo para que ele não exista mais no meu projeto? Simples! Basta executar o comando &lt;code&gt;git rm arquivo.ext&lt;/code&gt;, com isso ele vai apagar o arquivo dos seu projeto. &lt;/p&gt;
+
+&lt;p&gt;Bem, com esse artigo inicial aprendemos o básico de Git, tais como, como configurar o ambiente, como iniciar um respositório para que ele possa começar a ser versionado, adicionar arquivos, commitar arquivos e deletá-los. Até a próxima! :) &lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://felipesousa.github.io/Basico-em-git-parte1/&quot;&gt;Controle de Versão GIT - Parte 1&lt;/a&gt; was originally published by Felipe Sousa at &lt;a href=&quot;http://felipesousa.github.io&quot;&gt;Felipe Sousa&lt;/a&gt; on January 17, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Básico em Markdown]]></title>
+  <link rel="alternate" type="text/html" href="http://felipesousa.github.io/Basico-em-markdown/" />
+  <id>http://felipesousa.github.io/Basico-em-markdown</id>
+  <updated>2015-01-08T00:00:00-00:00</updated>
+  <published>2015-01-08T00:00:00-03:00</published>
+  
+  <author>
+    <name>Felipe Sousa</name>
+    <uri>http://felipesousa.github.io</uri>
+    <email>felipzbr@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Neste artigo, mostrarei maneiras de adicionar coisas as suas postagens de forma simples e rápida. &lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;o-que-ser-abordado-no-artigo&quot;&gt;O que será abordado no artigo:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#bq&quot;&gt; Blockquotes &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tabelas&quot;&gt; Tabelas &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#bc&quot;&gt; Blocos de Código &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#marcadores&quot;&gt; Marcadores de texto &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#td&quot;&gt; Texto em destaque &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#imagens&quot;&gt;Imagens&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#botoes&quot;&gt;Botões &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;bq&quot;&gt; Blockquote &lt;/h2&gt;
+
+&lt;p&gt;Blockquotes é um trecho de código que fica dentro de um mini bloco. Para adicionar um blockquote basta simplesmente adicionar o simbolo &lt;code&gt;&amp;gt;&lt;/code&gt; antes do trecho.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; Exemplo de Blockquote, veja que o trecho se concentra em um pequeno bloco.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;resultado&quot;&gt;Resultado:&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Exemplo de Blockquote, veja que o trecho se concentra em um pequeno bloco. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;tabelas&quot;&gt;Tabelas&lt;/h2&gt;
+
+&lt;p&gt;Tabelas são amplamente utilizadas e muitas das vezes chatas de se criar, so que ai vem a pergunta como criar uma tabela usando a própria sintaxe markdown? É bem simples, basta seguir uma lógica nada complexa. 
+Vamos supor que eu precise criar uma tabela simples com os seguintes campos: &lt;code&gt;nome&lt;/code&gt;, &lt;code&gt;idade&lt;/code&gt; e &lt;code&gt;sexo&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Segue o exemplo abaixo:  &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//nome, idade e sexo são as colunas e cel1, cel2, e cel3 são as celulas, juntas as 3 formam a 1 linha.
+// o trecho |---- significa um divisor. uma linha que vai dividir outra linha.
+
+
+| Nome    | Idade   | Sexo    |
+|:--------|:-------:|--------:|
+| cel1    |   cel2  |  cel3   |
+|----
+{: rules=&amp;quot;groups&amp;quot;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Com o exemplo acima conseguimos adquirir a tabela abaixo:  &lt;br /&gt; &lt;/p&gt;
+
+&lt;table rules=&quot;groups&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Nome&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Idade&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Sexo&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cel1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cel2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cel3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Iremos adicionar outra linha e editar os campos para mostrar um exemplo completo.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Observe, adicionei mais uma linha e um divisor.
+
+| Nome    | idade   | sexo    |
+|:--------|:-------:|--------:|
+| Thiago  |   20    |masculino|
+|----
+| Maria   |   34    |feminino |
+|----
+{: rules=&amp;quot;groups&amp;quot;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Adicionando outra linha e as preenchendo podemos adquirir uma tabela assim: &lt;br /&gt; &lt;/p&gt;
+
+&lt;table rules=&quot;groups&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Nome&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;idade&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;sexo&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Thiago&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;20&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;masculino&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Maria&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;34&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;feminino&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Pronto, seguindo este padrão, se cria tabelas em markdown, simples e rápido.&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Atenção:&lt;/strong&gt; no fim de suas tabelas, adicione &lt;code&gt;{: rules=&quot;groups&quot;}&lt;/code&gt; para tornar visíveis as linhas desta tabela. &lt;/p&gt;
+
+&lt;h2 id=&quot;bc&quot;&gt; Blocos de Códigos &lt;/h2&gt;
+
+&lt;p&gt;Em markdown utilizamos a ordem &lt;code&gt;highlight&lt;/code&gt; para adicionar exemplos de códigos, e &lt;code&gt;endhighlight&lt;/code&gt; , para mostrar o termino daquele dado exemplo.&lt;/p&gt;
+
+&lt;h4 id=&quot;exemplo&quot;&gt;Exemplo&lt;/h4&gt;
+
+&lt;p&gt;Vamos supor que queiramos adicionar um exemplo de código em HTML, basta adicionar &lt;code&gt;highlight html&lt;/code&gt;, sendo &lt;code&gt;html&lt;/code&gt; o tipo de linguagem que será adicionado nos códigos. A partir daí já podemos adicionar nossos códigos, após adicionar todos os nossos códigos, basta inserir ` endhighlight`, e terminar o trecho.&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Atenção:&lt;/strong&gt; é necessário adicionar o os simbolos( { (chave) + % (porcento) antes e depois dos &lt;code&gt;highlight&lt;/code&gt; e &lt;code&gt;endhighlight&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt; Testando os blocos de códigos &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Atenção:&lt;/strong&gt; Podemos adicionar diversos outros tipos de linguagens, css, js, etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;marcadores&quot;&gt;  Marcadores de Texto&lt;/h2&gt;
+&lt;p&gt;Os marcadores são quando fazemos selecao de determinada palavra ou de um frase. Podemos ver como exemplo:&lt;/p&gt;
+
+&lt;p&gt;O carro é bem &lt;code&gt;largo&lt;/code&gt; em relação ao &lt;code&gt;outro&lt;/code&gt;.
+O código deste trecho fica desta forma: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;O carro é bem `largo` em relação ao `outro`.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Como visto no exemplo, para destacar uma palavra ou frase, basta adicionar ` antes e depois do trecho. &lt;/p&gt;
+
+&lt;h2 id=&quot;td&quot;&gt; Texto em destaque &lt;/h2&gt;
+
+&lt;p&gt;Para adicionar o trecho em destaques, basta adicionar &lt;code&gt;{: .notice }&lt;/code&gt;, após o texto onde deseja destacar. Exemplo: &lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Atenção:&lt;/strong&gt; Texto que quer por em destaque. &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; 
+O código usado para criar o exemplo acima foi:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;**Atenção:** Texto que quer por em destaque. 
+{: .notice }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;imagens&quot;&gt; Imagens &lt;/h2&gt;
+&lt;p&gt;Em artigos, é muito comum usar-se imagens para mostrar exemplos ou até mesmo para enfeite de artigo, mostrarei como adicionar imagens no seu artigo.
+Voce pode optar por adicionar imagens de duas maneiras, pode ser adicionado como HTML simples, ou usando a sintaxe do markdown. 
+O corpo base para se adicionar imagens pelo markdown é, &lt;code&gt;![Nome da Imagem](caminho da imagem)&lt;/code&gt;, é simples, basta adicionar este padrao e editar os campos corretamente e a imagem é adicionada. &lt;/p&gt;
+
+&lt;p&gt;Vamos adicionar uma imagem que está armazenada no caminho &lt;code&gt;/images/teste.jpg&lt;/code&gt;, a maneira que eu irei adicionar ela é simples, basta utilizar o padrão
+&lt;code&gt;![Nome da Imagem](caminho da imagem)&lt;/code&gt;, desta forma ela ficaria, &lt;code&gt;![Teste](/images/teste.jpg)&lt;/code&gt;. &lt;br /&gt;
+&lt;br /&gt; 
+&lt;img src=&quot;/images/teste.jpg&quot; alt=&quot;Teste&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;botoes&quot;&gt; Botões &lt;/h2&gt;
+
+&lt;p&gt;Botões são muito utilizados, veja como adicioná-los e suas opções.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--exemplo de botão simples--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; Botão Simples&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!--botões extras--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-success&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Success Button&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+
+Adicionamos uma sub-classe (btn-sucess) após a classe padrão (btn).&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Resultado do exemplo acima.&lt;br /&gt; 
+&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Botão Simples&lt;/a&gt;
+&lt;br /&gt; 
+&lt;a href=&quot;#&quot; class=&quot;btn btn-success&quot;&gt;Success Button&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Atenção:&lt;/strong&gt; Existem outras classes de botões como &lt;code&gt;btn-warning&lt;/code&gt;, &lt;code&gt;btn-danger&lt;/code&gt; e &lt;code&gt;btn-info&lt;/code&gt;.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://felipesousa.github.io/Basico-em-markdown/&quot;&gt;Básico em Markdown&lt;/a&gt; was originally published by Felipe Sousa at &lt;a href=&quot;http://felipesousa.github.io&quot;&gt;Felipe Sousa&lt;/a&gt; on January 08, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Hello Word]]></title>
+  <link rel="alternate" type="text/html" href="http://felipesousa.github.io/Hello-Word/" />
+  <id>http://felipesousa.github.io/Hello-Word</id>
+  <updated>2015-04-17T00:00:00-00:00</updated>
+  <published>2015-01-04T00:00:00-03:00</published>
+  
+  <author>
+    <name>Felipe Sousa</name>
+    <uri>http://felipesousa.github.io</uri>
+    <email>felipzbr@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Antes de tudo gostaria de me apresentar! Meu nome é Felipe Sousa, sou Desenvolvedor Front-End, apaixonado pela web, pelo mundo open source e tudo que existe nele. &lt;/p&gt;
+
+&lt;p&gt;Nesse blog pretendo relatar sobre minha carreira profissional, escrever sobre alguma ferramenta, comentar sobre outro artigo e muito mais! Gostaria de agradecer a todos que de alguma forma contibuem para o trabalho de criar e manter um blog! &lt;/p&gt;
+
+&lt;p&gt;Começa aqui mais uma jornada na minha vida que é compartilhar o máximo do meu conhecimento com vocês! &lt;/p&gt;
+
+&lt;p&gt;Obrigado e sejam bem vindos a meu blog! &lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://felipesousa.github.io/Hello-Word/&quot;&gt;Hello Word&lt;/a&gt; was originally published by Felipe Sousa at &lt;a href=&quot;http://felipesousa.github.io&quot;&gt;Felipe Sousa&lt;/a&gt; on January 04, 2015.&lt;/p&gt;</content>
+</entry>
+
+</feed>
