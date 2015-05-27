@@ -1,0 +1,328 @@
+<!doctype html><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]--><!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]--><!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]--><head>    <meta charset="utf-8">
+        <title>Controle de Versão GIT - Parte 2 &#8211; Felipe Sousa</title>
+            <meta name="description" content="Aprenda conceitos básicos sobre GIT. Um dos melhores controladores de versão da atualidade.">
+                <meta name="keywords" content="aulas, git">
+                    
+                    
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Controle de Versão GIT - Parte 2">
+<meta name="twitter:description" content="Aprenda conceitos básicos sobre GIT. Um dos melhores controladores de versão da atualidade.">
+<meta name="twitter:site" content="@felipz_sousa">
+<meta name="twitter:creator" content="@felipz_sousa">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://felipesousa.github.io/images/gitpost.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Controle de Versão GIT - Parte 2">
+<meta property="og:description" content="Aprenda conceitos básicos sobre GIT. Um dos melhores controladores de versão da atualidade.">
+<meta property="og:url" content="http://felipesousa.github.io/Basico-em-git-parte2/">
+<meta property="og:site_name" content="Felipe Sousa">
+
+
+
+
+
+<link rel="canonical" href="http://felipesousa.github.io/Basico-em-git-parte2/">
+<link href="http://felipesousa.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Felipe Sousa Feed">
+<link rel="author" href="http://plus.google.com/+u/0/104290563189358000367?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://felipesousa.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://felipesousa.github.io/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://felipesousa.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://felipesousa.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://felipesousa.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://felipesousa.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://felipesousa.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://felipesousa.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://felipesousa.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://felipesousa.github.io/images/apple-touch-icon-144x144-precomposed.png">
+</head><body class="post">    <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->    <div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://felipesousa.github.io">Felipe Sousa</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				        
+				    
+				    <li><a href="http://felipesousa.github.io/" >Home</a></li>
+				
+				    
+				        
+				    
+				    <li><a href="http://felipesousa.github.io/sobre/" >Sobre</a></li>
+				
+				    
+				        
+				    
+				    <li><a href="http://felipesousa.github.io/postagens/" >Postagens</a></li>
+				
+				    
+				        
+				    
+				    <li><a href="http://felipesousa.github.io/projetos/" >Projetos</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->            <div class="image-wrap">            <img src=                                    "http://felipesousa.github.io/images/gitpost.jpg"                                    alt="Controle de Versão GIT - Parte 2 feature image">                            </div><!-- /.image-wrap -->        <div id="main" role="main">        <div class="article-author-side">            
+
+
+
+	<img src="http://felipesousa.github.io/images/bio-photo.jpg" class="bio-photo" alt="Felipe Sousa bio photo">
+
+
+<h3>Felipe Sousa</h3>
+<p>Front end Developer</p>
+
+<!--Perfis do Author-->
+
+<a href="http://github.com/felipesousa" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+
+<a href="http://twitter.com/felipz_sousa" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+
+
+
+<a href="http://plus.google.com/u/0/104290563189358000367" class="author-social" target="_blank"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a>
+
+
+
+<a href="mailto:felipzbr@gmail.com" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
+
+<a href="http://facebook.com/felipe.simpsons" class="author-social" target="_blank"><i class="fa fa-fw fa-facebook-square"></i> Facebook</a>
+
+<a href="http://instagram.com/felipz_sousa" class="author-social" target="_blank"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+
+
+
+
+
+<!--// Perfis do Author // -->
+
+        </div>            <article class="post">                <div class="headline-wrap">                                            <h1><a href="http://felipesousa.github.io/Basico-em-git-parte2/" rel="bookmark" title="Controle de Versão GIT - Parte 2">Controle de Versão GIT - Parte 2</a></h1>                                    </div><!--/ .headline-wrap -->                <div class="article-wrap">                <p>Bem, voltando com a segunda parte o artigo sobre GIT, vamos aprender sobre como verificar as mudanças realizadas nos arquivos, aprender como verificar os logs do projeto e como desfazer algumas ações. Caso chegou até aqui é porque ja conferiu a Primeira parte do artigo, caso não procure na aba Postagens.</p>
+
+<p>Primeiramente vamos dar um recapitulada no post anterior, lá aprendemos a adicionar, commitar, e excluir arquivos do controle do GIT. </p>
+
+<h3 id="verificar-modificaes-com-git">Verificar modificações com GIT</h3>
+<p>Agora vamos aprender como verificar as diferenças de um arquivo que está para ser adicionado. Vamos usar o mesmo exemplo. Vamos supor que temos um arquivo em um repositório e o modificamos, quando damos um <code>git status</code>, para ver o status do projeto, aparece a seguinte mensagem. </p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+	modified:   teste.txt
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</code></pre></div>
+
+<p>Segundo o GIT, ele nos informa que existem modificações no arquivo e que é preciso adicionar e commitar o mesmo. Mas, se quiséssemos ver as mudanças, como que faríamos? qual comando usariamos? A partir de agora, você vai aprender algo super importante sobre GIT, o GIT é dividido em 3 áreas principais, sendo era a <strong>Working Directory</strong>, <strong>Stage Area</strong> e <strong>Git Directory</strong>, o <strong>Working Directory</strong> é a sua parte de trabalho, arquivos nesse estágio estão pronto para serem adicionados, após adicioandos os arquivos vão para a segunda área, sendo ela a <strong>Stage Area</strong>, arquivos aqui, estão prontos para serem commitados, após commitados vão para o última área, a <strong>Git Directory</strong>, que são seus arquivos versionados e etc. </p>
+
+<p>Porque é importante aprender sobre essas áreas? Simples! Dependendo de cada área o comando pra verificar as modificações se altera. Vamos supor que eu tenho arquivos a serem <em>adicionados</em>, logo eles estão na área <code>Working Directory</code>, o comando para verificar as alterações no arquivo é o <code>git diff</code>, se aplicado no exemplo acima, ficaria desta forma. </p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git diff 
+
+diff --git a/teste.txt b/teste.txt
+index e69de29..8ca3766 100644
+--- a/teste.txt
++++ b/teste.txt
+@@ -0,0 +1 @@
+
++Exemplo de verificação.. :)
+
+\ No newline at end of file</code></pre></div>
+
+<p>Para entender o que foi modificado, temos que entender os <em>simbolos</em>, o simbolo de <code>+</code>, significa as linhas que foram adicionados, já o de <code>-</code>, significa que determinada(s) linha(s), foram retiradas. Pronto, sabendo disso podemos deduzir que no arquivo <code>teste.txt</code>foi adicionado a linha <em>+Exemplo de verificação.. :)</em>. </p>
+
+<p>Mais vamos supor que já tenhamos adicionado o(s) arquivos(s) e faltando apenas commitar, no caso estamos na <strong>Stage Area</strong>, o comando para verificar as modificações é <code>git diff --staged</code>. O mesmo vai ocorrer como no exemplo anterior.</p>
+
+<p>E vamos supor, acidentalmente você(acredite isso acontece muito!) adiciona arquivos que estavam na <strong>Working Directory</strong>, pra <strong>Stage Area</strong>, o que fazer? simples, o GIT nos oferece o comando <code>git reset HEAD arquivo.ext</code>, esse comando tira o(s) último(s) arquivo(s), que estavam na <strong>Stage Area</strong> e voltam para o <strong>Working Directory</strong>.</p>
+
+<p>Vamos adicionar arquivos para a <strong>Stage Area</strong> veja o exemplo:</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git status
+	On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+	modified:   teste.txt
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+
+//
+
+$ git add .
+//
+
+$ git status
+
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+	modified:   teste.txt</code></pre></div>
+
+<p>Pronto, arquivos estão na <strong>Stage Area</strong>, vamos adicionar o comando <code>git reset HEAD .</code>, para voltarmos ao <strong>Working Directory</strong> :</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git reset HEAD .
+
+Unstaged changes after reset:
+M	teste.txt
+
+// Após feito isso vamos dar um git status.
+
+$ git status
+
+On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+	modified:   teste.txt
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</code></pre></div>
+
+<p>Pronto, os arquivos voltaram para o nivel inicial.</p>
+
+<h3 id="logs-com-git">Log’s com GIT</h3>
+
+<p>Logs em GIT são marcados a partir dos seus commits, existem algumas forma de verificar os logs do seu projeto, o comando <code>git log</code> mostra de uma forma bem simples os seus commits, com a data, o autor e o nome do commit. Vamos executar o comando e ver o exemplo: </p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git log
+
+commit f448501027e2693af63e892a9bbb371a4ed55745
+Author: Felipe Sousa &lt;felipzbr@gmail.com&gt;
+Date:   Sun Jan 18 11:39:22 2015 -0300
+
+    initial commit</code></pre></div>
+
+<p>No meu caso, esse repositório nao possui muitos commits, então o seu <em>log</em> foi bem pequeno, mostrando apenas 1 commit. </p>
+
+<p>Mais vamos supor que você está em um projeto gigante com varios meses de trabalho, verificar o log, olhando commit por commit se torna cansativo e estressante. Para esse ocasião o GIT tem o comando, <code>git log --pretty=oneline</code>, esse comando vai apenas mostrar os nomes do commits um por um em linha, veja o exemplo: </p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git log --pretty=oneline
+
+f448501027e2693af63e892a9bbb371a4ed55745 initial commit</code></pre></div>
+
+<p>Como visto, ele mostrou os meus commits em linha, como apenas exite 1 commit, ele o listou somente.</p>
+
+<p>Pronto, simples e fácil verificar o log do seu projeto com GIT.</p>
+
+<p>Por hora é só, nesse parte do artigo aprendemos como ver as  modificações de arquivos, aprendemos sobre os estágios do GIT e aprendemos a verificar os logs do projeto. Obrigado e até a proxima! </p>
+
+                <hr />                    <footer role="contentinfo">                        <div class="article-author-bottom">                            
+
+
+
+	<img src="http://felipesousa.github.io/images/bio-photo.jpg" class="bio-photo" alt="Felipe Sousa bio photo">
+
+
+<h3>Felipe Sousa</h3>
+<p>Front end Developer</p>
+
+<!--Perfis do Author-->
+
+<a href="http://github.com/felipesousa" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+
+<a href="http://twitter.com/felipz_sousa" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+
+
+
+<a href="http://plus.google.com/u/0/104290563189358000367" class="author-social" target="_blank"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a>
+
+
+
+<a href="mailto:felipzbr@gmail.com" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
+
+<a href="http://facebook.com/felipe.simpsons" class="author-social" target="_blank"><i class="fa fa-fw fa-facebook-square"></i> Facebook</a>
+
+<a href="http://instagram.com/felipz_sousa" class="author-social" target="_blank"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+
+
+
+
+
+<!--// Perfis do Author // -->
+
+                        </div>                            <p class="byline"><strong>Controle de Versão GIT - Parte 2</strong> foi publicado em <time datetime="2015-01-18T00:00:00-03:00">January 18, 2015</time> e modificada pela última vez em <time datetime="2015-01-18">January 18, 2015</time>.</p>                    </footer>            </div><!-- /.article-wrap -->                                    <section id="disqus_thread"></section><!-- /#disqus_thread -->                            </article>    </div><!-- /#main -->    <div class="footer-wrap">        <div class="related-articles">            <h4>Você também pode conferir<small class="pull-right">(<a href="http://felipesousa.github.io/postagens/">Todas as Postagens</a>)</small></h4>        <ul>                            <li><a href="http://felipesousa.github.io/A-importancia-de-prototipar/" title="A importância de prototipar">A importância de prototipar</a></li>                            <li><a href="http://felipesousa.github.io/Jekyll-no-Linux/" title="Jekyll no Linux">Jekyll no Linux</a></li>                            <li><a href="http://felipesousa.github.io/Um-pouco-de-Linux/" title="Um pouco de Linux">Um pouco de Linux</a></li>                    </ul>            <hr />        </div><!-- /.related-articles -->          <footer>            
+
+<span>&copy; 2015 Felipe Sousa. Desenvolvido com <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> e <i class="fa fa-coffee"></i>
+ .
+        </footer>        </div><!-- /.footer-wrap --><script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://felipesousa.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://felipesousa.github.io/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+
+<!--Script google analytics sem variavel do arquivo _conf.yml -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60406413-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- fim do Script google analytics sem variavel do arquivo _conf.yml -->
+
+
+  
+<script type="text/javascript">
+    var disqus_shortname = 'felipesousa'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<noscript>Por favor ative seu JavaScript para visualizar <a href="http://disqus.com/?ref_noscript">comentários desenvolvidos por Disqus.</a></noscript>
+
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+	        </body></html>
