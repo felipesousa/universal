@@ -1,11 +1,12 @@
 ---
-title: "React Talk"
+title: "PT LOREM Talk"
 date: "2020-05-15"
 category: talks
+lang: pt
 ---
 
 ### Hi!
 
-here is a react template data
+REACT PT CONTENT
 
 ![alt text image](./maps.png)

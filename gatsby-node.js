@@ -1,55 +1,57 @@
-const path = require("path");
 const utils = require("./src/utils/");
 
-module.exports = {
-  onCreateNode: ({ node, actions }) => {
-    const { createNodeField } = actions;
-    if (node.internal.type === "MarkdownRemark") {
-      createNodeField({
-        node,
-        name: "slug",
-        value: path.basename(node.fileAbsolutePath, ".md"),
-      });
-    }
-  },
-  createPages: async ({ graphql, actions: { createPage } }) => {
-    const POSTS_TEMPLATE = path.resolve("./src/templates/post.template.tsx");
-    const TALKS_TEMPLATE = path.resolve("./src/templates/talk.template.tsx");
+const onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === "MarkdownRemark") {
+    createNodeField({
+      node,
+      name: "slug",
+      value: utils.extractFilename(node),
+    });
+  }
+};
 
-    const { data } = await graphql(`
-      query {
-        allMarkdownRemark {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                category
-              }
+const createPages = async ({ graphql, actions: { createPage } }) => {
+  const POSTS_TEMPLATE = utils.getTemplate("./src/templates/post.template.tsx");
+  const TALKS_TEMPLATE = utils.getTemplate("./src/templates/talk.template.tsx");
+
+  const { data } = await graphql(`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              category
+              lang
             }
           }
         }
       }
-    `);
+    }
+  `);
 
-    const posts = utils.getDataFromCategory(data, "posts");
-    const talks = utils.getDataFromCategory(data, "talks");
+  // TODO: refactor, use reducer instead of a filtered method;
+  const posts = utils.getDataFromCategory(data, "posts");
+  const talks = utils.getDataFromCategory(data, "talks");
 
-    talks.forEach(({ slug }) => {
-      createPage({
-        component: TALKS_TEMPLATE,
-        path: `/talk/${slug}`,
-        context: { slug },
-      });
+  for (const talk of talks) {
+    createPage({
+      component: TALKS_TEMPLATE,
+      path: `/talk/${talk.lang}/${talk.slug}`,
+      context: { slug: talk.slug },
     });
+  }
 
-    posts.forEach(({ slug }) => {
-      createPage({
-        component: POSTS_TEMPLATE,
-        path: `/post/${slug}`,
-        context: { slug },
-      });
+  for (const post of posts) {
+    createPage({
+      component: POSTS_TEMPLATE,
+      path: `/post/${post.lang}/${post.slug}`,
+      context: { slug: post.slug },
     });
-  },
+  }
 };
+
+module.exports = { onCreateNode, createPages };

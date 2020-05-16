@@ -2,8 +2,9 @@
 title: "Gatsby Post"
 date: "2020-05-06"
 category: posts
+lang: en
 ---
 
 ### Hi!
 
-> here is a gatsby template data
+> GATSBY EN CONTENT
