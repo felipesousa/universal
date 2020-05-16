@@ -2,7 +2,7 @@ require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` });
 
 const plugins = [
   `gatsby-plugin-react-helmet`,
-  `gatsby-plugin-sass`,
+  `gatsby-plugin-styled-components`,
   `gatsby-plugin-sharp`,
   `gatsby-transformer-sharp`,
   {

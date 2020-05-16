@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-
-import "../styles/reset.scss";
-
-import styles from "./layout.module.scss";
+import "./layout.css";
 
 const Header = () => (
-  <header className={styles.header}>
+  <header>
     <Link to="/">Home</Link>
     <Link to="/posts">Posts</Link>
     <Link to="/talks">Talks</Link>

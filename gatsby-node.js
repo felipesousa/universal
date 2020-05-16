@@ -33,8 +33,6 @@ module.exports = {
       }
     `);
 
-    console.log(JSON.stringify(query, undefined, 4));
-
     query.data.allMarkdownRemark.edges
       .filter(edge => edge.node.frontmatter.category === "talks" && edge)
       .forEach(edge => {
