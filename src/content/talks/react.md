@@ -1,5 +1,5 @@
 ---
-title: "Progressive Web Apps Done Right"
+title: "React Talk"
 date: "2020-05-15"
 category: talks
 ---

@@ -1,4 +1,5 @@
 const path = require("path");
+const utils = require("./src/utils/");
 
 module.exports = {
   onCreateNode: ({ node, actions }) => {
@@ -11,12 +12,11 @@ module.exports = {
       });
     }
   },
-  createPages: async ({ graphql, actions }) => {
-    const { createPage } = actions;
-    const postsTemplate = path.resolve("./src/templates/post.template.tsx");
-    const talksTemplate = path.resolve("./src/templates/talk.template.tsx");
+  createPages: async ({ graphql, actions: { createPage } }) => {
+    const POSTS_TEMPLATE = path.resolve("./src/templates/post.template.tsx");
+    const TALKS_TEMPLATE = path.resolve("./src/templates/talk.template.tsx");
 
-    const query = await graphql(`
+    const { data } = await graphql(`
       query {
         allMarkdownRemark {
           edges {
@@ -33,28 +33,23 @@ module.exports = {
       }
     `);
 
-    query.data.allMarkdownRemark.edges
-      .filter(edge => edge.node.frontmatter.category === "talks" && edge)
-      .forEach(edge => {
-        createPage({
-          component: talksTemplate,
-          path: `/talk/${edge.node.fields.slug}`,
-          context: {
-            slug: edge.node.fields.slug,
-          },
-        });
-      });
+    const posts = utils.getDataFromCategory(data, "posts");
+    const talks = utils.getDataFromCategory(data, "talks");
 
-    query.data.allMarkdownRemark.edges
-      .filter(edge => edge.node.frontmatter.category === "posts" && edge)
-      .forEach(edge => {
-        createPage({
-          component: postsTemplate,
-          path: `/post/${edge.node.fields.slug}`,
-          context: {
-            slug: edge.node.fields.slug,
-          },
-        });
+    talks.forEach(({ slug }) => {
+      createPage({
+        component: TALKS_TEMPLATE,
+        path: `/talk/${slug}`,
+        context: { slug },
       });
+    });
+
+    posts.forEach(({ slug }) => {
+      createPage({
+        component: POSTS_TEMPLATE,
+        path: `/post/${slug}`,
+        context: { slug },
+      });
+    });
   },
 };
