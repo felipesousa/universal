@@ -38,7 +38,7 @@ const Posts = props => {
         <ul>
           {utils
             .getEdges(query)
-            .map(utils.mapNodeFields)
+            .map(utils.mapFields)
             .filter(node => node.lang === language && node)
             .map(({ title, slug, lang, date }) => (
               <Link to={`post/${lang}/${slug}`}>

@@ -38,7 +38,7 @@ const Talks = () => {
         <ul>
           {utils
             .getEdges(query)
-            .map(utils.mapNodeFields)
+            .map(utils.mapFields)
             .filter(node => node.lang === language && node)
             .map(({ title, slug, lang, date }) => (
               <Link to={`talk/${lang}/${slug}`}>

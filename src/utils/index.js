@@ -2,6 +2,8 @@ const path = require("path");
 
 const getEdges = (data, prop = "allMarkdownRemark") => data[prop].edges;
 
+const getTemplate = pathname => path.resolve(pathname);
+
 const getLang = () =>
   navigator.languages ? navigator.languages[0] : navigator.language;
 
@@ -11,28 +13,27 @@ const filterNode = (edge, category) =>
 const filterNodeByLanguage = (edge, lang) =>
   edge.node.frontmatter.lang === lang && edge;
 
-const mapNodeFields = ({ node: { frontmatter, fields } }) => ({
+const mapFields = ({ node: { frontmatter, fields } }) => ({
   ...fields,
   ...frontmatter,
 });
 
-const extractFilename = file =>
-  path.basename(file.fileAbsolutePath.slice(0, -6));
+const getFileName = file => path.basename(file.fileAbsolutePath.slice(0, -6));
 
 const getDataFromCategory = (data, category, language) =>
   getEdges(data)
     .filter(node => filterNode(node, category))
-    .map(mapNodeFields);
-
-const getTemplate = pathname => path.resolve(pathname);
+    .map(mapFields);
 
 module.exports = {
-  getTemplate,
-  extractFilename,
-  getLang,
   getEdges,
+  getTemplate,
+  getLang,
+  getFileName,
+
+  mapFields,
+
   filterNode,
-  mapNodeFields,
-  getDataFromCategory,
   filterNodeByLanguage,
+  getDataFromCategory,
 };

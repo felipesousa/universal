@@ -6,7 +6,7 @@ const onCreateNode = ({ node, actions }) => {
     createNodeField({
       node,
       name: "slug",
-      value: utils.extractFilename(node),
+      value: utils.getFileName(node),
     });
   }
 };
