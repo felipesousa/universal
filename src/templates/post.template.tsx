@@ -28,7 +28,7 @@ const PostTemplate = ({ data: { markdownRemark: post } }) => {
 
   useEffect(() => {
     if (post.frontmatter.lang !== language) {
-      navigate(`/post/${language}/${post.fields.slug}`);
+      navigate(`/post/${language}/${post.fields.slug}`, { replace: true });
     }
   }, [language]);
 
