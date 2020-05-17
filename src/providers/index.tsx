@@ -5,7 +5,7 @@ import { GlobalStyles, colors } from "../components/styles/";
 const { light, dark } = colors;
 
 const getStorage = (item: string, fallback: any): string =>
-  localStorage.getItem(item) || fallback;
+  window.localStorage.getItem(item) || fallback;
 
 const LanguageContext = createContext({
   language: getStorage("language", "en"),
@@ -13,19 +13,19 @@ const LanguageContext = createContext({
   setTheme: (): void => {},
 });
 
-export const LanguageProvider = ({ children }) => {
+export const AppProvider = ({ children }) => {
   const [language, setLang] = useState(getStorage("language", "en"));
   const [theme, setTheme] = useState(getStorage("theme", "LIGHT"));
 
   const setLanguage = (value: string): void => {
-    localStorage.setItem("language", value);
+    window.localStorage.setItem("language", value);
     setLang(value);
   };
 
   const _setTheme = (): void => {
     const item = getStorage("theme", "");
     const data = item === "LIGHT" ? "DARK" : "LIGHT";
-    localStorage.setItem("theme", data);
+    window.localStorage.setItem("theme", data);
     setTheme(data);
   };
 
