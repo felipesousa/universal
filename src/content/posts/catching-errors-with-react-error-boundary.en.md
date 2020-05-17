@@ -11,7 +11,7 @@ lang: en
 
 React 16.x releases bring great and good implementations and significant improvements, one of which is extremely useful for error control within the application, known as **error boundary** is an error capture strategy that would naturally break the application (behavior native to javascript applications), can now be controlled and scaled with simple React lifecycles! So far **only** component classes support the life cycles that are necessary for capture and control, more details can be found [in the official documentation](https://reactjs.org/docs/hooks-faq.html#do-hooks-cover-all-use-cases-for-classes).
 
-Lifecycles are **static getDerivedStateFromErrors** and **componentDidCatch** that can be used together or separately, but the combination of the two methods allows for better control.
+Lifecycles are `static getDerivedStateFromError` and **componentDidCatch** that can be used together or separately, but the combination of the two methods allows for better control.
 
 ## How works?
 
