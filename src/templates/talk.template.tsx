@@ -1,29 +1,47 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React, { useContext, useEffect } from "react";
+import { graphql, navigate } from "gatsby";
+
+import LanguageContext from "../providers";
 import { SEO, Layout } from "../components";
 
 export const query = graphql`
-  query($slug: String) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query($slug: String, $lang: String) {
+    markdownRemark(
+      fields: { slug: { eq: $slug } }
+      frontmatter: { lang: { eq: $lang } }
+    ) {
       frontmatter {
         title
         date
-        category
+        lang
+      }
+      fields {
+        slug
       }
       html
     }
   }
 `;
 
-const TalkTemplate = ({ data: { markdownRemark: talk } }) => (
-  <Layout>
-    <SEO title={talk.frontmatter.title} />
-    <h1>{talk.frontmatter.title}</h1>
-    <p>{talk.frontmatter.date}</p>
-    <p>{talk.frontmatter.category}</p>
+const TalkTemplate = ({ data: { markdownRemark: talk } }) => {
+  let { language } = useContext(LanguageContext);
 
-    <div dangerouslySetInnerHTML={{ __html: talk.html }}></div>
-  </Layout>
-);
+  useEffect(() => {
+    if (talk.frontmatter.lang !== language) {
+      navigate(`/talk/${language}/${talk.fields.slug}`);
+    }
+  }, [language]);
+
+  return (
+    <Layout>
+      <SEO title={talk.frontmatter.title} />
+      <h1>{talk.frontmatter.title}</h1>
+      <p>{language}</p>
+      <p>{talk.frontmatter.date}</p>
+
+      <div dangerouslySetInnerHTML={{ __html: talk.html }}></div>
+    </Layout>
+  );
+};
 
 export default TalkTemplate;

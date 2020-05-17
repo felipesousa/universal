@@ -41,7 +41,7 @@ const createPages = async ({ graphql, actions: { createPage } }) => {
     createPage({
       component: TALKS_TEMPLATE,
       path: `/talk/${talk.lang}/${talk.slug}`,
-      context: { slug: talk.slug },
+      context: { slug: talk.slug, lang: talk.lang },
     });
   }
 
@@ -49,7 +49,7 @@ const createPages = async ({ graphql, actions: { createPage } }) => {
     createPage({
       component: POSTS_TEMPLATE,
       path: `/post/${post.lang}/${post.slug}`,
-      context: { slug: post.slug },
+      context: { slug: post.slug, lang: post.lang },
     });
   }
 };
