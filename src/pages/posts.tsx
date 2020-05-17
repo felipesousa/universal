@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import LanguageContext from "../contexts/";
-import * as utils from "../utils";
-import Layout from "../components/layout";
 
-import SEO from "../components/seo";
+import { Layout, SEO } from "../components";
+import LanguageContext from "../providers/";
+import utils from "../utils";
 
 const Posts = props => {
   const { language } = useContext(LanguageContext);

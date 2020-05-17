@@ -1,10 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import { SEO, Layout } from "../components";
 
-// receive the context props passed inside the createPage node Hook in build time and send to a query
-// "query" should be export to be rendered automatically by gatsby
 export const query = graphql`
   query($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {

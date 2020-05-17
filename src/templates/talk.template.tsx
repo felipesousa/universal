@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import { SEO, Layout } from "../components";
 
 export const query = graphql`
   query($slug: String) {
@@ -16,15 +15,15 @@ export const query = graphql`
   }
 `;
 
-const PostTemplate = ({ data: { markdownRemark: post } }) => (
+const TalkTemplate = ({ data: { markdownRemark: talk } }) => (
   <Layout>
-    <SEO title={post.frontmatter.title} />
-    <h1>{post.frontmatter.title}</h1>
-    <p>{post.frontmatter.date}</p>
-    <p>{post.frontmatter.category}</p>
+    <SEO title={talk.frontmatter.title} />
+    <h1>{talk.frontmatter.title}</h1>
+    <p>{talk.frontmatter.date}</p>
+    <p>{talk.frontmatter.category}</p>
 
-    <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+    <div dangerouslySetInnerHTML={{ __html: talk.html }}></div>
   </Layout>
 );
 
-export default PostTemplate;
+export default TalkTemplate;
