@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "gatsby";
+import LanguageContext from "../contexts/";
 import "./base.css";
 
 const Header = () => (
@@ -18,12 +19,25 @@ const Footer = () => (
   </footer>
 );
 
-const Layout = ({ children }) => (
-  <>
-    <Header />
-    <main>{children}</main>
-    <Footer />
-  </>
-);
+const Layout = ({ children }) => {
+  const { language, setLanguage } = useContext(LanguageContext);
+
+  return (
+    <>
+      <Header />
+      <select
+        name="select"
+        value={language}
+        onChange={e => setLanguage(e.target.value)}
+        id="select"
+      >
+        <option value="en">EN</option>
+        <option value="pt">PT</option>
+      </select>
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+};
 
 export default Layout;

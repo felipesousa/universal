@@ -1,5 +1,5 @@
 ---
-title: "Gatsby Post"
+title: "EN Gatsby Post"
 date: "2020-05-06"
 category: posts
 lang: en

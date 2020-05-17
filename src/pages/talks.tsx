@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import * as utils from "../utils";
 import Layout from "../components/layout";
 
 import SEO from "../components/seo";
+import LanguageContext from "../contexts";
 
 const Talks = () => {
-  const [lang, setLang] = useState("pt");
-
+  const { language } = useContext(LanguageContext);
   const query = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
@@ -35,15 +35,11 @@ const Talks = () => {
       <SEO title="Talks" />
       <Layout>
         <h1>Talks</h1>
-        <select value={lang} onChange={e => setLang(e.target.value)}>
-          <option value="pt">PT</option>
-          <option value="en">EN</option>
-        </select>
         <ul>
           {utils
             .getEdges(query)
             .map(utils.mapNodeFields)
-            .filter(node => node.lang === lang && node)
+            .filter(node => node.lang === language && node)
             .map(({ title, slug, lang, date }) => (
               <Link to={`talk/${lang}/${slug}`}>
                 <h2>{title}</h2>
