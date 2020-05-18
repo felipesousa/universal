@@ -40,7 +40,7 @@ const Header = props => {
         <Divider />
 
         <DarkTheme
-          src={theme === "light" ? "/images/dark.svg" : "/images/light.svg"}
+          src={theme === "dark" ? "/images/light.svg" : "/images/dark.svg"}
           onClick={toggleTheme}
           alt="dark mode toggle icon"
         />

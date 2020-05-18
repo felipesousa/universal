@@ -52,7 +52,7 @@ exports.onRenderBody = ({ setPreBodyComponents }) => {
               window.__setPreferredTheme(e.matches ? 'light' : 'dark')
             })
 
-            setTheme(preferredTheme || (darkQuery.matches ? 'light' : 'dark'))
+            setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
             setLang(preferredLang || 'en')
           })()
         `,

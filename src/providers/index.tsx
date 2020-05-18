@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyle, colors } from "../components/styles/";
+import { GlobalStyle } from "../components/styles/";
 declare global {
   interface Window {
     __theme: any;
@@ -12,11 +12,9 @@ declare global {
   }
 }
 
-const { light, dark } = colors;
-
 const LanguageContext = createContext({
   language: "en",
-  theme: "dark",
+  theme: "light",
   toggleLanguage: (event: any): void => {},
   toggleTheme: (): void => {},
 });
@@ -49,7 +47,7 @@ export const AppProvider = ({ children }) => {
   }, [theme]);
 
   const toggleTheme = () => {
-    window.__setPreferredTheme(websiteTheme === "dark" ? "light" : "dark");
+    window.__setPreferredTheme(websiteTheme === "light" ? "dark" : "light");
   };
 
   const toggleLanguage = (e: any): void => {

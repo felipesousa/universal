@@ -27,8 +27,8 @@ export const query = graphql`
 
 const lang = {
   published: {
-    en: "Published: ",
-    pt: "Publicado: ",
+    en: "Published at: ",
+    pt: "Publicado em: ",
   },
   timeToRead: {
     en: "Time to read: ",
@@ -83,7 +83,7 @@ const Content = styled.article`
 `;
 
 const PostDetails = styled.section`
-  font-family: "Slab Regular";
+  font-family: "Slab Bold";
   font-size: 1.2rem;
   display: flex;
   justify-content: flex-start;
