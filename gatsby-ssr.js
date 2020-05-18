@@ -19,7 +19,7 @@ exports.onRenderBody = ({ setPreBodyComponents }) => {
             function setLang(newLang) {                  
               window.__lang = newLang;                  
               preferredLang = newLang;                  
-              document.body.setAttribute('lang', newLang);                 
+              document.body.setAttribute('language', newLang);                 
               window.__onLangChange(newLang);                
             }
 
@@ -30,7 +30,7 @@ exports.onRenderBody = ({ setPreBodyComponents }) => {
 
             let preferredLang
             try {
-              preferredLang = localStorage.getItem('lang')
+              preferredLang = localStorage.getItem('language')
             } catch (err) {}
 
             window.__setPreferredTheme = newTheme => {
@@ -41,9 +41,9 @@ exports.onRenderBody = ({ setPreBodyComponents }) => {
             }
 
             window.__setPreferredLang = newLang => {
-              setTheme(newLang)
+              setLang(newLang)
               try {
-                localStorage.setItem('lang', newLang)
+                localStorage.setItem('language', newLang)
               } catch (err) {}
             }
 

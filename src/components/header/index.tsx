@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import LanguageContext from "../../providers";
 import { Link } from "gatsby";
 
 declare global {
@@ -6,34 +7,19 @@ declare global {
     __theme: any;
     __onThemeChange: any;
     __setPreferredTheme: any;
+    __lang: any;
+    __onLangChange: any;
+    __setPreferredLang: any;
   }
 }
 
 const Header = props => {
-  let websiteTheme;
-  if (typeof window !== `undefined`) {
-    websiteTheme = window.__theme;
-  }
-
-  const [theme, setTheme] = useState(websiteTheme);
-
-  useEffect(() => {
-    setTheme(window.__theme);
-    window.__onThemeChange = () => {
-      setTheme(window.__theme);
-    };
-  }, [theme]);
-
-  const ThemeToggle = () => {
-    window.__setPreferredTheme(websiteTheme === "dark" ? "light" : "dark");
-  };
-
-  const getTheme = () => websiteTheme;
+  const { setTheme, theme } = useContext(LanguageContext);
 
   return (
     <>
-      <button onClick={ThemeToggle}>
-        {getTheme() === "dark" ? (
+      <button onClick={setTheme}>
+        {theme === "dark" ? (
           <img
             src="https://img.pngio.com/sun-icon-png-50-px-61659-png-images-pngio-sun-icon-png-1600_1600.png"
             style={{
