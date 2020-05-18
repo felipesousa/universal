@@ -11,13 +11,14 @@ const Posts = props => {
     query {
       allMarkdownRemark(
         filter: { frontmatter: { category: { eq: "posts" } } }
+        sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
           node {
             frontmatter {
               title
               category
-              date
+              date(formatString: "DD/MM/YYYY")
               lang
             }
             fields {

@@ -1,28 +1,24 @@
-import React, { useContext } from "react";
+import React from "react";
+import styled from "styled-components";
 import { Header, Footer } from "../";
-import LanguageContext from "../../providers";
 
 import "./base.css";
 
-const Layout = ({ children }) => {
-  const { language, toggleLanguage } = useContext(LanguageContext);
+const Layout = ({ children }) => (
+  <Container>
+    <Header />
+    <Main>{children}</Main>
+    <Footer />
+  </Container>
+);
 
-  return (
-    <>
-      <Header />
-      <select
-        name="select"
-        value={language}
-        onChange={e => toggleLanguage(e.target.value)}
-        id="select"
-      >
-        <option value="en">EN</option>
-        <option value="pt">PT</option>
-      </select>
-      <main>{children}</main>
-      <Footer />
-    </>
-  );
-};
+const Container = styled.div`
+  max-width: 1250px;
+  width: 90%;
+`;
+
+const Main = styled.main`
+  min-height: calc(100vh - 225px);
+`;
 
 export default Layout;

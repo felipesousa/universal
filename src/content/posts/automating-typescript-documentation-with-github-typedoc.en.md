@@ -1,5 +1,5 @@
 ---
-title: "Automatizando documentação para projetos TypeScript com Github e Typedoc"
+title: "Automating typescript documentation with Github Actions and Typedoc"
 date: "2020-03-21"
 category: posts
 lang: en

@@ -11,6 +11,7 @@ const Talks = () => {
     query {
       allMarkdownRemark(
         filter: { frontmatter: { category: { eq: "talks" } } }
+        sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
           node {

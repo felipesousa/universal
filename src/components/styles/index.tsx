@@ -5,19 +5,37 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--bg);
-    color: var(--textNormal);
+    background-color: var(--white);
+    color: var(--black);
+    transition: all 0.4s linear;
 
     &.dark {
-      --bg: #221133;
-      --textNormal: #fff;
+      --white: #424242;
+      --black: #fafafa;
+      --gray: #d5d5d5;
+      --grayBold: #aaaaaa;
+      --blue: #566fff;
+      --blueLight: #b1c2ff;
+      --blueExtraLight: #d1daff;
     }
 
     &.light {
-      --bg: #fff;
-      --textNormal: #000;
+      --white: #fafafa;
+      --black: #424242;
+      --gray: #d5d5d5;
+      --grayBold: #aaaaaa;
+      --blue: #566fff;
+      --blueLight: #b1c2ff;
+      --blueExtraLight: #d1daff;
     }
-  `;
+  }
+  
+  div#gatsby-focus-wrapper {
+    display: flex;
+    justify-content center;
+  }
+
+`;
 
 const light = {
   primary: "#FFFFFF",

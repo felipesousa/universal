@@ -1,13 +1,23 @@
 import React, { createContext, useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle, colors } from "../components/styles/";
+declare global {
+  interface Window {
+    __theme: any;
+    __onThemeChange: any;
+    __setPreferredTheme: any;
+    __lang: any;
+    __onLangChange: any;
+    __setPreferredLang: any;
+  }
+}
 
 const { light, dark } = colors;
 
 const LanguageContext = createContext({
   language: "en",
   theme: "dark",
-  toggleLanguage: (language: string): void => {},
+  toggleLanguage: (event: any): void => {},
   toggleTheme: (): void => {},
 });
 
@@ -42,11 +52,9 @@ export const AppProvider = ({ children }) => {
     window.__setPreferredTheme(websiteTheme === "dark" ? "light" : "dark");
   };
 
-  const toggleLanguage = (value: string): void => {
-    window.__setPreferredLang(value);
+  const toggleLanguage = (e: any): void => {
+    window.__setPreferredLang(e.target.value);
   };
-
-  const _value = theme == "dark" ? dark : light;
 
   return (
     <LanguageContext.Provider
@@ -57,7 +65,7 @@ export const AppProvider = ({ children }) => {
         toggleTheme,
       }}
     >
-      <ThemeProvider theme={_value}>
+      <ThemeProvider theme={{}}>
         <>
           <GlobalStyle />
           {children}

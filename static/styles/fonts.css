@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Okta";
+  font-style: normal;
+  font-weight: normal;
+  src: local("okta"), url("/fonts/okta.woff") format("woff");
+}
+
+@font-face {
+  font-family: "regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("regular"), url("/fonts/regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Regular Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("regular_italic"), url("/fonts/regular_italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/fonts/light"), url("/fonts/light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("light_italic"), url("/fonts/light_italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/fonts/bold"), url("/fonts/bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("bold_italic"), url("/fonts/bold_italic.woff") format("woff");
+}
