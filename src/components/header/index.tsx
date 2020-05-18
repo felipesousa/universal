@@ -22,16 +22,18 @@ const Header = props => {
     window.__onThemeChange = () => {
       setTheme(window.__theme);
     };
-  }, []);
+  }, [theme]);
 
   const ThemeToggle = () => {
     window.__setPreferredTheme(websiteTheme === "dark" ? "light" : "dark");
   };
 
+  const getTheme = () => websiteTheme;
+
   return (
     <>
       <button onClick={ThemeToggle}>
-        {theme === "dark" ? (
+        {getTheme() === "dark" ? (
           <img
             src="https://img.pngio.com/sun-icon-png-50-px-61659-png-images-pngio-sun-icon-png-1600_1600.png"
             style={{

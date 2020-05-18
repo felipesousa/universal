@@ -6,7 +6,9 @@ exports.onRenderBody = ({ setPreBodyComponents }) => {
       dangerouslySetInnerHTML: {
         __html: `
           (() => {    
-            window.__onThemeChange = function() {};                
+            window.__onThemeChange = function() {};
+            window.__onLangChange = function() {};
+
             function setTheme(newTheme) {                  
               window.__theme = newTheme;                  
               preferredTheme = newTheme;                  
@@ -14,9 +16,21 @@ exports.onRenderBody = ({ setPreBodyComponents }) => {
               window.__onThemeChange(newTheme);                
             }
 
+            function setLang(newLang) {                  
+              window.__lang = newLang;                  
+              preferredLang = newLang;                  
+              document.body.setAttribute('lang', newLang);                 
+              window.__onLangChange(newLang);                
+            }
+
             let preferredTheme
             try {
               preferredTheme = localStorage.getItem('theme')
+            } catch (err) {}
+
+            let preferredLang
+            try {
+              preferredLang = localStorage.getItem('lang')
             } catch (err) {}
 
             window.__setPreferredTheme = newTheme => {
@@ -26,12 +40,20 @@ exports.onRenderBody = ({ setPreBodyComponents }) => {
               } catch (err) {}
             }
 
+            window.__setPreferredLang = newLang => {
+              setTheme(newLang)
+              try {
+                localStorage.setItem('lang', newLang)
+              } catch (err) {}
+            }
+
             let darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
             darkQuery.addListener(e => {
               window.__setPreferredTheme(e.matches ? 'light' : 'dark')
             })
 
             setTheme(preferredTheme || (darkQuery.matches ? 'light' : 'dark'))
+            setLang(preferredLang || 'en')
           })()
         `,
       },
