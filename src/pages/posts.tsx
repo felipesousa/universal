@@ -6,32 +6,33 @@ import { Layout, SEO, SectionTitle } from "../components";
 import LanguageContext from "../providers/";
 import utils from "../utils";
 
-const Posts = () => {
-  const { language } = useContext(LanguageContext);
-  const query = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(
-        filter: { frontmatter: { category: { eq: "posts" } } }
-        sort: { fields: frontmatter___date, order: DESC }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              title
-              category
-              date(formatString: "MMMM Do, YYYY")
-              lang
-            }
-            fields {
-              slug
-            }
-            excerpt
+export const query = graphql`
+  query {
+    allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: "posts" } } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            category
+            date(formatString: "MMMM Do, YYYY", locale: "pt")
+            lang
           }
+          fields {
+            slug
+          }
+          excerpt
+          timeToRead
         }
       }
     }
-  `);
+  }
+`;
 
+const Posts = _query => {
+  const { language } = useContext(LanguageContext);
   return (
     <>
       <SEO title="Posts" />
@@ -41,15 +42,19 @@ const Posts = () => {
 
         <PostsList>
           {utils
-            .getEdges(query)
+            .getEdges(_query.data)
             .map(utils.mapFields)
             .filter(node => node.lang === language && node)
-            .map(({ title, slug, lang, date, excerpt }) => (
+            .map(({ title, slug, lang, date, excerpt, timeToRead }) => (
               <Post>
                 <Link to={`post/${lang}/${slug}`}>
-                  <h2>{title}</h2>
-                  <h5>{date}</h5>
-                  <h5>{excerpt}</h5>
+                  <h2>💯 {title}</h2>
+                  <p>
+                    <strong>
+                      {date}, {timeToRead} minutos.
+                    </strong>
+                  </p>
+                  <p style={{ margin: 0 }}>{excerpt}</p>
                 </Link>
               </Post>
             ))}
@@ -64,10 +69,13 @@ const PostsList = styled.ul`
   margin: 0;
 
   a {
-    font-family: "Slab Regular";
+    font-family: Slab Regular;
     text-decoration: none;
     color: var(--black);
-    margin
+
+    h2 {
+      font-family: Slab Bold;
+    }
   }
 `;
 
