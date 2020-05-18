@@ -1,12 +1,23 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   body {
-    background: ${({ theme }: any) => theme.primary};
-    color: ${({ theme }: any) => theme.secondary};
-    transition: all 0.4s linear;
-  }
-`;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    color: var(--textNormal);
+
+    &.dark {
+      --bg: #221133;
+      --textNormal: #fff;
+    }
+
+    &.light {
+      --bg: #fff;
+      --textNormal: #000;
+    }
+  `;
 
 const light = {
   primary: "#FFFFFF",

@@ -5,7 +5,7 @@ import LanguageContext from "../../providers";
 import "./base.css";
 
 const Layout = ({ children }) => {
-  const { language, setLanguage, setTheme } = useContext(LanguageContext);
+  const { language, setLanguage } = useContext(LanguageContext);
 
   return (
     <>
@@ -19,7 +19,6 @@ const Layout = ({ children }) => {
         <option value="en">EN</option>
         <option value="pt">PT</option>
       </select>
-      <button onClick={setTheme}>change theme</button>
       <main>{children}</main>
       <Footer />
     </>
