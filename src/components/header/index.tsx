@@ -16,6 +16,7 @@ const Header = props => {
 
   return (
     <Container>
+      {/* <Profile src="/images/profile.jpeg" alt="profile" /> */}
       <Title onClick={() => navigate("/")}>
         <span>FELIPE</span>
         <p>SOUSA</p>
@@ -51,6 +52,7 @@ const Header = props => {
 
 const Container = styled.header`
   width: 100%;
+  height: 120px;
   min-height: 120px;
   margin-bottom: 20px;
 
@@ -63,6 +65,17 @@ const Container = styled.header`
     height: 300px;
     justify-content: space-evenly;
     flex-direction: column;
+  }
+`;
+
+const Profile = styled.img`
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+
+  @media (min-width: 480px) {
+    display: hidden;
   }
 `;
 
@@ -126,10 +139,12 @@ const Nav = styled.nav`
 const Settings = styled.div`
   width: 120px;
   display: flex;
+  align-items: center;
+  height: auto;
   justify-content: flex-end;
 
   @media screen and (max-width: 768px) {
-    width: auto;
+    width: 100px;
   }
 `;
 

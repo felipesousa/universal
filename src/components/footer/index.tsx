@@ -34,6 +34,10 @@ const Container = styled.footer`
   a {
     color: transparent;
     text-decoration: none;
+
+    &:first-of-type {
+      margin-left: -10px;
+    }
   }
 `;
 
