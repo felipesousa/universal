@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { navigate } from "gatsby";
 import LanguageContext from "../../providers";
 import styled from "styled-components";
 

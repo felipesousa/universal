@@ -14,8 +14,6 @@ const Header = props => {
   const { toggleTheme, theme } = useContext(LanguageContext);
   const { language, toggleLanguage } = useContext(LanguageContext);
 
-  // theme value and toggle method
-
   return (
     <Container>
       <Title onClick={() => navigate("/")}>
@@ -53,12 +51,19 @@ const Header = props => {
 
 const Container = styled.header`
   width: 100%;
-  height: 120px;
+  min-height: 120px;
   margin-bottom: 20px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    height: 300px;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
 `;
 
 const Title: any = styled.h1`
@@ -85,14 +90,6 @@ const Title: any = styled.h1`
   }
 `;
 
-const Profile = styled.img`
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 0;
-  cursor: pointer;
-`;
-
 const Nav = styled.nav`
   padding: 0px;
   box-sizing: border-box;
@@ -106,6 +103,7 @@ const Nav = styled.nav`
     border-bottom: none;
     font-size: 1.1rem;
     margin: 0px 10px;
+    text-shadow: -2px 1px 0px var(--blueExtraLight);
 
     &:hover {
       border-bottom: 4px solid var(--blueLight);
@@ -129,6 +127,10 @@ const Settings = styled.div`
   width: 120px;
   display: flex;
   justify-content: flex-end;
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
 `;
 
 const LanguageToggler = styled.select`

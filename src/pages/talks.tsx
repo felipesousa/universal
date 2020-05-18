@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 
-import { Layout, SEO } from "../components";
+import { Layout, SEO, SectionTitle } from "../components";
 import LanguageContext from "../providers";
 import utils from "../utils";
 
@@ -34,7 +34,7 @@ const Talks = () => {
     <>
       <SEO title="Talks" />
       <Layout>
-        <h1>Talks</h1>
+        <SectionTitle>Talks</SectionTitle>
         <ul>
           {utils
             .getEdges(query)

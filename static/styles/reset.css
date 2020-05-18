@@ -1,5 +1,18 @@
 @import "./fonts.css";
 
+body::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--white);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blueExtraLight);
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

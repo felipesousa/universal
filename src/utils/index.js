@@ -13,9 +13,10 @@ const filterNode = (edge, category) =>
 const filterNodeByLanguage = (edge, lang) =>
   edge.node.frontmatter.lang === lang && edge;
 
-const mapFields = ({ node: { frontmatter, fields } }) => ({
+const mapFields = ({ node: { frontmatter, fields, ...rest } }) => ({
   ...fields,
   ...frontmatter,
+  ...rest,
 });
 
 const getFileName = file => path.basename(file.fileAbsolutePath.slice(0, -6));

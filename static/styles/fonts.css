@@ -6,6 +6,27 @@
 }
 
 @font-face {
+  font-family: "Pluto";
+  font-style: normal;
+  font-weight: normal;
+  src: local("pluto"), url("/fonts/pluto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Slab Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("slab_regular"), url("/fonts/slab_regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Slab Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Slab_bold"), url("/fonts/Slab_bold.woff") format("woff");
+}
+
+@font-face {
   font-family: "regular";
   font-style: normal;
   font-weight: normal;
