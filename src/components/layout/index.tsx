@@ -18,7 +18,7 @@ const Container = styled.div`
 `;
 
 const Main = styled.main`
-  min-height: calc(100vh - 225px);
+  min-height: calc(100vh - 240px);
 `;
 
 export default Layout;

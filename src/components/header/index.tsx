@@ -18,25 +18,23 @@ const Header = props => {
 
   return (
     <Container>
-      <Title onClick={() => navigate("/")}>Felipe Sousa</Title>
+      <Title onClick={() => navigate("/")}>
+        <span>FELIPE</span>
+        <p>SOUSA</p>
+      </Title>
 
       <Nav>
         {LINKS.map(function ({ name, route }) {
           return (
             <Link activeClassName="active" to={route}>
-              {name}
+              {name.toUpperCase()}
             </Link>
           );
         })}
       </Nav>
 
       <Settings>
-        <LanguageToggler
-          name="select"
-          value={language}
-          onChange={toggleLanguage}
-          id="select"
-        >
+        <LanguageToggler value={language} onChange={toggleLanguage}>
           <option value="en">EN</option>
           <option value="pt">PT</option>
         </LanguageToggler>
@@ -71,6 +69,20 @@ const Title: any = styled.h1`
   font-style: normal;
   color: var(--dark);
   cursor: pointer;
+
+  p {
+    margin: 0;
+    line-height: 1;
+    padding-left: 20px;
+  }
+
+  span {
+    display: block;
+    color: var(--blue);
+    text-shadow: -4px 1px 0px var(--blueExtraLight);
+    line-height: 0.6;
+    margin-left: 0;
+  }
 `;
 
 const Profile = styled.img`
@@ -95,6 +107,10 @@ const Nav = styled.nav`
     font-size: 1.1rem;
     margin: 0px 10px;
 
+    &:hover {
+      border-bottom: 4px solid var(--blueLight);
+    }
+
     &:first-of-type {
       margin-left: 0;
     }
@@ -104,13 +120,13 @@ const Nav = styled.nav`
     }
 
     &.active {
-      text-decoration: underline;
+      border-bottom: 4px solid var(--blue);
     }
   }
 `;
 
 const Settings = styled.div`
-  width: 180px;
+  width: 120px;
   display: flex;
   justify-content: flex-end;
 `;
@@ -122,6 +138,8 @@ const LanguageToggler = styled.select`
   color: var(--black);
   outline: none;
   cursor: pointer;
+  text-shadow: -4px 1px 0px var(--blueExtraLight);
+  font-family: Okta;
 `;
 
 const Divider = styled.div`

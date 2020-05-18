@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
       --grayBold: #aaaaaa;
       --blue: #566fff;
       --blueLight: #b1c2ff;
-      --blueExtraLight: #d1daff;
+      --blueExtraLight: #424242;
     }
 
     &.light {
