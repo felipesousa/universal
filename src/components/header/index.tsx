@@ -14,11 +14,11 @@ declare global {
 }
 
 const Header = props => {
-  const { setTheme, theme } = useContext(LanguageContext);
+  const { toggleTheme, theme } = useContext(LanguageContext);
 
   return (
     <>
-      <button onClick={setTheme}>
+      <button onClick={toggleTheme}>
         {theme === "dark" ? (
           <img
             src="https://img.pngio.com/sun-icon-png-50-px-61659-png-images-pngio-sun-icon-png-1600_1600.png"

@@ -7,8 +7,8 @@ const { light, dark } = colors;
 const LanguageContext = createContext({
   language: "en",
   theme: "dark",
-  setLanguage: (language: string): void => {},
-  setTheme: (): void => {},
+  toggleLanguage: (language: string): void => {},
+  toggleTheme: (): void => {},
 });
 
 export const AppProvider = ({ children }) => {
@@ -22,27 +22,27 @@ export const AppProvider = ({ children }) => {
     websiteLang = window.__lang;
   }
 
-  const [lang, setLang] = useState(websiteLang);
+  const [language, setLanguage] = useState(websiteLang);
   const [theme, setTheme] = useState(websiteTheme);
 
   useEffect(() => {
     setTheme(window.__theme);
-    setTheme(window.__lang);
+    setLanguage(window.__lang);
 
     window.__onThemeChange = () => {
       setTheme(window.__theme);
     };
 
     window.__onLangChange = () => {
-      setLang(window.__lang);
+      setLanguage(window.__lang);
     };
-  }, [theme, lang]);
+  }, [theme]);
 
   const toggleTheme = () => {
     window.__setPreferredTheme(websiteTheme === "dark" ? "light" : "dark");
   };
 
-  const setLanguage = (value: string): void => {
+  const toggleLanguage = (value: string): void => {
     window.__setPreferredLang(value);
   };
 
@@ -50,7 +50,12 @@ export const AppProvider = ({ children }) => {
 
   return (
     <LanguageContext.Provider
-      value={{ theme, language: lang, setLanguage, setTheme: toggleTheme }}
+      value={{
+        theme,
+        language,
+        toggleLanguage,
+        toggleTheme,
+      }}
     >
       <ThemeProvider theme={_value}>
         <>
