@@ -13,7 +13,7 @@ export const query = graphql`
     ) {
       frontmatter {
         title
-        date(formatString: "MMMM Do, YYYY")
+        date(formatString: "MMMM Do, YYYY", locale: $lang)
         lang
       }
       fields {

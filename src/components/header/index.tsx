@@ -11,14 +11,13 @@ const LINKS: Array<{ name: string; route: string }> = [
 ];
 
 const Header = props => {
-  const { toggleTheme, theme } = useContext(LanguageContext);
-  const { language, toggleLanguage } = useContext(LanguageContext);
+  const { toggleTheme, theme, language, toggleLanguage } = useContext(
+    LanguageContext
+  );
 
   return (
     <Container>
-      {/* <Profile src="/images/profile.jpeg" alt="profile" /> */}
-
-      <div className="mudando">
+      <div className="mobile-header">
         <Title onClick={() => navigate("/")}>
           <span>FELIPE</span>
           <p>SOUSA</p>
@@ -79,17 +78,18 @@ const Container = styled.header`
   align-items: center;
   flex-wrap: wrap;
 
-  .mudando {
+  .mobile-header {
     display: flex;
     justify-content: center;
   }
 
   @media screen and (max-width: 768px) {
+    height: 210px;
     justify-content: space-evenly;
     flex-direction: column;
     margin-bottom: 0px;
 
-    .mudando {
+    .mobile-header {
       justify-content: space-between;
       width: 100%;
 
@@ -98,17 +98,6 @@ const Container = styled.header`
         margin: 0;
       }
     }
-  }
-`;
-
-const Profile = styled.img`
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: block;
-
-  @media (min-width: 480px) {
-    display: hidden;
   }
 `;
 
@@ -139,10 +128,13 @@ const Title: any = styled.h1`
 const Nav = styled.nav`
   padding: 0px;
   box-sizing: border-box;
-  display: inline-flex;
+  display: flex;
 
   @media screen and (max-width: 768px) {
-    display: none;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
   }
 
   a {

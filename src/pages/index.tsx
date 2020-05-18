@@ -24,10 +24,6 @@ const IndexPage = () => {
         <SectionTitle line={false} className="title-home">
           {data.site.siteMetadata.subtitle}
         </SectionTitle>
-
-        <SectionSubtitle line={false}>
-          {data.site.siteMetadata.subtitle}
-        </SectionSubtitle>
       </Layout>
     </>
   );
