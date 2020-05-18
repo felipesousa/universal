@@ -28,8 +28,8 @@ export const query = graphql`
 
 const lang = {
   published: {
-    en: "Published at: ",
-    pt: "Publicado em: ",
+    en: "Published at ",
+    pt: "Publicado em ",
   },
   timeToRead: {
     en: "Time to read: ",

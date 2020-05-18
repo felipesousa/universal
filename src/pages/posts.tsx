@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link, useStaticQuery, graphql, PageProps } from "gatsby";
 import styled from "styled-components";
 
 import { Layout, SEO, SectionTitle } from "../components";
@@ -31,7 +31,7 @@ export const query = graphql`
   }
 `;
 
-const Posts = _query => {
+const Posts = (_query: PageProps) => {
   const { language } = useContext(LanguageContext);
   return (
     <>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import { Layout, SEO } from "../components";
+import { Layout, SEO, SectionTitle, SectionSubtitle } from "../components";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -9,6 +9,9 @@ const IndexPage = () => {
       site {
         siteMetadata {
           author
+          description
+          subtitle
+          title
         }
       }
     }
@@ -18,7 +21,13 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       <Layout>
-        <h1>Hi, my name is {data.site.siteMetadata.author}</h1>
+        <SectionTitle line={false} className="title-home">
+          {data.site.siteMetadata.subtitle}
+        </SectionTitle>
+
+        <SectionSubtitle line={false}>
+          {data.site.siteMetadata.subtitle}
+        </SectionSubtitle>
       </Layout>
     </>
   );

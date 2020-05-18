@@ -56,7 +56,8 @@ const plugins = [
 ];
 
 const siteMetadata = {
-  title: `Felipe Sousa Universe`,
+  title: `Felipe Sousa`,
+  subtitle: `Front-End Engineer & Dev-Speaker`,
   description: `Front End Developer focused in performance, good practices and open-source.`,
   author: `Felipe Sousa`,
 };

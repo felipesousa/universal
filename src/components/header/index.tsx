@@ -17,10 +17,28 @@ const Header = props => {
   return (
     <Container>
       {/* <Profile src="/images/profile.jpeg" alt="profile" /> */}
-      <Title onClick={() => navigate("/")}>
-        <span>FELIPE</span>
-        <p>SOUSA</p>
-      </Title>
+
+      <div className="mudando">
+        <Title onClick={() => navigate("/")}>
+          <span>FELIPE</span>
+          <p>SOUSA</p>
+        </Title>
+
+        <Settings className="mobile">
+          <LanguageToggler value={language} onChange={toggleLanguage}>
+            <option value="en">EN</option>
+            <option value="pt">PT</option>
+          </LanguageToggler>
+
+          <Divider />
+
+          <DarkTheme
+            src={theme === "dark" ? "/images/light.svg" : "/images/dark.svg"}
+            onClick={toggleTheme}
+            alt="dark mode toggle icon"
+          />
+        </Settings>
+      </div>
 
       <Nav>
         {LINKS.map(function ({ name, route }) {
@@ -32,7 +50,7 @@ const Header = props => {
         })}
       </Nav>
 
-      <Settings>
+      <Settings className="desktop">
         <LanguageToggler value={language} onChange={toggleLanguage}>
           <option value="en">EN</option>
           <option value="pt">PT</option>
@@ -61,10 +79,25 @@ const Container = styled.header`
   align-items: center;
   flex-wrap: wrap;
 
+  .mudando {
+    display: flex;
+    justify-content: center;
+  }
+
   @media screen and (max-width: 768px) {
-    height: 300px;
     justify-content: space-evenly;
     flex-direction: column;
+    margin-bottom: 0px;
+
+    .mudando {
+      justify-content: space-between;
+      width: 100%;
+
+      h1 {
+        line-height: 1;
+        margin: 0;
+      }
+    }
   }
 `;
 
@@ -106,6 +139,11 @@ const Title: any = styled.h1`
 const Nav = styled.nav`
   padding: 0px;
   box-sizing: border-box;
+  display: inline-flex;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 
   a {
     color: var(--black);
@@ -117,6 +155,7 @@ const Nav = styled.nav`
     font-size: 1.1rem;
     margin: 0px 10px;
     text-shadow: -2px 1px 0px var(--blueExtraLight);
+    border-bottom: 4px solid transparent;
 
     &:hover {
       border-bottom: 4px solid var(--blueLight);
@@ -138,13 +177,28 @@ const Nav = styled.nav`
 
 const Settings = styled.div`
   width: 120px;
-  display: flex;
   align-items: center;
   height: auto;
   justify-content: flex-end;
 
+  &.mobile {
+    display: none;
+  }
+
+  &.desktop {
+    display: flex;
+  }
+
   @media screen and (max-width: 768px) {
     width: 100px;
+
+    &.mobile {
+      display: flex;
+    }
+
+    &.desktop {
+      display: none;
+    }
   }
 `;
 

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const socials = [
   { link: "https://github.com/felipesousa", name: "github" },
-  { link: "https://linkedin.com/in/luifelipesousa", name: "linkedin" },
+  { link: "https://linkedin.com/in/luisfelipesousa", name: "linkedin" },
   { link: "https://twitter.com/felipz_sousa", name: "twitter" },
 ];
 
