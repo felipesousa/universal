@@ -9,10 +9,10 @@ export default ({ children, line = true, ...props }) => (
 );
 
 const Title: any = styled.h1`
-  font-size: 3.5rem;
+  font-size: 2.4rem;
   color: var(--light);
   font-family: Okta;
-  margin: 50px 0px;
+  margin: 50px 0px 20px;
   text-shadow: -4px 1px 0px var(--blueExtraLight);
 
   &.title-home {
@@ -34,15 +34,14 @@ const Title: any = styled.h1`
 
 const Line = styled.div`
   width: 25%;
-  height: 10px;
+  height: 7px;
   background: var(--blue);
-  margin-top: -2.3rem;
+  margin-top: -1.5rem;
   margin-left: -27%;
   animation: showOn 0.5s 1;
 
-  @media screen and (max-width: 420px) {
-    margin-top: -1.3rem;
-    height: 5px;
+  @media screen and (max-width: 768px) {
+    margin-top: -1.8rem;
   }
 
   @keyframes showOn {

@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { graphql, navigate } from "gatsby";
+import utils from "../utils";
 
 import LanguageContext from "../providers";
 import { SEO, Layout, SectionTitle } from "../components";
@@ -26,17 +27,6 @@ export const query = graphql`
   }
 `;
 
-const lang = {
-  published: {
-    en: "Published at ",
-    pt: "Publicado em ",
-  },
-  timeToRead: {
-    en: "Time to read: ",
-    pt: "Tempo de leitura: ",
-  },
-};
-
 const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
   let { language, theme } = useContext(LanguageContext);
 
@@ -54,12 +44,12 @@ const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
       <PostDetails>
         <div>
           <span>
-            {lang["published"][language]}
+            {utils.translatePostDetails["published"][language]}
             {post.frontmatter.date}.
           </span>
 
           <span>
-            {lang["timeToRead"][language]}
+            {utils.translatePostDetails["timeToRead"][language]}
             {post.timeToRead} min.
           </span>
         </div>
