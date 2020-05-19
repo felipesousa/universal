@@ -36,7 +36,8 @@ http://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascr
 }
 
 pre::-webkit-scrollbar {
-  width: 14px;
+  width: 5px;
+  height: 5px;
 }
 
 pre::-webkit-scrollbar-track {

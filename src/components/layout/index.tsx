@@ -19,6 +19,10 @@ const Container = styled.div`
 
 const Main = styled.main`
   min-height: calc(100vh - 310px);
+
+  @media screen and (max-width: 768px) {
+    min-height: calc(100vh - 330px);
+  }
 `;
 
 export default Layout;

@@ -109,13 +109,15 @@ const PostMain = styled.main`
 
 const Excerpt = styled.p`
   margin: 0;
+  margin-top: 10px;
   font-size: 1rem;
 
   &:first-letter {
     font-weight: bold;
-    font-size: 50px;
-    padding-left: 15px;
-    line-height: 2;
+    font-size: 45px;
+    padding-left: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
   }
 
   a {
@@ -191,16 +193,28 @@ const PostsList = styled.ul`
 const Post = styled.article`
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin-bottom: 0px;
+  width: 100%;
 
   a.post-link {
     text-decoration: none !important;
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin-bottom: 0px;
+    border-left: 6px solid var(--blueLight);
+    padding-left: 40px;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+
+    a.post-link {
+      margin-top: -30px;
+    }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    border-bottom: 3px solid var(--gray);
+    border-bottom: 3px solid var(--blueLight);
     padding-bottom: 30px;
     margin-bottom: 40px;
 

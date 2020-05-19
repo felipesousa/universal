@@ -77,10 +77,7 @@ const Content = styled.article`
     line-height: 1.4;
 
     a {
-      border-bottom: 4px solid var(--blue);
-      text-decoration: none;
       color: var(--black);
-      font-weight: bold;
       line-height: 1.8;
     }
   }

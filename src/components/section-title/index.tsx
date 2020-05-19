@@ -12,14 +12,14 @@ const Title: any = styled.h1`
   font-size: 3.6rem;
   color: var(--light);
   font-family: Okta;
-  margin: 50px 0px 20px;
+  margin: 50px 50px 20px 0px;
   text-shadow: -4px 1px 0px var(--blueExtraLight);
 
   &.title-home {
     width: 100%;
     max-width: 768px;
     color: var(--blue);
-    text-shadow: -4px 2px var(--blueLight);
+    text-shadow: -4px 2px var(--blueExtraLight);
   }
 
   @media screen and (max-width: 768px) {
@@ -29,20 +29,17 @@ const Title: any = styled.h1`
 
   @media screen and (max-width: 420px) {
     font-size: 2.1rem;
+    margin: 0px;
   }
 `;
 
 const Line = styled.div`
   width: 25%;
   height: 7px;
-  background: var(--blue);
+  background: var(--blueLight);
   margin-top: -1.5rem;
   margin-left: -27%;
   animation: showOn 0.5s 1;
-
-  @media screen and (max-width: 768px) {
-    margin-top: -1.8rem;
-  }
 
   @keyframes showOn {
     from {
