@@ -8,12 +8,12 @@ const socials = [
   { link: "https://twitter.com/felipz_sousa", name: "twitter" },
 ];
 
-const Footer = () => {
+const Footer = ({ fixed }) => {
   const { theme } = useContext(LanguageContext);
   const _theme = theme == "dark" ? "light" : "dark";
 
   return (
-    <Container>
+    <Container fixed={fixed}>
       {socials.map(({ name, link }) => (
         <a href={link} target="_blank">
           <Icon alt={name} src={`/images/${name}-${_theme}.svg`} />
@@ -23,13 +23,16 @@ const Footer = () => {
   );
 };
 
-const Container = styled.footer`
+const Container: any = styled.footer`
   max-width: 100%;
   width: 1250px;
   height: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  position: ${(props: any) => (props.fixed ? "fixed" : "none")};
+  bottom: ${(props: any) => (props.fixed ? 0 : "none")};
 
   a {
     color: transparent;

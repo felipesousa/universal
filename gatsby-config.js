@@ -58,7 +58,10 @@ const plugins = [
 const siteMetadata = {
   title: `Felipe Sousa`,
   subtitle: `Front-End Engineer & Dev-Speaker`,
-  description: `Performance, good practices and open-source.`,
+  description: {
+    prefix: `Brazilian living in Santiago working at `,
+    suffix: `Using this <space> to archive and share my career, projects and dev/life-experiences.`,
+  },
   author: `Felipe Sousa`,
 };
 

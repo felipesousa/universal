@@ -9,7 +9,10 @@ const IndexPage = () => {
       site {
         siteMetadata {
           author
-          description
+          description {
+            prefix
+            suffix
+          }
           subtitle
           title
         }
@@ -20,10 +23,18 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <Layout>
+      <Layout fixed>
         <SectionTitle line={false} className="title-home">
           {data.site.siteMetadata.subtitle}
         </SectionTitle>
+        <SectionSubtitle>
+          {data.site.siteMetadata.description.prefix}
+          <a href="https://github.com/concretesolutions">
+            @concretelatinoamerica.
+          </a>
+          <br />
+          {data.site.siteMetadata.description.suffix}
+        </SectionSubtitle>
       </Layout>
     </>
   );

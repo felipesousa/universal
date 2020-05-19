@@ -162,7 +162,7 @@ const Nav = styled.nav`
     }
 
     &.active {
-      border-bottom: 4px solid var(--blue);
+      border-bottom: 4px solid var(--blue) !important;
     }
   }
 `;

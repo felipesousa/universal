@@ -109,14 +109,14 @@ const PostMain = styled.main`
 
 const Excerpt = styled.p`
   margin: 0;
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 1rem;
 
   &:first-letter {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
     padding-left: 20px;
-    margin-top: 10px;
+    padding-right: 2px;
     line-height: 1.5;
   }
 

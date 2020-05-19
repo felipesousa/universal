@@ -4,19 +4,20 @@ import styled from "styled-components";
 export default ({ children }) => <Subtitle>{children}</Subtitle>;
 
 const Subtitle = styled.h1`
-  width: 280px;
-  font-size: 1.6rem;
-  float: right;
+  width: 60%;
+  font-size: 1.5rem;
   color: var(--gray);
   font-family: "Slab Regular";
   margin: 0px;
   text-align: right;
+  line-height: 1.3;
+  margin-top: 110px;
 
   a {
     color: var(--gray);
   }
 
-  @media screen and (min-width: 480px) {
-    display: none;
+  @media screen and (max-width: 767px) {
+    width: 90%;
   }
 `;
