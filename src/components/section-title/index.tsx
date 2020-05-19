@@ -9,7 +9,7 @@ export default ({ children, line = true, ...props }) => (
 );
 
 const Title: any = styled.h1`
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   color: var(--light);
   font-family: Okta;
   margin: 50px 0px 20px;
