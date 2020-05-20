@@ -53,7 +53,7 @@ const Posts = (_query: PageProps) => {
               return (
                 <Post>
                   <Link className="post-link" to={`post/${lang}/${slug}`}>
-                    <SectionTitle className="decoration" line={false}>
+                    <SectionTitle className="talks" line={false}>
                       {title}
                     </SectionTitle>
                   </Link>
@@ -194,6 +194,7 @@ const Post = styled.article`
   display: flex;
   flex-direction: column;
   width: 100%;
+  transition: all 0.2s linear;
 
   a.post-link {
     text-decoration: none !important;
@@ -203,9 +204,8 @@ const Post = styled.article`
   @media screen and (min-width: 768px) {
     width: 100%;
     margin-bottom: 0px;
-    border-left: 6px solid var(--blueLight);
-    padding-left: 40px;
     margin-bottom: 80px;
+
     box-sizing: border-box;
 
     a.post-link {
@@ -214,7 +214,7 @@ const Post = styled.article`
   }
 
   @media screen and (max-width: 768px) {
-    border-bottom: 3px solid var(--blueLight);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.03);
     padding-bottom: 30px;
     margin-bottom: 40px;
 

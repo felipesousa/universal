@@ -1,6 +1,6 @@
 ---
-title: "DevFest Santiago 2019"
-date: "2020-05-21"
+title: "GDG Meetup Santiago"
+date: "2019-09-24"
 category: talks
 lang: en
 ---

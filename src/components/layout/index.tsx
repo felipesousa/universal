@@ -4,7 +4,7 @@ import { Header, Footer } from "../";
 
 import "./base.css";
 
-const Layout = ({ children, relative }) => (
+const Layout = ({ children, relative = false }) => (
   <Container>
     <Header />
     <Main relative={relative}>{children}</Main>
@@ -31,7 +31,7 @@ const Main: any = styled.main`
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
-    `}}
+    `}
 `;
 
 export default Layout;

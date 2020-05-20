@@ -16,6 +16,10 @@ const Title: any = styled.h1`
   margin-left: 0px;
   text-shadow: -4px 1px 0px var(--blueExtraLight);
 
+  &.talks {
+    margin-bottom: 25px;
+  }
+
   &.title-home {
     width: 100%;
     max-width: 768px;
@@ -36,8 +40,8 @@ const Title: any = styled.h1`
 
 const Line = styled.div`
   width: 25%;
-  height: 7px;
-  background: var(--blueLight);
+  height: 6px;
+  background: rgba(0, 0, 0, 0.05);
   margin-top: -1.5rem;
   margin-left: -27%;
   animation: showOn 0.5s 1;
