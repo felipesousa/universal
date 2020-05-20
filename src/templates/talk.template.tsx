@@ -28,7 +28,7 @@ const TalkTemplate = ({ data: { markdownRemark: talk } }) => {
 
   useEffect(() => {
     if (talk.frontmatter.lang !== language) {
-      navigate(`/talk/${language}/${talk.fields.slug}`);
+      navigate(`/talks/${language}/${talk.fields.slug}`);
     }
   }, [language]);
 

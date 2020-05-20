@@ -15,6 +15,8 @@ const Header = props => {
     LanguageContext
   );
 
+  const _theme = theme === "dark" ? "light" : "dark";
+
   return (
     <Container>
       <div className="mobile-header">
@@ -32,7 +34,7 @@ const Header = props => {
           <Divider />
 
           <DarkTheme
-            src={theme === "dark" ? "/images/light.svg" : "/images/dark.svg"}
+            src={`images/${_theme}.svg`}
             onClick={toggleTheme}
             alt="dark mode toggle icon"
           />
@@ -42,7 +44,11 @@ const Header = props => {
       <Nav>
         {LINKS.map(function ({ name, route }) {
           return (
-            <Link activeClassName="active" to={route}>
+            <Link
+              activeClassName="active"
+              partiallyActive={route !== "/" ? true : false}
+              to={route}
+            >
               {name.toUpperCase()}
             </Link>
           );

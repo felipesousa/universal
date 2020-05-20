@@ -52,7 +52,7 @@ const Talks = (_query: PageProps) => {
 
               return (
                 <Post>
-                  <Link className="post-link" to={`talk/${lang}/${slug}`}>
+                  <Link className="post-link" to={`talks/${lang}/${slug}`}>
                     <SectionTitle className="talks" line={false}>
                       {title}
                     </SectionTitle>
@@ -60,7 +60,7 @@ const Talks = (_query: PageProps) => {
                   <PostMain>
                     <Excerpt>
                       {excerpt}
-                      <Link className="readmore" to={`talk/${lang}/${slug}`}>
+                      <Link className="readmore" to={`talks/${lang}/${slug}`}>
                         Read More.
                       </Link>
                     </Excerpt>
