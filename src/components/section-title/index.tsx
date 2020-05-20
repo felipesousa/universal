@@ -12,7 +12,8 @@ const Title: any = styled.h1`
   font-size: 3.6rem;
   color: var(--light);
   font-family: Okta;
-  margin: 50px 50px 20px 0px;
+  margin: 50px;
+  margin-left: 0px;
   text-shadow: -4px 1px 0px var(--blueExtraLight);
 
   &.title-home {
@@ -29,7 +30,7 @@ const Title: any = styled.h1`
 
   @media screen and (max-width: 420px) {
     font-size: 2.1rem;
-    margin: 0px;
+    margin: 0px 0px 50px;
   }
 `;
 

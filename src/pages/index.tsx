@@ -1,7 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import styled from "styled-components";
 
-import { Layout, SEO, SectionTitle, SectionSubtitle } from "../components";
+import { Layout, SEO, SectionTitle } from "../components";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -23,7 +24,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <Layout fixed>
+      <Layout relative={true}>
         <SectionTitle line={false} className="title-home">
           {data.site.siteMetadata.subtitle}
         </SectionTitle>
@@ -39,5 +40,18 @@ const IndexPage = () => {
     </>
   );
 };
+
+const SectionSubtitle = styled.h2`
+  font-size: 1.5rem;
+  color: var(--gray);
+  font-family: "Slab Regular";
+  line-height: 1.3;
+  text-align: right;
+
+  a {
+    color: var(--gray);
+    text-decoration: none;
+  }
+`;
 
 export default IndexPage;
