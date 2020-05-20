@@ -34,7 +34,7 @@ const Header = props => {
           <Divider />
 
           <DarkTheme
-            src={`images/${_theme}.svg`}
+            src={`/images/${_theme}.svg`}
             onClick={toggleTheme}
             alt="dark mode toggle icon"
           />
