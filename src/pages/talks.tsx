@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, graphql, PageProps } from "gatsby";
+import { Link, navigate, graphql, PageProps } from "gatsby";
 import styled from "styled-components";
 
 import { Layout, SEO, SectionTitle } from "../components";
@@ -17,14 +17,14 @@ export const query = graphql`
           frontmatter {
             title
             category
-            date(formatString: "MM Do, YYYY")
+            date(formatString: "MM D, YYYY")
             lang
+            location
+            presentation
           }
           fields {
             slug
           }
-          excerpt
-          timeToRead
         }
       }
     }
@@ -38,14 +38,13 @@ const Talks = (_query: PageProps) => {
       <SEO title="Talks" />
       <Layout>
         <SectionTitle>Talks</SectionTitle>
-        <br />
 
         <PostsList>
           {utils
             .getEdges(_query.data)
             .map(utils.mapFields)
             .filter(node => node.lang === language && node)
-            .map(({ title, slug, lang, date, excerpt, timeToRead }) => {
+            .map(({ title, slug, lang, location, date, presentation }) => {
               const _value = parseInt(date.slice(0, 2));
               const _date = date.slice(3);
               const _month = utils.getMonth(language, _value);
@@ -53,30 +52,19 @@ const Talks = (_query: PageProps) => {
               return (
                 <Post>
                   <Link className="post-link" to={`talks/${lang}/${slug}`}>
-                    <SectionTitle className="talks" line={false}>
+                    <SectionTitle className="talks hover" line={false}>
                       {title}
                     </SectionTitle>
                   </Link>
-                  <PostMain>
-                    <Excerpt>
-                      {excerpt}
-                      <Link className="readmore" to={`talks/${lang}/${slug}`}>
-                        Read More.
-                      </Link>
-                    </Excerpt>
-                  </PostMain>
-                  <PostFooter>
+                  <TalkFooter>
                     <div>
-                      <span>
-                        {utils.translatePostDetails["published"][language]}
-                        {_month} {_date}.
-                      </span>
-                      <span>
-                        {utils.translatePostDetails["timeToRead"][language]}
-                        {timeToRead} min.
-                      </span>
+                      <p>🌍 {location}</p>
+                      <p>
+                        🗓 {_month} {_date}
+                      </p>
+                      <p>🎤 {presentation}</p>
                     </div>
-                  </PostFooter>
+                  </TalkFooter>
                 </Post>
               );
             })}
@@ -86,54 +74,12 @@ const Talks = (_query: PageProps) => {
   );
 };
 
-const PostMain = styled.main`
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  font-family: "Slab Regular";
-
-  p {
-    margin: 0;
-    font-size: 1rem;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    width: 100%;
-
-    a {
-      font-size: 1rem;
-      margin-left: 5px;
-      text-decoration: underline;
-    }
-  }
-`;
-
-const Excerpt = styled.p`
-  margin: 0;
-  margin-top: 15px;
-  font-size: 1rem;
-
-  &:first-letter {
-    font-weight: bold;
-    font-size: 40px;
-    padding-right: 2px;
-    line-height: 1.5;
-  }
-
-  a {
-    font-size: 1rem;
-    margin-left: 5px;
-    text-decoration: underline;
-    color: var(--black);
-  }
-`;
-
-const PostFooter = styled.footer`
+const TalkFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   font-family: "Slab Regular";
-  margin-top: 10px;
   padding-bottom: 0px;
   margin-bottom: 10px;
   font-size: 0.9rem;
@@ -144,6 +90,11 @@ const PostFooter = styled.footer`
     flex-wrap: wrap;
     justify-content: flex-start;
     width: auto;
+    flex-direction: row;
+
+    p {
+      margin-right: 20px;
+    }
   }
 
   a.readmore {

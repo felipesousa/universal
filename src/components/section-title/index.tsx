@@ -16,15 +16,10 @@ const Title: any = styled.h1`
   margin-left: 0px;
   text-shadow: -4px 1px 0px var(--blueExtraLight);
 
-  &.talks {
-    margin-bottom: 25px;
-  }
-
-  &.title-home {
-    width: 100%;
-    max-width: 768px;
-    color: var(--blue);
-    text-shadow: -4px 2px var(--blueExtraLight);
+  @media screen and (min-width: 768px) {
+    &.hover :hover {
+      text-decoration: underline;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -35,6 +30,17 @@ const Title: any = styled.h1`
   @media screen and (max-width: 420px) {
     font-size: 2.1rem;
     margin: 0px 0px 50px;
+  }
+
+  &.talks {
+    margin-bottom: 25px;
+  }
+
+  &.title-home {
+    width: 100%;
+    max-width: 768px;
+    color: var(--blue);
+    text-shadow: -4px 2px var(--blueExtraLight);
   }
 `;
 

@@ -17,6 +17,7 @@ const plugins = [
     options: {
       plugins: [
         "gatsby-remark-relative-images",
+        "gatsby-remark-responsive-iframe",
         {
           resolve: "gatsby-remark-images",
           options: {

@@ -17,7 +17,7 @@ export const query = graphql`
           frontmatter {
             title
             category
-            date(formatString: "MM Do, YYYY")
+            date(formatString: "MM D, YYYY")
             lang
           }
           fields {
@@ -53,7 +53,7 @@ const Posts = (_query: PageProps) => {
               return (
                 <Post>
                   <Link className="post-link" to={`posts/${lang}/${slug}`}>
-                    <SectionTitle className="talks" line={false}>
+                    <SectionTitle className="talks hover" line={false}>
                       {title}
                     </SectionTitle>
                   </Link>
@@ -68,11 +68,11 @@ const Posts = (_query: PageProps) => {
                   <PostFooter>
                     <div>
                       <span>
-                        {utils.translatePostDetails["published"][language]}
-                        {_month} {_date}.
+                        🗓 {utils.translatePostDetails["published"][language]}
+                        {_month} {_date}
                       </span>
                       <span>
-                        {utils.translatePostDetails["timeToRead"][language]}
+                        ⏰ {utils.translatePostDetails["timeToRead"][language]}
                         {timeToRead} min.
                       </span>
                     </div>
@@ -145,6 +145,11 @@ const PostFooter = styled.footer`
     flex-wrap: wrap;
     justify-content: flex-start;
     width: auto;
+    flex-direction: row;
+
+    p {
+      margin-right: 20px;
+    }
   }
 
   a.readmore {

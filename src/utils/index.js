@@ -5,6 +5,10 @@ const translatePostDetails = {
     en: "Published at ",
     pt: "Publicado em ",
   },
+  presented: {
+    en: "Presented at ",
+    pt: "Apresentado em ",
+  },
   timeToRead: {
     en: "Time to read: ",
     pt: "Tempo de leitura: ",
