@@ -12,12 +12,12 @@ const Title: any = styled.h1`
   font-size: 3.6rem;
   color: var(--light);
   font-family: Okta;
-  margin: 50px;
+  margin-top: 50px;
   margin-left: 0px;
   text-shadow: -4px 1px 0px var(--blueExtraLight);
 
   @media screen and (min-width: 768px) {
-    &.hover :hover {
+    &.hover:hover {
       text-decoration: underline;
     }
   }
@@ -32,8 +32,12 @@ const Title: any = styled.h1`
     margin: 0px 0px 50px;
   }
 
-  &.talks {
+  .posts {
     margin-bottom: 25px;
+  }
+
+  &.talks {
+    margin-bottom: 0px;
   }
 
   &.title-home {

@@ -56,7 +56,7 @@ const Talks = (_query: PageProps) => {
                       {title}
                     </SectionTitle>
                   </Link>
-                  <TalkFooter>
+                  <TalkDetails>
                     <div>
                       <p>🌍 {location}</p>
                       <p>
@@ -64,7 +64,7 @@ const Talks = (_query: PageProps) => {
                       </p>
                       <p>🎤 {presentation}</p>
                     </div>
-                  </TalkFooter>
+                  </TalkDetails>
                 </Post>
               );
             })}
@@ -74,14 +74,16 @@ const Talks = (_query: PageProps) => {
   );
 };
 
-const TalkFooter = styled.footer`
+const TalkDetails = styled.section`
+  border-bottom: 4px solid var(--gray);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   font-family: "Slab Regular";
-  padding-bottom: 0px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
   font-size: 1.2rem;
   font-weight: bold;
 
@@ -90,19 +92,13 @@ const TalkFooter = styled.footer`
     flex-wrap: wrap;
     justify-content: flex-start;
     width: auto;
-    flex-direction: row;
-
-    p {
-      margin-right: 20px;
-    }
   }
 
-  a.readmore {
+  a {
     display: flex;
     color: var(--black);
     text-transform: capitalize;
     margin-bottom: 10px;
-    text-decoration: underline;
 
     img {
       width: 27px;
@@ -116,13 +112,10 @@ const TalkFooter = styled.footer`
     }
   }
 
-  span {
+  p {
     margin: 0;
-    margin-bottom: 10px;
-
-    &:first-of-type {
-      margin-right: 10px;
-    }
+    margin-right: 20px;
+    line-height: 1.5;
   }
 `;
 
@@ -152,22 +145,14 @@ const Post = styled.article`
   }
 
   @media screen and (min-width: 768px) {
-    width: 100%;
-    margin-bottom: 0px;
-    margin-bottom: 80px;
-
     box-sizing: border-box;
 
     a.post-link {
-      margin-top: -30px;
+      // margin-top: -30px;
     }
   }
 
   @media screen and (max-width: 768px) {
-    border-bottom: 4px solid var(--black);
-    padding-bottom: 30px;
-    margin-bottom: 40px;
-
     .decoration {
       font-size: 1.7rem !important;
       margin-bottom: 20px;

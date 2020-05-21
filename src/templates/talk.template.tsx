@@ -14,7 +14,7 @@ export const query = graphql`
     ) {
       frontmatter {
         title
-        date(formatString: "MM Do, YYYY", locale: $lang)
+        date(formatString: "MM D, YYYY", locale: $lang)
         lang
         presentation
         link
@@ -77,7 +77,7 @@ const Content = styled.article`
 `;
 
 const TalkDetails = styled.section`
-  border-bottom: 5px solid var(--gray);
+  border-bottom: 4px solid var(--gray);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

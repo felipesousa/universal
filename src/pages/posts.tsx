@@ -53,7 +53,7 @@ const Posts = (_query: PageProps) => {
               return (
                 <Post key={i}>
                   <Link className="post-link" to={`/posts/${lang}/${slug}`}>
-                    <SectionTitle className="talks hover" line={false}>
+                    <SectionTitle className="posts hover" line={false}>
                       {title}
                     </SectionTitle>
                   </Link>
@@ -219,7 +219,7 @@ const Post = styled.article`
   }
 
   @media screen and (max-width: 768px) {
-    border-bottom: 4px solid rgba(0, 0, 0, 0.03);
+    border-bottom: 4px solid var(--black);
     padding-bottom: 30px;
     margin-bottom: 40px;
 

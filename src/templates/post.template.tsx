@@ -84,7 +84,7 @@ const Content = styled.article`
 `;
 
 const PostDetails = styled.section`
-  border-bottom: 5px solid var(--gray);
+  border-bottom: 4px solid var(--gray);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
