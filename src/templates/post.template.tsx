@@ -43,12 +43,12 @@ const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
 
       <PostDetails>
         <div>
-          <span>
+          <span style={{ marginRight: "20px" }}>
             🗓 {utils.translatePostDetails["published"][language]}
             {post.frontmatter.date}
           </span>
 
-          <span style={{ marginLeft: "20px" }}>
+          <span>
             ⏰ {utils.translatePostDetails["timeToRead"][language]}
             {post.timeToRead} min.
           </span>
@@ -94,6 +94,7 @@ const PostDetails = styled.section`
   padding-bottom: 10px;
   margin-bottom: 60px;
   font-size: 1.2rem;
+  font-weight: bold;
 
   div {
     display: flex;

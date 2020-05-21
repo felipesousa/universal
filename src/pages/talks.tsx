@@ -44,14 +44,14 @@ const Talks = (_query: PageProps) => {
             .getEdges(_query.data)
             .map(utils.mapFields)
             .filter(node => node.lang === language && node)
-            .map(({ title, slug, lang, location, date, presentation }) => {
+            .map(({ title, slug, lang, location, date, presentation }, i) => {
               const _value = parseInt(date.slice(0, 2));
               const _date = date.slice(3);
               const _month = utils.getMonth(language, _value);
 
               return (
-                <Post>
-                  <Link className="post-link" to={`talks/${lang}/${slug}`}>
+                <Post key={i}>
+                  <Link className="post-link" to={`/talks/${lang}/${slug}`}>
                     <SectionTitle className="talks hover" line={false}>
                       {title}
                     </SectionTitle>
@@ -82,7 +82,7 @@ const TalkFooter = styled.footer`
   font-family: "Slab Regular";
   padding-bottom: 0px;
   margin-bottom: 10px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: bold;
 
   div {
@@ -164,7 +164,7 @@ const Post = styled.article`
   }
 
   @media screen and (max-width: 768px) {
-    border-bottom: 4px solid rgba(0, 0, 0, 0.03);
+    border-bottom: 4px solid var(--black);
     padding-bottom: 30px;
     margin-bottom: 40px;
 

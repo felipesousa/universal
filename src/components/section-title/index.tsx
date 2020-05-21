@@ -47,7 +47,7 @@ const Title: any = styled.h1`
 const Line = styled.div`
   width: 25%;
   height: 6px;
-  background: rgba(0, 0, 0, 0.05);
+  background: var(--black);
   margin-top: -1.5rem;
   margin-left: -27%;
   animation: showOn 0.5s 1;

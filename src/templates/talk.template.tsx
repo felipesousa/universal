@@ -87,6 +87,7 @@ const TalkDetails = styled.section`
   padding-bottom: 20px;
   margin-bottom: 60px;
   font-size: 1.2rem;
+  font-weight: bold;
 
   div {
     display: flex;

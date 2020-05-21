@@ -14,8 +14,8 @@ const Footer = () => {
 
   return (
     <Container>
-      {socials.map(({ name, link }) => (
-        <a href={link} target="_blank">
+      {socials.map(({ name, link }, i) => (
+        <a href={link} target="_blank" key={i}>
           <Icon alt={name} src={`/images/${name}-${_theme}.svg`} />
         </a>
       ))}

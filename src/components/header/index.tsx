@@ -42,12 +42,13 @@ const Header = props => {
       </div>
 
       <Nav>
-        {LINKS.map(function ({ name, route }) {
+        {LINKS.map(function ({ name, route }, i) {
           return (
             <Link
               activeClassName="active"
               partiallyActive={route !== "/" ? true : false}
               to={route}
+              key={i}
             >
               {name.toUpperCase()}
             </Link>

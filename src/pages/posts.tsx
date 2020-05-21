@@ -45,14 +45,14 @@ const Posts = (_query: PageProps) => {
             .getEdges(_query.data)
             .map(utils.mapFields)
             .filter(node => node.lang === language && node)
-            .map(({ title, slug, lang, date, excerpt, timeToRead }) => {
+            .map(({ title, slug, lang, date, excerpt, timeToRead }, i) => {
               const _value = parseInt(date.slice(0, 2));
               const _date = date.slice(3);
               const _month = utils.getMonth(language, _value);
 
               return (
-                <Post>
-                  <Link className="post-link" to={`posts/${lang}/${slug}`}>
+                <Post key={i}>
+                  <Link className="post-link" to={`/posts/${lang}/${slug}`}>
                     <SectionTitle className="talks hover" line={false}>
                       {title}
                     </SectionTitle>
@@ -60,7 +60,7 @@ const Posts = (_query: PageProps) => {
                   <PostMain>
                     <Excerpt>
                       {excerpt}
-                      <Link className="readmore" to={`posts/${lang}/${slug}`}>
+                      <Link className="readmore" to={`/posts/${lang}/${slug}`}>
                         Read More.
                       </Link>
                     </Excerpt>
@@ -137,7 +137,7 @@ const PostFooter = styled.footer`
   margin-top: 10px;
   padding-bottom: 0px;
   margin-bottom: 10px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: bold;
 
   div {
