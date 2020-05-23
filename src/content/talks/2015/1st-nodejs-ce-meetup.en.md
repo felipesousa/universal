@@ -3,10 +3,11 @@ title: "1st NodeJS CE Meetup - NUG/CE"
 date: "2015-11-21"
 category: talks
 lang: en
-presentation: "Static Generators - No Backend, No Problem"
+presentation: "Static Generators` - No Backend, No Problem"
 link: "https://felipesousa.github.io/talks/NUG-CE/#/"
 location: "Fortaleza - Brazil"
 event: "https://www.meetup.com/nug-ce/events/225394717/"
+draft: true
 ---
 
 Local: Auditório A3 - Universidade de Fortaleza (UNIFOR)

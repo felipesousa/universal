@@ -4,7 +4,7 @@ import styled from "styled-components";
 import utils from "../utils";
 
 import LanguageContext from "../providers";
-import { SEO, Layout, SectionTitle } from "../components";
+import { Fallback, SEO, Layout, SectionTitle } from "../components";
 
 export const query = graphql`
   query($slug: String, $lang: String) {
@@ -20,6 +20,7 @@ export const query = graphql`
         link
         location
         event
+        draft
       }
       fields {
         slug
@@ -42,22 +43,29 @@ const TalkTemplate = ({ data: { markdownRemark: talk } }) => {
   const _date = talk.frontmatter.date.slice(3);
   const _month = utils.getMonth(language, _value);
 
+  let draft = talk.frontmatter.draft || false;
+
   return (
     <Layout>
       <SEO title={talk.frontmatter.title} />
       <SectionTitle line={false}>{talk.frontmatter.title}</SectionTitle>
 
-      <TalkDetails>
-        <div>
-          <p>🌍 {talk.frontmatter.location}</p>
-          <p>
-            🗓 {_month} {_date}
-          </p>
-          <p>🎤 {talk.frontmatter.presentation}</p>
-        </div>
-      </TalkDetails>
-
-      <Content dangerouslySetInnerHTML={{ __html: talk.html }}></Content>
+      {draft ? (
+        <Fallback link="lorem" />
+      ) : (
+        <>
+          <TalkDetails>
+            <div>
+              <p>🌍 {talk.frontmatter.location}</p>
+              <p>
+                🗓 {_month} {_date}
+              </p>
+              <p>🎤 {talk.frontmatter.presentation}</p>
+            </div>
+          </TalkDetails>
+          <Content dangerouslySetInnerHTML={{ __html: talk.html }}></Content>
+        </>
+      )}
     </Layout>
   );
 };

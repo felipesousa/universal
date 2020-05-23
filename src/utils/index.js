@@ -76,6 +76,9 @@ const getMonth = (lang, month) => Months[lang][month - 1];
 
 const setClassMenu = (path, word) => path.includes(word) && "subactive";
 
+const getElement = id => document.querySelector(id);
+const setRandomNumber = () => Math.floor(Math.random() * 9) + 1;
+
 module.exports = {
   getEdges,
   getTemplate,
@@ -83,6 +86,7 @@ module.exports = {
   getFileName,
   getMonth,
   getDataFromCategory,
+  getElement,
 
   mapFields,
 
@@ -91,4 +95,5 @@ module.exports = {
 
   translatePostDetails,
   setClassMenu,
+  setRandomNumber,
 };

@@ -4,7 +4,7 @@ import { graphql, navigate } from "gatsby";
 import utils from "../utils";
 
 import LanguageContext from "../providers";
-import { SEO, Layout, SectionTitle } from "../components";
+import { SEO, Layout, SectionTitle, Fallback } from "../components";
 
 export const query = graphql`
   query($slug: String, $lang: String) {
@@ -16,6 +16,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM Do, YYYY", locale: $lang)
         lang
+        draft
       }
       fields {
         slug
@@ -29,6 +30,7 @@ export const query = graphql`
 
 const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
   let { language, theme } = useContext(LanguageContext);
+  let draft = post.frontmatter.draft || false;
 
   useEffect(() => {
     if (post.frontmatter.lang !== language) {
@@ -41,31 +43,39 @@ const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
       <SEO title={post.frontmatter.title} />
       <SectionTitle line={false}>{post.frontmatter.title}</SectionTitle>
 
-      <PostDetails>
-        <div>
-          <span style={{ marginRight: "20px" }}>
-            🗓 {utils.translatePostDetails["published"][language]}
-            {post.frontmatter.date}
-          </span>
+      {draft ? (
+        <Fallback link="lorem" />
+      ) : (
+        <>
+          <PostDetails>
+            <div>
+              <span style={{ marginRight: "20px" }}>
+                🗓 {utils.translatePostDetails["published"][language]}
+                {post.frontmatter.date}
+              </span>
 
-          <span>
-            ⏰ {utils.translatePostDetails["timeToRead"][language]}
-            {post.timeToRead} min.
-          </span>
-        </div>
+              <span>
+                ⏰ {utils.translatePostDetails["timeToRead"][language]}
+                {post.timeToRead} min.
+              </span>
+            </div>
 
-        <a
-          href={`https://twitter.com/intent/tweet?url=${location.href}&text=${post.excerpt}`}
-          target="_blank"
-        >
-          Share on Twitter
-          <img
-            src={`/images/twitter-${theme == "dark" ? "light" : "dark"}.svg`}
-          />
-        </a>
-      </PostDetails>
+            <a
+              href={`https://twitter.com/intent/tweet?url=${location.href}&text=${post.excerpt}`}
+              target="_blank"
+            >
+              Share on Twitter
+              <img
+                src={`/images/twitter-${
+                  theme == "dark" ? "light" : "dark"
+                }.svg`}
+              />
+            </a>
+          </PostDetails>
 
-      <Content dangerouslySetInnerHTML={{ __html: post.html }}></Content>
+          <Content dangerouslySetInnerHTML={{ __html: post.html }}></Content>
+        </>
+      )}
     </Layout>
   );
 };
