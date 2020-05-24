@@ -45,45 +45,41 @@ const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
       <SEO title={post.frontmatter.title} />
       <SectionTitle line={false}>{post.frontmatter.title}</SectionTitle>
 
+      <PostDetails>
+        <div>
+          <span style={{ marginRight: "20px" }}>
+            🗓 {utils.translatePostDetails["published"][language]}
+            {post.frontmatter.date}
+          </span>
+
+          <span>
+            ⏰ {utils.translatePostDetails["timeToRead"][language]}
+            {post.timeToRead} min.
+          </span>
+        </div>
+
+        <a
+          href={`https://twitter.com/intent/tweet?url=${location.href}&text=${post.excerpt}`}
+          target="_blank"
+        >
+          Share on Twitter
+          <img
+            src={`/images/twitter-${theme == "dark" ? "light" : "dark"}.svg`}
+          />
+        </a>
+      </PostDetails>
+
       {draft ? (
         <Content>
           <p>
-            Content not availble in{" "}
-            {language == "pt" ? "Portuguese" : "English"}.{" "}
+            Content yet not available in the current language.
             <span onClick={() => toggleLanguage(_lang)}>
-              Click here to check the{" "}
-              {language == "pt" ? "English" : "Portuguese"} version.
+              Click here to check the original version.
             </span>
           </p>
         </Content>
       ) : (
         <>
-          <PostDetails>
-            <div>
-              <span style={{ marginRight: "20px" }}>
-                🗓 {utils.translatePostDetails["published"][language]}
-                {post.frontmatter.date}
-              </span>
-
-              <span>
-                ⏰ {utils.translatePostDetails["timeToRead"][language]}
-                {post.timeToRead} min.
-              </span>
-            </div>
-
-            <a
-              href={`https://twitter.com/intent/tweet?url=${location.href}&text=${post.excerpt}`}
-              target="_blank"
-            >
-              Share on Twitter
-              <img
-                src={`/images/twitter-${
-                  theme == "dark" ? "light" : "dark"
-                }.svg`}
-              />
-            </a>
-          </PostDetails>
-
           <Content dangerouslySetInnerHTML={{ __html: post.html }}></Content>
         </>
       )}

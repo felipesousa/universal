@@ -17,7 +17,7 @@ photos:
 
 ### Resume
 
-The event was one of the editions of GDG Santiago in partnership with @concretelatinoamerica and [@4geeksacademy](https://www.4geeksacademy.co/). The meeting took place in Santiago, Chile at one of WeWork's headquarters. It was my first presentation outside of Brazil and also in another language, I spoke in Spanish and with the challenge with a new community, it was a very positive experience and well evaluated by the ~30 members who were on the day. [More details about the meeting can be seen here](https://www.meetup.com/gdg-santiago-chile/events/264634504/).
+The event was one of the editions of GDG Santiago in partnership with @concretelatinoamerica and [@4geeksacademycl](https://www.instagram.com/4geeksacademycl/). The meeting took place in Santiago, Chile at one of WeWork's headquarters. It was my first presentation outside of Brazil and also in another language, I spoke in Spanish and with the challenge with a new community, it was a very positive experience and well evaluated by the ~30 members who were on the day. [More details about the meeting can be seen here](https://www.meetup.com/gdg-santiago-chile/events/264634504/).
 
 <br />
 

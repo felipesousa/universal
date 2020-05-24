@@ -3,9 +3,8 @@ title: "Brazil to Chile, reasons to change - part 1"
 date: "2019-12-26"
 category: posts
 lang: pt
+draft: true
 ---
-
-PENDING
 
 Hello, after almost 5 months of moving country, for the first time I will tell you how the whole process went
 and how has been the experience of change and what are my impressions before these days.

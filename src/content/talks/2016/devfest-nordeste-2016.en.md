@@ -7,6 +7,12 @@ presentation: "Angular & Firebase - A powerfull path to create dinamic apps."
 link: "https://felipesousa.github.io/talks/devfestne2016/#/"
 location: "Maceió - Brasil"
 event: "https://www.meetup.com/GDG-Maceio/events/232924846/"
+photos:
+  - "devfest-ne-2016-00.jpg"
+  - "devfest-ne-2016-01.JPG"
+  - "devfest-ne-2016-03.jpg"
+  - "devfest-ne-2016-02.jpg"
+  - "devfest-ne-2016-06.jpg"
 ---
 
 ### Resume

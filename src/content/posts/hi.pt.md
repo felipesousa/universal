@@ -3,9 +3,8 @@ title: Hi 👋🏻
 date: "2019-06-23"
 category: posts
 lang: pt
+draft: true
 ---
-
-PENDING
 
 Hi all, welcome to my new space! Here I'll share a couple of things (not only technical things), I decided that after
 pass a couple of years without write/share anything about my knowledge and also about my personal experiences.

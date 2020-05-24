@@ -70,7 +70,7 @@ const TalkTemplate = ({ data: { markdownRemark: talk } }) => {
       {draft ? (
         <Content>
           <p>
-            Content not availble in{" "}
+            Content not available in{" "}
             {language == "pt" ? "Portuguese" : "English"}.{" "}
             <span onClick={() => toggleLanguage(_lang)}>
               Click here to check the{" "}
@@ -82,7 +82,11 @@ const TalkTemplate = ({ data: { markdownRemark: talk } }) => {
         <>
           <Images>
             {_d.map(l => (
-              <img src={l} alt={l.toString()} />
+              <img
+                style={{ flex: _d.length == 1 ? "none" : 1 }}
+                src={l}
+                alt={l.toString()}
+              />
             ))}
           </Images>
           <Content dangerouslySetInnerHTML={{ __html: talk.html }}></Content>

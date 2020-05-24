@@ -17,7 +17,7 @@ photos:
 
 ### Resumo
 
-O Evento foi uma das edições do GDG Santiago em parceria com @concretelatinoamerica e [@4geeksacademy](https://www.4geeksacademy.co/). O encontro aconteceu em Santiago, Chile em uma das sedes da WeWork.
+O Evento foi uma das edições do GDG Santiago em parceria com @concretelatinoamerica e [@4geeksacademycl](https://www.instagram.com/4geeksacademycl/). O encontro aconteceu em Santiago, Chile em uma das sedes da WeWork.
 Foi a minha primeira palestra fora do Brasil e também em outra língua, falei em espanhol e encarei o desafio de enfretar uma comunidade nova, foi uma experiência muito positiva e bem avaliada pelos ~30 membros que estavam no dia. [Mais detalhes sobre o encontro podem ser visto aqui](https://www.meetup.com/gdg-santiago-chile/events/264634504/).
 
 <br />

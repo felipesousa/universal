@@ -3,9 +3,8 @@ title: "Storybook: Why, When and How."
 date: "2019-06-29"
 category: posts
 lang: pt
+draft: true
 ---
-
-PENDING
 
 Applications based at components aren't news for nobody, libraries like React, VueJS, and Angular are basically our first option when we're creating a new project, it's because they are really good for us developers.
 

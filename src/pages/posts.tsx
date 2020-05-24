@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, graphql, PageProps } from "gatsby";
+import { Link, graphql, PageProps, navigate } from "gatsby";
 import styled from "styled-components";
 
 import { Layout, SEO, SectionTitle } from "../components";
@@ -19,6 +19,7 @@ export const query = graphql`
             category
             date(formatString: "MM D, YYYY")
             lang
+            draft
           }
           fields {
             slug
@@ -32,7 +33,8 @@ export const query = graphql`
 `;
 
 const Posts = (_query: PageProps) => {
-  const { language } = useContext(LanguageContext);
+  const { language, toggleLanguage } = useContext(LanguageContext);
+  const _lang = language === "pt" ? "en" : "pt";
   return (
     <>
       <SEO title="Posts" />
@@ -45,41 +47,71 @@ const Posts = (_query: PageProps) => {
             .getEdges(_query.data)
             .map(utils.mapFields)
             .filter(node => node.lang === language && node)
-            .map(({ title, slug, lang, date, excerpt, timeToRead }, i) => {
-              const _value = parseInt(date.slice(0, 2));
-              const _date = date.slice(3);
-              const _month = utils.getMonth(language, _value);
+            .map(
+              (
+                { title, slug, lang, date, excerpt, timeToRead, draft = false },
+                i
+              ) => {
+                const _value = parseInt(date.slice(0, 2));
+                const _date = date.slice(3);
+                const _month = utils.getMonth(language, _value);
 
-              return (
-                <Post key={i}>
-                  <Link className="post-link" to={`/posts/${lang}/${slug}`}>
-                    <SectionTitle className="posts hover" line={false}>
-                      {title}
-                    </SectionTitle>
-                  </Link>
-                  <PostMain>
-                    <Excerpt>
-                      {excerpt}
-                      <Link className="readmore" to={`/posts/${lang}/${slug}`}>
-                        Read More.
-                      </Link>
-                    </Excerpt>
-                  </PostMain>
-                  <PostFooter>
-                    <div>
-                      <span>
-                        🗓 {utils.translatePostDetails["published"][language]}
-                        {_month} {_date}
-                      </span>
-                      <span>
-                        ⏰ {utils.translatePostDetails["timeToRead"][language]}
-                        {timeToRead} min.
-                      </span>
-                    </div>
-                  </PostFooter>
-                </Post>
-              );
-            })}
+                return (
+                  <Post key={i}>
+                    <Link className="post-link" to={`/posts/${lang}/${slug}`}>
+                      <SectionTitle className="posts hover" line={false}>
+                        {title}
+                      </SectionTitle>
+                    </Link>
+                    <PostMain>
+                      {draft ? (
+                        <Excerpt>
+                          <p
+                            style={{
+                              margin: 0,
+                            }}
+                          >
+                            Content yet not available in the current language.
+                            <span
+                              className="readmore"
+                              onClick={() => {
+                                toggleLanguage(_lang);
+                                navigate(`/posts/${_lang}/${slug}`);
+                              }}
+                            >
+                              Check the original version here.
+                            </span>
+                          </p>
+                        </Excerpt>
+                      ) : (
+                        <Excerpt>
+                          {excerpt}
+                          <Link
+                            className="readmore"
+                            to={`/posts/${lang}/${slug}`}
+                          >
+                            Read More.
+                          </Link>
+                        </Excerpt>
+                      )}
+                    </PostMain>
+                    <PostFooter>
+                      <div>
+                        <span>
+                          🗓 {utils.translatePostDetails["published"][language]}
+                          {_month} {_date}
+                        </span>
+                        <span>
+                          ⏰{" "}
+                          {utils.translatePostDetails["timeToRead"][language]}
+                          {timeToRead} min.
+                        </span>
+                      </div>
+                    </PostFooter>
+                  </Post>
+                );
+              }
+            )}
         </PostsList>
       </Layout>
     </>
@@ -126,6 +158,11 @@ const Excerpt = styled.p`
     color: var(--black);
     text-decoration: underline;
   }
+
+  span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 `;
 
 const PostFooter = styled.footer`
@@ -150,6 +187,10 @@ const PostFooter = styled.footer`
     p {
       margin-right: 20px;
     }
+  }
+
+  span.readmore {
+    text-decoration: underline;
   }
 
   a.readmore {
