@@ -7,9 +7,9 @@ presentation: "O que vem antes do Getting Starter?"
 link: "https://felipesousa.github.io/talks/IonicMeetup/#/"
 location: "Fortaleza - Brazil"
 event: "N/A"
+photos:
+  - "2ionicce.jpg"
 ---
-
-<img src="2ionicce.jpg" alt="alt" class="image" />
 
 ### Resumo
 

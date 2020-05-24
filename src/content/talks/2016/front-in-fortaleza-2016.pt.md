@@ -7,6 +7,8 @@ presentation: "Pensando uma aplicação acessível com HTML5!"
 link: "https://felipesousa.github.io/talks/fif2016/#/"
 location: "Fortaleza - Brazil"
 event: "https://frontinfortaleza.com.br/"
+photos:
+  - "front-in-fortaleza-2016.jpg"
 ---
 
 ### Resumo
