@@ -11,17 +11,12 @@ event: "https://frontinfortaleza.com.br/"
 
 ### Resumo
 
-O Evento foi uma das edições do GDG Santiago em parceria com @concretelatinoamerica e [@4geeksacademy](https://www.4geeksacademy.co/). O encontro aconteceu em Santiago, Chile em uma das sedes da WeWork.
-Foi a minha primeira palestra fora do Brasil e também em outra língua, falei em espanhol e encarei o desafio de enfretar uma comunidade nova, foi uma experiência muito positiva e bem avaliada pelos ~30 membros que estavam no dia. [Mais detalhes sobre o encontro podem ser visto aqui](https://www.meetup.com/gdg-santiago-chile/events/264634504/).
+Minha história com o Front In Fortaleza começou bem antes desse evento, na verdade essa havia sido a terceira edição do evento na qual eu acompanhava, porém a primeira como palestrante. Foi uma experência fantástica e claro, bem desafiadora, foi uma das minhas primeiras apresentações para públicos maiores, com níveis técnicos maiores, etc.
 
 <br />
 
 # A Palestra
 
-No dia do evento falei sobre "Shared Web-Component with StencilJS", onde explorei um pouco dos conceitos por trás de toda a arquitetura e como usar as principais features e métodos da biblioteca [@Stenciljs](https://github.com/ionic-team/stencil). Dentro do conteúdo, usei um componente que criei como [exemplo em live-code](https://github.com/felipesousa/stencil-movie-card).
+No dia foquei em Acessibilidade e Semântica com HTML5 com a palestra: [**Pensando uma aplicação acessível com HTML5**](https://felipesousa.github.io/talks/fif2016/#/), que foi inclusive apresentada em outros encontros em Fortaleza. Dentro da lista de conteúdos, fui desde conceitos básicos, ferramentas utilizadas para facilitar a navegação para os usuários que possuem alguma deficiência, elementos HTML e dicas básicas de passar ao usuário, seja ele qual for, independente da condição, conexão ou particularidade, ter acesso a informação que precisa.
 
 <br />
-
-### Slides
-
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/fc2c97556cc240f3a0d5c2431fac9f13" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>

@@ -10,8 +10,8 @@ const LINKS: Array<{ name: string; route: string }> = [
   { name: "Talks", route: "/talks" },
 ];
 
-const Header = props => {
-  const { toggleTheme, theme, language, toggleLanguage } = useContext(
+const Header = (props: any) => {
+  const { theme, language, toggleLanguage, toggleTheme } = useContext(
     LanguageContext
   );
 
@@ -26,7 +26,10 @@ const Header = props => {
         </Title>
 
         <Settings className="mobile">
-          <LanguageToggler value={language} onChange={toggleLanguage}>
+          <LanguageToggler
+            value={language}
+            onChange={e => toggleLanguage(e.target.value)}
+          >
             <option value="en">EN</option>
             <option value="pt">PT</option>
           </LanguageToggler>
@@ -57,7 +60,10 @@ const Header = props => {
       </Nav>
 
       <Settings className="desktop">
-        <LanguageToggler value={language} onChange={toggleLanguage}>
+        <LanguageToggler
+          value={language}
+          onChange={e => toggleLanguage(e.target.value)}
+        >
           <option value="en">EN</option>
           <option value="pt">PT</option>
         </LanguageToggler>
@@ -155,6 +161,7 @@ const Nav = styled.nav`
     margin: 0px 10px;
     text-shadow: -2px 1px 0px var(--blueExtraLight);
     border-bottom: 4px solid transparent;
+    transition: all 0.2s linear;
 
     &:hover {
       border-bottom: 4px solid var(--blueLight);

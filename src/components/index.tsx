@@ -2,5 +2,4 @@ export { default as SEO } from "./seo";
 export { default as Layout } from "./layout";
 export { default as Header } from "./header";
 export { default as Footer } from "./footer";
-export { default as Fallback } from "./fallback";
 export { default as SectionTitle } from "./section-title";

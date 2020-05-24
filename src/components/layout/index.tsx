@@ -1,7 +1,8 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Header, Footer } from "../";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import { Header, Footer } from "../";
 import "./base.css";
 
 const Layout = ({ children, relative = false }) => (

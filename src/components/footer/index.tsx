@@ -11,14 +11,18 @@ const socials = [
 const Footer = () => {
   const { theme } = useContext(LanguageContext);
   const _theme = theme == "dark" ? "light" : "dark";
+  const year = new Date().getFullYear();
 
   return (
     <Container>
-      {socials.map(({ name, link }, i) => (
-        <a href={link} target="_blank" key={i}>
-          <Icon alt={name} src={`/images/${name}-${_theme}.svg`} />
-        </a>
-      ))}
+      <nav>
+        {socials.map(({ name, link }, i) => (
+          <a href={link} target="_blank" key={i}>
+            <Icon alt={name} src={`/images/${name}-${_theme}.svg`} />
+          </a>
+        ))}
+      </nav>
+      <a href="mailto:hi@felipesousa.space">Felipe Sousa - {year}</a>
     </Container>
   );
 };
@@ -27,13 +31,17 @@ const Container: any = styled.footer`
   max-width: 100%;
   width: 1250px;
   height: 100px;
+  margin-bottom: 10px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 
   a {
-    color: transparent;
-    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--black);
+    font-family: "Slab Regular";
+    height: 25px;
 
     &:first-of-type {
       margin-left: -10px;

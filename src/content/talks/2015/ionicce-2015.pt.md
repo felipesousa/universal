@@ -9,24 +9,14 @@ location: "Fortaleza - Brazil"
 event: "N/A"
 ---
 
-Local: Auditório A3 - Universidade de Fortaleza (UNIFOR)
-Av. Washington Soares, 1321, Ed. Queiroz
-
-![meetup ionic ce 2 edition](./images/2ionicce.png)
+<img src="2ionicce.jpg" alt="alt" class="image" />
 
 ### Resumo
 
-O Evento foi uma das edições do GDG Santiago em parceria com @concretelatinoamerica e [@4geeksacademy](https://www.4geeksacademy.co/). O encontro aconteceu em Santiago, Chile em uma das sedes da WeWork.
-Foi a minha primeira palestra fora do Brasil e também em outra língua, falei em espanhol e encarei o desafio de enfretar uma comunidade nova, foi uma experiência muito positiva e bem avaliada pelos ~30 membros que estavam no dia. [Mais detalhes sobre o encontro podem ser visto aqui](https://www.meetup.com/gdg-santiago-chile/events/264634504/).
+A Segunda edição do Ionic Meetup Fortaleza foi mais um encontro realizado pela comunidade local de Fortaleza no final de 2015. No encontro discutimos assuntos bem interessantes, como alguns temas bem novos pra época, como push-notifications e e um overview sobre o Ionic 2 que estava em pre-release no período.
 
 <br />
 
 # A Palestra
 
-No dia do evento falei sobre "Shared Web-Component with StencilJS", onde explorei um pouco dos conceitos por trás de toda a arquitetura e como usar as principais features e métodos da biblioteca [@Stenciljs](https://github.com/ionic-team/stencil). Dentro do conteúdo, usei um componente que criei como [exemplo em live-code](https://github.com/felipesousa/stencil-movie-card).
-
-<br />
-
-### Slides
-
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/fc2c97556cc240f3a0d5c2431fac9f13" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+Submeti uma mini-talk sobre a importância de prototipar projetos antes de começar e comentando um pouco sobre o [Ionic Creator](https://creator.ionic.io/) com o título: "O que vem antes do getting starter?". O conceito principal foi apresentar formas de validações visuais para uma melhor validação e planejamento de desenvolvimento, antes mesmo de começar a escrever código. [Os slides possuem mais detalhes e você pode conferir aqui.](https://felipesousa.github.io/talks/IonicMeetup/#/)

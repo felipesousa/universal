@@ -3,27 +3,20 @@ title: "GDG DevFest Nordeste 2016"
 date: "2016-10-21"
 category: talks
 lang: en
-presentation: "Angular e Firebase - A super dupla na criação de aplicações dinâmicas"
+presentation: "Angular & Firebase - A powerfull path to create dinamic apps."
 link: "https://felipesousa.github.io/talks/devfestne2016/#/"
 location: "Maceió - Brasil"
 event: "https://www.meetup.com/GDG-Maceio/events/232924846/"
 ---
 
+### Resume
+
+The 2016 GDG DevFest Nordeste took place in Maceió - Alagoas, about 950km from where I lived (Fortaleza/Ceará), the event showed me in reality the real power that technology can have in people's lives. I had the opportunity to meet great references in the technical area and also make great friends like [@gustavocostaw](https://twitter.com/GustavoCostaW), [@jeffersonmourak](https://twitter.com/jeffersonmourak), [@elisionfilho](https://twitter.com/elisionfilho) and many others. It was also my first experience as a speaker in another state, I remember with great affection and joy this great event! More details of the event can be seen in the video:
+
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/9ALTl6dQrCc?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
-### Resumo
-
-O Evento foi uma das edições do GDG Santiago em parceria com @concretelatinoamerica e [@4geeksacademy](https://www.4geeksacademy.co/). O encontro aconteceu em Santiago, Chile em uma das sedes da WeWork.
-Foi a minha primeira palestra fora do Brasil e também em outra língua, falei em espanhol e encarei o desafio de enfretar uma comunidade nova, foi uma experiência muito positiva e bem avaliada pelos ~30 membros que estavam no dia. [Mais detalhes sobre o encontro podem ser visto aqui](https://www.meetup.com/gdg-santiago-chile/events/264634504/).
-
 <br />
 
-# A Palestra
+# The Talk
 
-No dia do evento falei sobre "Shared Web-Component with StencilJS", onde explorei um pouco dos conceitos por trás de toda a arquitetura e como usar as principais features e métodos da biblioteca [@Stenciljs](https://github.com/ionic-team/stencil). Dentro do conteúdo, usei um componente que criei como [exemplo em live-code](https://github.com/felipesousa/stencil-movie-card).
-
-<br />
-
-### Slides
-
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/fc2c97556cc240f3a0d5c2431fac9f13" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+On the day, I presented on [how to build applications quickly with Angular and Firebase](https://felipesousa.github.io/talks/devfestne2016/#/), on the day I also did a live-demo interacting with all the audience present with a chat created with the technologies above.

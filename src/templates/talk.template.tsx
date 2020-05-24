@@ -4,7 +4,7 @@ import styled from "styled-components";
 import utils from "../utils";
 
 import LanguageContext from "../providers";
-import { Fallback, SEO, Layout, SectionTitle } from "../components";
+import { SEO, Layout, SectionTitle } from "../components";
 
 export const query = graphql`
   query($slug: String, $lang: String) {
@@ -21,6 +21,9 @@ export const query = graphql`
         location
         event
         draft
+        photos {
+          publicURL
+        }
       }
       fields {
         slug
@@ -31,13 +34,16 @@ export const query = graphql`
 `;
 
 const TalkTemplate = ({ data: { markdownRemark: talk } }) => {
-  let { language } = useContext(LanguageContext);
+  let { language, toggleLanguage } = useContext(LanguageContext);
 
   useEffect(() => {
     if (talk.frontmatter.lang !== language) {
       navigate(`/talks/${language}/${talk.fields.slug}`);
     }
   }, [language]);
+
+  const images = talk.frontmatter.photos || [];
+  const _d = images.map(({ publicURL }) => `${publicURL}`);
 
   const _value = parseInt(talk.frontmatter.date.slice(0, 2));
   const _date = talk.frontmatter.date.slice(3);
@@ -50,19 +56,30 @@ const TalkTemplate = ({ data: { markdownRemark: talk } }) => {
       <SEO title={talk.frontmatter.title} />
       <SectionTitle line={false}>{talk.frontmatter.title}</SectionTitle>
 
+      <TalkDetails>
+        <div>
+          <p>🌍 {talk.frontmatter.location}</p>
+          <p>
+            🗓 {_month} {_date}
+          </p>
+          <p>🎤 {talk.frontmatter.presentation}</p>
+        </div>
+      </TalkDetails>
+
       {draft ? (
-        <Fallback link="lorem" />
+        <p>
+          Content not availble in {language}.{" "}
+          <span onClick={() => toggleLanguage("pt")}>
+            Click here to check the original version.
+          </span>
+        </p>
       ) : (
         <>
-          <TalkDetails>
-            <div>
-              <p>🌍 {talk.frontmatter.location}</p>
-              <p>
-                🗓 {_month} {_date}
-              </p>
-              <p>🎤 {talk.frontmatter.presentation}</p>
-            </div>
-          </TalkDetails>
+          <Images>
+            {_d.map(l => (
+              <img src={l} alt={l.toString()} />
+            ))}
+          </Images>
           <Content dangerouslySetInnerHTML={{ __html: talk.html }}></Content>
         </>
       )}
@@ -126,6 +143,41 @@ const TalkDetails = styled.section`
     margin: 0;
     margin-right: 20px;
     line-height: 1.5;
+  }
+`;
+
+const Images = styled.div`
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+
+    img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  img {
+    min-width: 300px;
+    width: 20%;
+    height: auto;
+    margin-bottom: 30px;
+    object-fit: cover;
+    transition: all 0.4s linear;
+    box-shadow: 0px 0px 0px 0px transparent;
+
+    &:hover {
+      transform: scale(1.5);
+      cursor: pointer;
+      box-shadow: 0px 0px 10px 0px var(--black);
+    }
   }
 `;
 

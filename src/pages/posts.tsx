@@ -94,13 +94,13 @@ const PostMain = styled.main`
 
   p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-top: -20px;
     margin-bottom: 20px;
     width: 100%;
 
     a {
-      font-size: 1rem;
+      font-size: 1.3rem;
       margin-left: 5px;
       text-decoration: underline;
     }
@@ -110,7 +110,7 @@ const PostMain = styled.main`
 const Excerpt = styled.p`
   margin: 0;
   margin-top: 15px;
-  font-size: 1rem;
+  font-size: 1.3rem;
 
   &:first-letter {
     font-weight: bold;
@@ -121,10 +121,10 @@ const Excerpt = styled.p`
   }
 
   a {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-left: 5px;
-    text-decoration: underline;
     color: var(--black);
+    text-decoration: underline;
   }
 `;
 
@@ -200,6 +200,7 @@ const Post = styled.article`
   flex-direction: column;
   width: 100%;
   transition: all 0.2s linear;
+  border-bottom: 4px solid var(--black);
 
   a.post-link {
     text-decoration: none !important;
@@ -209,7 +210,7 @@ const Post = styled.article`
   @media screen and (min-width: 768px) {
     width: 100%;
     margin-bottom: 0px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 
     box-sizing: border-box;
 
@@ -219,9 +220,8 @@ const Post = styled.article`
   }
 
   @media screen and (max-width: 768px) {
-    border-bottom: 4px solid var(--black);
     padding-bottom: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 
     .decoration {
       font-size: 1.7rem !important;

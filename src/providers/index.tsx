@@ -15,7 +15,7 @@ declare global {
 const LanguageContext = createContext({
   language: "en",
   theme: "light",
-  toggleLanguage: (event: any): void => {},
+  toggleLanguage: (language: string): void => {},
   toggleTheme: (): void => {},
 });
 
@@ -50,8 +50,8 @@ export const AppProvider = ({ children }) => {
     window.__setPreferredTheme(websiteTheme === "light" ? "dark" : "light");
   };
 
-  const toggleLanguage = (e: any): void => {
-    window.__setPreferredLang(e.target.value);
+  const toggleLanguage = (language: string): void => {
+    window.__setPreferredLang(language);
   };
 
   return (

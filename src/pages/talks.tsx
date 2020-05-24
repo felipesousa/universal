@@ -75,7 +75,7 @@ const Talks = (_query: PageProps) => {
 };
 
 const TalkDetails = styled.section`
-  border-bottom: 4px solid var(--gray);
+  border-bottom: 4px solid var(--black);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

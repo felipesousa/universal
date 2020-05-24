@@ -4,7 +4,7 @@ import { graphql, navigate } from "gatsby";
 import utils from "../utils";
 
 import LanguageContext from "../providers";
-import { SEO, Layout, SectionTitle, Fallback } from "../components";
+import { SEO, Layout, SectionTitle } from "../components";
 
 export const query = graphql`
   query($slug: String, $lang: String) {
@@ -29,7 +29,7 @@ export const query = graphql`
 `;
 
 const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
-  let { language, theme } = useContext(LanguageContext);
+  let { language, theme, toggleLanguage } = useContext(LanguageContext);
   let draft = post.frontmatter.draft || false;
 
   useEffect(() => {
@@ -44,7 +44,12 @@ const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
       <SectionTitle line={false}>{post.frontmatter.title}</SectionTitle>
 
       {draft ? (
-        <Fallback link="lorem" />
+        <p>
+          Content not availble in {language}.{" "}
+          <span onClick={() => toggleLanguage("pt")}>
+            Click here to check the original version.
+          </span>
+        </p>
       ) : (
         <>
           <PostDetails>
