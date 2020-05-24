@@ -50,6 +50,7 @@ const TalkTemplate = ({ data: { markdownRemark: talk } }) => {
   const _month = utils.getMonth(language, _value);
 
   let draft = talk.frontmatter.draft || false;
+  const _lang = language === "pt" ? "en" : "pt";
 
   return (
     <Layout>
@@ -67,12 +68,16 @@ const TalkTemplate = ({ data: { markdownRemark: talk } }) => {
       </TalkDetails>
 
       {draft ? (
-        <p>
-          Content not availble in {language}.{" "}
-          <span onClick={() => toggleLanguage("pt")}>
-            Click here to check the original version.
-          </span>
-        </p>
+        <Content>
+          <p>
+            Content not availble in{" "}
+            {language == "pt" ? "Portuguese" : "English"}.{" "}
+            <span onClick={() => toggleLanguage(_lang)}>
+              Click here to check the{" "}
+              {language == "pt" ? "English" : "Portuguese"} version.
+            </span>
+          </p>
+        </Content>
       ) : (
         <>
           <Images>
@@ -151,7 +156,7 @@ const Images = styled.div`
   height: auto;
   margin: 20px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
 
@@ -167,13 +172,21 @@ const Images = styled.div`
   img {
     max-width: 100%;
     min-width: 300px;
-    width: 20%;
+    flex: 1;
     height: auto;
     max-height: 300px;
-    margin-bottom: 30px;
+    margin: 20px 15px;
     object-fit: cover;
     transition: all 0.2s linear;
     box-shadow: 0px 0px 0px 0px transparent;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
 
     &:hover {
       transform: scale(1.2);

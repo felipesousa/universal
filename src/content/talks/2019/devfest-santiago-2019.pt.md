@@ -14,6 +14,7 @@ photos:
   - "devfest-santiago-2019-04.jpg"
   - "devfest-santiago-2019-05.jpg"
   - "devfest-santiago-2019-06.jpg"
+draft: true
 ---
 
 ## Resumo

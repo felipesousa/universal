@@ -38,18 +38,24 @@ const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
     }
   }, [language]);
 
+  const _lang = language === "pt" ? "en" : "pt";
+
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
       <SectionTitle line={false}>{post.frontmatter.title}</SectionTitle>
 
       {draft ? (
-        <p>
-          Content not availble in {language}.{" "}
-          <span onClick={() => toggleLanguage("pt")}>
-            Click here to check the original version.
-          </span>
-        </p>
+        <Content>
+          <p>
+            Content not availble in{" "}
+            {language == "pt" ? "Portuguese" : "English"}.{" "}
+            <span onClick={() => toggleLanguage(_lang)}>
+              Click here to check the{" "}
+              {language == "pt" ? "English" : "Portuguese"} version.
+            </span>
+          </p>
+        </Content>
       ) : (
         <>
           <PostDetails>

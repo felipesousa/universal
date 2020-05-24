@@ -6,8 +6,6 @@ lang: en
 draft: true
 ---
 
-PENDING
-
 "Automatizando" e "TypeScript" na mesma frase pode soar hype até demais, porém ambas não ganharam famas a toa, automatizar vem sendo cada vez mais buscado entre todas as camadas de produtos, desde um fluxo automatizado de envio de emails ou publicação de uma biblioteca no npm a partir de algum hook, etc. Independente do nível, automatizar _quase_ sempre vai ser uma ótima opção.
 
 Nos últimos projetos que tenho trabalhado, optamos por usar TypeScript e tirar proveito o máximo que puder de acordo com o caso. Documentar projetos é um trabalho que posso confessar, é cansativo, e principalmente quando se trata de uma documentação de código, sim, aquela que você escreve pra outro dev entender - ou você mesmo em um futuro -. Obrigar alguém a ler seu código a partir de um editor é algo além de bem antigo, não tão funcional a nível de entendimento de código, o que atrapalha em possíveis bugs e/ou features.
