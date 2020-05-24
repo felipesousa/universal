@@ -165,9 +165,11 @@ const Images = styled.div`
   }
 
   img {
+    max-width: 100%;
     min-width: 300px;
     width: 20%;
     height: auto;
+    max-height: 300px;
     margin-bottom: 30px;
     object-fit: cover;
     transition: all 0.2s linear;
