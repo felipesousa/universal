@@ -170,11 +170,11 @@ const Images = styled.div`
     height: auto;
     margin-bottom: 30px;
     object-fit: cover;
-    transition: all 0.4s linear;
+    transition: all 0.2s linear;
     box-shadow: 0px 0px 0px 0px transparent;
 
     &:hover {
-      transform: scale(1.5);
+      transform: scale(1.2);
       cursor: pointer;
       box-shadow: 0px 0px 10px 0px var(--black);
     }

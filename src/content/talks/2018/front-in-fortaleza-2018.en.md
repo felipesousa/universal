@@ -1,29 +1,21 @@
 ---
 title: "Front in Fortaleza 2018"
-date: "2018-10-02"
+date: "2018-09-15"
 category: talks
 lang: en
 presentation: "Event Hoster"
 link: "https://speakerdeck.com/felipesousa/shared-web-components-with-stenciljs"
 location: "Fortaleza - Brazil"
 event: "https://frontinfortaleza.com.br/"
+photos:
+  - "front-in-fortaleza-2018-02.jpg"
+  - "front-in-fortaleza-2018-01.jpg"
+  - "front-in-fortaleza-2018-03.jpg"
 ---
-
-![front in fortaleza](./images/front-in-fortaleza-2018.jpg)
 
 ### Resumo
 
-O Evento foi uma das edições do GDG Santiago em parceria com @concretelatinoamerica e [@4geeksacademy](https://www.4geeksacademy.co/). O encontro aconteceu em Santiago, Chile em uma das sedes da WeWork.
-Foi a minha primeira palestra fora do Brasil e também em outra língua, falei em espanhol e encarei o desafio de enfretar uma comunidade nova, foi uma experiência muito positiva e bem avaliada pelos ~30 membros que estavam no dia. [Mais detalhes sobre o encontro podem ser visto aqui](https://www.meetup.com/gdg-santiago-chile/events/264634504/).
+The 2018 edition of Front In Fortaleza was my first opportunity as an event hoster, where I was responsible for presenting the event throughout the day of content by invitation from my great friend and organizer of Front in Fortaleza [@eliasdeoliveira](https://www.instagram.com/faeliaso/), with great local and regional names. Front in Fortaleza is always a community that welcomes me with open arms and that I have a special affection for. Throughout
+the day, speakers from the region shared content on a variety of subjects, from open-source to scalable architectures of front end applications.
 
-<br />
-
-# A Palestra
-
-No dia do evento falei sobre "Shared Web-Component with StencilJS", onde explorei um pouco dos conceitos por trás de toda a arquitetura e como usar as principais features e métodos da biblioteca [@Stenciljs](https://github.com/ionic-team/stencil). Dentro do conteúdo, usei um componente que criei como [exemplo em live-code](https://github.com/felipesousa/stencil-movie-card).
-
-<br />
-
-### Slides
-
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/fc2c97556cc240f3a0d5c2431fac9f13" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+[More details of the entire event, schedule and speakers can be seen here!](https://frontinfortaleza.com.br/)

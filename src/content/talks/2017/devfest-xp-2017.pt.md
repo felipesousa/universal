@@ -9,6 +9,9 @@ location: "Recife - Brazil"
 event: "https://devfestxp.com/"
 photos:
   - "devfest-xp-2017-02.png"
+  - "devfestxp-2017-03.JPG"
+  - "devfestxp-2017-04.JPG"
+  - "devfestxp-2017-05.JPG"
 ---
 
 ### Resumo

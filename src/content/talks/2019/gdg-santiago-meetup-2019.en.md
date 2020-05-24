@@ -7,6 +7,12 @@ presentation: "Shared web-components with StencilJS"
 link: "https://speakerdeck.com/felipesousa/shared-web-components-with-stenciljs"
 location: "Santiago - Chile"
 event: "https://www.meetup.com/gdg-santiago-chile/events/264634504/"
+photos:
+  - "gdg-meetup-santiago-2019-03.jpg"
+  - "gdg-meetup-santiago-2019-02.jpg"
+  - "gdg-meetup-santiago-2019-04.jpg"
+  - "gdg-meetup-santiago-2019-05.jpg"
+  - "gdg-meetup-santiago-2019-06.jpg"
 ---
 
 ### Resume
