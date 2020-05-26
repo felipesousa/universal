@@ -5,7 +5,7 @@ category: talks
 lang: en
 presentation: "Thinking a acessible web-app with HTML5!"
 link: "https://felipesousa.github.io/talks/javou/#/"
-location: "Fortaleza - Brasil"
+location: "Fortaleza - Brazil"
 event: "http://www.javace.org/javou-08-java-technology-day/"
 photos:
   - "java-ce-08.png"

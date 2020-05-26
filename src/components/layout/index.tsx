@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { Header, Footer } from "../";
-import "./base.css";
 
 const Layout = ({ children, relative = false }) => (
   <Container>

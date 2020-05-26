@@ -5,7 +5,7 @@ category: talks
 lang: pt
 presentation: "O que vem antes do Getting Starter?"
 link: "https://felipesousa.github.io/talks/IonicMeetup/#/"
-location: "Fortaleza - Brazil"
+location: "Fortaleza - Brasil"
 event: "N/A"
 photos:
   - "2ionicce.jpg"

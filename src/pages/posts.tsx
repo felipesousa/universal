@@ -66,22 +66,16 @@ const Posts = (_query: PageProps) => {
                     <PostMain>
                       {draft ? (
                         <Excerpt>
-                          <p
-                            style={{
-                              margin: 0,
+                          Content yet not available in the current language.{" "}
+                          <span
+                            className="readmore"
+                            onClick={() => {
+                              toggleLanguage(_lang);
+                              navigate(`/posts/${_lang}/${slug}`);
                             }}
                           >
-                            Content yet not available in the current language.
-                            <span
-                              className="readmore"
-                              onClick={() => {
-                                toggleLanguage(_lang);
-                                navigate(`/posts/${_lang}/${slug}`);
-                              }}
-                            >
-                              Check the original version here.
-                            </span>
-                          </p>
+                            Check the original version here.
+                          </span>
                         </Excerpt>
                       ) : (
                         <Excerpt>

@@ -5,7 +5,7 @@ category: talks
 lang: pt
 presentation: "Static Generators - No Backend, No Problem"
 link: "https://felipesousa.github.io/talks/NUG-CE/#/"
-location: "Fortaleza - Brazil"
+location: "Fortaleza - Brasil"
 event: "https://www.meetup.com/nug-ce/events/225394717/"
 photos:
   - "1nugce.png"

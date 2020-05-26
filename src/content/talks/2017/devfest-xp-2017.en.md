@@ -1,5 +1,5 @@
 ---
-title: "DevFest XP Recife/2017"
+title: "DevFest XP Recife 2017"
 date: "2017-12-09"
 category: talks
 lang: en

@@ -3,7 +3,7 @@ title: "2o Ionic CE Meetup"
 date: "2015-12-05"
 category: talks
 lang: en
-presentation: "O que vem antes do Getting Starter?"
+presentation: "What comes before Getting Started?"
 link: "https://felipesousa.github.io/talks/IonicMeetup/#/"
 location: "Fortaleza - Brazil"
 event: "N/A"

@@ -5,7 +5,7 @@ category: talks
 lang: en
 presentation: "Progresive Web Apps Done Right"
 link: "https://speakerdeck.com/felipesousa/progressive-web-apps-done-right"
-location: "Fortaleza - Brasil"
+location: "Fortaleza - Brazil"
 event: "https://www.facebook.com/events/1985627951703018/"
 ---
 

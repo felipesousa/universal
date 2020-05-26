@@ -3,9 +3,9 @@ title: "Front in Fortaleza 2018"
 date: "2018-09-15"
 category: talks
 lang: pt
-presentation: "Event Hoster"
+presentation: "Apresentador/Hoster"
 link: "https://speakerdeck.com/felipesousa/shared-web-components-with-stenciljs"
-location: "Fortaleza - Brazil"
+location: "Fortaleza - Brasil"
 event: "https://frontinfortaleza.com.br/"
 photos:
   - "front-in-fortaleza-2018-02.jpg"

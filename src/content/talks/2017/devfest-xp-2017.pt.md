@@ -1,11 +1,11 @@
 ---
-title: "DevFest XP Recife/2017"
+title: "DevFest XP Recife 2017"
 date: "2017-12-09"
 category: talks
 lang: pt
 presentation: "Progressive Web Apps Done Right"
 link: "https://speakerdeck.com/felipesousa/progressive-web-apps-done-right"
-location: "Recife - Brazil"
+location: "Recife - Brasil"
 event: "https://devfestxp.com/"
 photos:
   - "devfest-xp-2017-02.png"

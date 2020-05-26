@@ -5,7 +5,7 @@ category: talks
 lang: en
 presentation: "A Intro to Angular 2"
 link: "https://felipesousa.github.io/talks/devfestne2016/#/"
-location: "Fortaleza - Brasil"
+location: "Fortaleza - Brazil"
 event: "https://queroworkar.com.br/google-io-extended-fortaleza-2016/"
 ---
 
