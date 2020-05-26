@@ -15,7 +15,12 @@ const SEO = ({ title = "" }) => {
 
   const _title = `${title} | ${data.site.siteMetadata.title}`;
 
-  return <Helmet title={_title} />;
+  return (
+    <Helmet
+      title={_title}
+      link={[{ rel: "icon", type: "image/png", href: "favicon.png" }]}
+    />
+  );
 };
 
 export default SEO;
