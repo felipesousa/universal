@@ -49,7 +49,7 @@ exports.onRenderBody = ({ setPreBodyComponents }) => {
 
             let darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
             darkQuery.addListener(e => {
-              window.__setPreferredTheme(e.matches ? 'light' : 'dark')
+              window.__setPreferredTheme(e.matches ? 'dark' : 'light')
             })
 
             setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))

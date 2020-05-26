@@ -92,12 +92,11 @@ const Posts = (_query: PageProps) => {
                     <PostFooter>
                       <div>
                         <span>
-                          🗓 {utils.translatePostDetails["published"][language]}
+                          🗓 {utils.transalation["published"][language]}
                           {_month} {_date}
                         </span>
                         <span>
-                          ⏰{" "}
-                          {utils.translatePostDetails["timeToRead"][language]}
+                          ⏰ {utils.transalation["timeToRead"][language]}
                           {timeToRead} min.
                         </span>
                       </div>

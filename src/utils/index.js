@@ -1,6 +1,6 @@
 const path = require("path");
 
-const translatePostDetails = {
+const transalation = {
   published: {
     en: "Published at ",
     pt: "Publicado em ",
@@ -93,7 +93,7 @@ module.exports = {
   filterNode,
   filterNodeByLanguage,
 
-  translatePostDetails,
+  transalation,
   setClassMenu,
   setRandomNumber,
 };
