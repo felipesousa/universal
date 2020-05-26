@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useStaticQuery, graphql } from "gatsby";
+
 import styled from "styled-components";
 
 import { Layout, SEO, SectionTitle } from "../components";
+import LanguageContext from "../providers";
+import utils from "../utils";
 
 const IndexPage = () => {
+  const { language } = useContext(LanguageContext);
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -29,12 +33,12 @@ const IndexPage = () => {
           {data.site.siteMetadata.subtitle}
         </SectionTitle>
         <SectionSubtitle>
-          {data.site.siteMetadata.description.prefix}
+          {utils.translations["home"]["first"][language]}{" "}
           <a href="https://github.com/concretesolutions">
             @concretelatinoamerica.
           </a>
           <br />
-          {data.site.siteMetadata.description.suffix}
+          {utils.translations["home"]["second"][language]}{" "}
         </SectionSubtitle>
       </Layout>
     </>

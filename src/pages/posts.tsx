@@ -6,6 +6,11 @@ import { Layout, SEO, SectionTitle } from "../components";
 import LanguageContext from "../providers/";
 import utils from "../utils";
 
+const TITLE = {
+  en: "Posts",
+  pt: "Posts",
+};
+
 export const query = graphql`
   query {
     allMarkdownRemark(
@@ -37,9 +42,9 @@ const Posts = (_query: PageProps) => {
   const _lang = language === "pt" ? "en" : "pt";
   return (
     <>
-      <SEO title="Posts" />
+      <SEO title={TITLE[language]} />
       <Layout>
-        <SectionTitle>Posts</SectionTitle>
+        <SectionTitle>{TITLE[language]}</SectionTitle>
         <br />
 
         <PostsList>
@@ -66,7 +71,7 @@ const Posts = (_query: PageProps) => {
                     <PostMain>
                       {draft ? (
                         <Excerpt>
-                          Content yet not available in the current language.{" "}
+                          {utils.translations["nopost"]["first"][language]}{" "}
                           <span
                             className="readmore"
                             onClick={() => {
@@ -74,7 +79,7 @@ const Posts = (_query: PageProps) => {
                               navigate(`/posts/${_lang}/${slug}`);
                             }}
                           >
-                            Check the original version here.
+                            {utils.translations["nopost"]["second"][language]}
                           </span>
                         </Excerpt>
                       ) : (
@@ -84,7 +89,7 @@ const Posts = (_query: PageProps) => {
                             className="readmore"
                             to={`/posts/${lang}/${slug}`}
                           >
-                            Read More.
+                            {utils.translations["readmore"][language]}
                           </Link>
                         </Excerpt>
                       )}
@@ -92,11 +97,11 @@ const Posts = (_query: PageProps) => {
                     <PostFooter>
                       <div>
                         <span>
-                          🗓 {utils.transalation["published"][language]}
+                          🗓 {utils.translations["published"][language]}
                           {_month} {_date}
                         </span>
                         <span>
-                          ⏰ {utils.transalation["timeToRead"][language]}
+                          ⏰ {utils.translations["timeToRead"][language]}
                           {timeToRead} min.
                         </span>
                       </div>

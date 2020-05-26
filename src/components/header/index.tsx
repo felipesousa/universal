@@ -3,11 +3,35 @@ import styled from "styled-components";
 import LanguageContext from "../../providers";
 import { Link, navigate } from "gatsby";
 
-const LINKS: Array<{ name: string; route: string }> = [
-  { name: "Home", route: "/" },
-  { name: "About", route: "/about" },
-  { name: "Posts", route: "/posts" },
-  { name: "Talks", route: "/talks" },
+const LINKS: Array<{ name: { en: string; pt: string }; route: string }> = [
+  {
+    name: {
+      en: "Home",
+      pt: "Início",
+    },
+    route: "/",
+  },
+  {
+    name: {
+      en: "About",
+      pt: "Sobre",
+    },
+    route: "/about",
+  },
+  {
+    name: {
+      en: "Posts",
+      pt: "Posts",
+    },
+    route: "/posts",
+  },
+  {
+    name: {
+      en: "Talks",
+      pt: "Palestras",
+    },
+    route: "/talks",
+  },
 ];
 
 const Header = (props: any) => {
@@ -53,7 +77,7 @@ const Header = (props: any) => {
               to={route}
               key={i}
             >
-              {name.toUpperCase()}
+              {name[language].toUpperCase()}
             </Link>
           );
         })}
@@ -71,7 +95,7 @@ const Header = (props: any) => {
         <Divider />
 
         <DarkTheme
-          src={theme === "dark" ? "/images/light.svg" : "/images/dark.svg"}
+          src={`/images/${_theme}.svg`}
           onClick={toggleTheme}
           alt="dark mode toggle icon"
         />

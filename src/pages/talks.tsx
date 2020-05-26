@@ -6,6 +6,11 @@ import { Layout, SEO, SectionTitle } from "../components";
 import LanguageContext from "../providers/";
 import utils from "../utils";
 
+const TITLE = {
+  en: "Talks",
+  pt: "Palestras",
+};
+
 export const query = graphql`
   query {
     allMarkdownRemark(
@@ -35,9 +40,9 @@ const Talks = (_query: PageProps) => {
   const { language } = useContext(LanguageContext);
   return (
     <>
-      <SEO title="Talks" />
+      <SEO title={TITLE[language]} />
       <Layout>
-        <SectionTitle>Talks</SectionTitle>
+        <SectionTitle>{TITLE[language]}</SectionTitle>
 
         <PostsList>
           {utils

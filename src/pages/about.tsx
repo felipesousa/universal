@@ -1,29 +1,19 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import React, { useContext } from "react";
 import { Layout, SEO, SectionTitle } from "../components";
+import LanguageContext from "../providers/";
+
+const TITLE = {
+  en: "About",
+  pt: "Sobre",
+};
 
 const AboutPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          author
-          description {
-            prefix
-            suffix
-          }
-          subtitle
-          title
-        }
-      }
-    }
-  `);
-
+  const { language } = useContext(LanguageContext);
   return (
     <>
-      <SEO title="About" />
+      <SEO title={TITLE[language]} />
       <Layout>
-        <SectionTitle>About</SectionTitle>
+        <SectionTitle>{TITLE[language]}</SectionTitle>
       </Layout>
     </>
   );

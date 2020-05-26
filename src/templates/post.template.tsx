@@ -48,21 +48,21 @@ const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
       <PostDetails>
         <div>
           <span style={{ marginRight: "20px" }}>
-            🗓 {utils.transalation["published"][language]}
+            🗓 {utils.translations["published"][language]}
             {post.frontmatter.date}
           </span>
 
           <span>
-            ⏰ {utils.transalation["timeToRead"][language]}
+            ⏰ {utils.translations["timeToRead"][language]}
             {post.timeToRead} min.
           </span>
         </div>
 
         <a
-          href={`https://twitter.com/intent/tweet?url=${location.href}&text=${post.excerpt}`}
+          href={`https://twitter.com/intent/tweet?url=${location.href}&text=${post.frontmatter.title}`}
           target="_blank"
         >
-          Share on Twitter
+          {utils.translations["share"][language]} Twitter
           <img
             src={`/images/twitter-${theme == "dark" ? "light" : "dark"}.svg`}
           />
@@ -72,16 +72,17 @@ const PostTemplate = ({ data: { markdownRemark: post }, location }) => {
       {draft ? (
         <Content>
           <p>
-            Content yet not available in the current language.
-            <span onClick={() => toggleLanguage(_lang)}>
-              Click here to check the original version.
+            {utils.translations["nopost"]["first"][language]}{" "}
+            <span
+              style={{ textDecoration: "underline" }}
+              onClick={() => toggleLanguage(_lang)}
+            >
+              {utils.translations["nopost"]["second"][language]}
             </span>
           </p>
         </Content>
       ) : (
-        <>
-          <Content dangerouslySetInnerHTML={{ __html: post.html }}></Content>
-        </>
+        <Content dangerouslySetInnerHTML={{ __html: post.html }}></Content>
       )}
     </Layout>
   );
@@ -123,7 +124,6 @@ const PostDetails = styled.section`
   a {
     display: flex;
     color: var(--black);
-    text-transform: capitalize;
     margin-bottom: 10px;
 
     img {

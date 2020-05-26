@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import * as utils from "../utils";
+import LanguageContext from "../providers/";
+import utils from "../utils";
 import Layout from "../components/layout";
 
 const TIME = 30;
@@ -15,6 +16,7 @@ const NotFoundPage = () => {
   const [first, setFirst] = useState(null);
   const [second, setSecond] = useState(null);
   const [third, setThird] = useState(null);
+  const { language } = useContext(LanguageContext);
 
   L1 = setInterval(() => {
     if (i > 40) {
@@ -49,7 +51,6 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <Container>
-        {/* <img src="/images/404.gif" alt="404 illustration" /> */}
         <Message simple={false}>
           {first}
           {second}
@@ -57,8 +58,10 @@ const NotFoundPage = () => {
         </Message>
         {first === 4 && second === 0 && third === 4 && (
           <Message simple={true}>
-            Ops, você acessou uma página que não existe!
-            <Link to="/">Voltar pra Home!</Link>
+            {utils.translations["notfound"]["first"][language]}
+            <Link to="/">
+              {utils.translations["notfound"]["second"][language]}
+            </Link>
           </Message>
         )}
       </Container>
