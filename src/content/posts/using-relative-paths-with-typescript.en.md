@@ -13,6 +13,7 @@ In the world where modularizing and distributing code traces has become standard
 
 Imagine a use case where we have a simple code tree similar to this:
 
+```text
 - _src/_
   - _config/_
     - **_constants.ts_**
@@ -24,6 +25,7 @@ Imagine a use case where we have a simple code tree similar to this:
     - _home/_
       - **_home.screen.ts_**
 - **_tsconfig.json_**
+```
 
 The file **src/screens/home/home.screen.ts** has this content:
 

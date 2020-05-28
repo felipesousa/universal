@@ -13,17 +13,19 @@ No mundo onde modularizar e distribuir traços de código virou padrão ([não p
 
 Imaginemos um caso de uso onde temos uma árvore de código simples similar a essa:
 
-- _src/_
-  - _config/_
-    - **_constants.ts_**
-  - _components/_
-    - **_hello.ts_**
-  - _services/_
-    - **_service.ts_**
-  - _screens/_
-    - _home/_
-      - **_home.screen.ts_**
-- **_tsconfig.json_**
+```text
+- src/
+  - config/
+    - constants.ts
+  - components/
+    - hello.ts
+  - services/
+    - service.ts
+  - screens/
+    - home/
+      - home.screen.ts
+- tsconfig.json
+```
 
 O arquivo `src/screens/home/home.screen.ts` têm o seguinte código:
 
