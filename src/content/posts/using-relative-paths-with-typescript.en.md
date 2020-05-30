@@ -14,17 +14,17 @@ In the world where modularizing and distributing code traces has become standard
 Imagine a use case where we have a simple code tree similar to this:
 
 ```text
-- _src/_
-  - _config/_
-    - **_constants.ts_**
-  - _components/_
-    - **_hello.ts_**
-  - _services/_
-    - **_service.ts_**
-  - _screens/_
-    - _home/_
-      - **_home.screen.ts_**
-- **_tsconfig.json_**
+- src/
+  - config/
+    - constants.ts
+  - components/
+    - hello.ts
+  - services/
+    - service.ts
+  - screens/
+    - home/
+      - home.screen.ts
+- tsconfig.json
 ```
 
 The file **src/screens/home/home.screen.ts** has this content:
