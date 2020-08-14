@@ -6,11 +6,17 @@ const plugins = [
   `gatsby-plugin-sharp`,
   `gatsby-transformer-sharp`,
   {
+    resolve: "gatsby-plugin-google-analytics",
+    options: {
+      trackingId: "UA-60406413-1"
+    }
+  },
+  {
     resolve: "gatsby-source-filesystem",
     options: {
       name: "src",
-      path: `${__dirname}/src/content`,
-    },
+      path: `${__dirname}/src/content`
+    }
   },
   {
     resolve: `gatsby-transformer-remark`,
@@ -21,8 +27,8 @@ const plugins = [
         {
           resolve: "gatsby-remark-images",
           options: {
-            maxWidth: 600,
-          },
+            maxWidth: 600
+          }
         },
         {
           resolve: `gatsby-remark-prismjs`,
@@ -32,12 +38,12 @@ const plugins = [
             aliases: {},
             showLineNumbers: false,
             noInlineHighlight: false,
-            escapeEntities: {},
-          },
-        },
-      ],
-    },
-  },
+            escapeEntities: {}
+          }
+        }
+      ]
+    }
+  }
   // {
   //   resolve: `gatsby-plugin-manifest`,
   //   options: {
@@ -60,12 +66,12 @@ const siteMetadata = {
   subtitle: `Front-End Engineer & Dev-Speaker`,
   description: {
     prefix: `A Brazilian living in Santiago working at `,
-    suffix: `Using this <space> to archive and share my career, projects and dev/life-experiences.`,
+    suffix: `Using this <space> to archive and share my career, projects and dev/life-experiences.`
   },
-  author: `Felipe Sousa`,
+  author: `Felipe Sousa`
 };
 
 module.exports = {
   siteMetadata,
-  plugins,
+  plugins
 };
