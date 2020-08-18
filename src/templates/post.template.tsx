@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { graphql, navigate } from "gatsby";
-import utils from "../utils";
+import utils from "../utils/";
 
 import LanguageContext from "../providers";
 import { SEO, Layout, SectionTitle } from "../components";
