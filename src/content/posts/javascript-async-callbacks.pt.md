@@ -13,7 +13,7 @@ _Caso tenha dúvidas sobre o que são funções assíncronas, como funcionam e/o
 
 # Callbacks
 
-Também conhecidos como a forma mais antigas de tratar dados assíncronos, as callbacks nos permite injetar uma função dentro de uma execução assíncrona para que possamos controlar o(s) resultado(s) quando eles estiverem disponíveis. De uma forma bem indireta é como se nós enviassemos um "espião" que vai nos informar quando algo acontecer dentro da chamada que estamos executando.
+Também conhecidos como a forma mais antiga de tratar dados assíncronos, as callbacks nos permite injetar uma função dentro de uma execução assíncrona para que possamos controlar o(s) resultado(s) quando eles estiverem disponíveis. De uma forma bem indireta é como se nós enviassemos um "espião" que vai nos informar quando algo acontecer dentro da chamada que estamos executando.
 
 Criaremos um exemplo simples para começar, uma função que retorna um `new Date()`:
 
