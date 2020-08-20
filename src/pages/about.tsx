@@ -191,9 +191,8 @@ const AboutPage = () => {
           <Content>
             <h1>👋🏻</h1>
             <p>
-              22, Brasileiro natural de Fortaleza/Ceará. Vivendo em
-              Santiago/Chile desde Julho de 2019 e trabalhando com Front End
-              Engineer na @concretelatinoamerica.
+              Olá, meu nome é Felipe, front-end engineer da
+              @concretelatinoamerica e morando em Santiago - Chile.
             </p>
             <p>
               Antes de tudo, um grande obrigado por visitar e dedicar seu tempo
@@ -203,44 +202,23 @@ const AboutPage = () => {
             📸:<i> Company Office 2019, Chile.</i> */}
             <h2>Como tudo começou?</h2>
             <p>
-              Meu primeiro contato com programação aconteceu quando eu tinha ~14
-              anos (2012) enquanto navegava pelo Google, me lembro que conheci o
-              projeto Blogger, que era um blog creator, lembro bem qual foi a
-              sensação de criar a primeira página, ver os primeiros plugins -
-              desde simples banners até contadores de pessoas online 🤯, por
-              mais simples que fossem, a sensação de algo funcionar é até hoje,{" "}
-              <strong style={{ textDecoration: "none" }}>positiva</strong> - ver
-              como um "amontoado" de letras coloridas se tornam algo visualmente
-              interativo me deixou super animado, aquilo me chamou atenção na
-              hora!
+              Meu primeiro contato com programação aconteceu quando eu tinha por
+              volta de 14 anos enquanto navegava pelo Google, me lembro que
+              conheci o projeto Blogger que era um blog creator, lembro bem qual
+              foi a sensação de criar a primeira página, ver os primeiros
+              plugins - desde simples banners, alguns scripts copiados da
+              internet, etc., por mais simples que fossem, aquilo me chamou
+              atenção na hora! Muitas vezes estudava por vídeos e por alguns
+              fóruns que existem/existiam dentro da internet, as interações eram
+              simplesmente com HTML e um raro e desconhecido CSS.
             </p>
             <p>
-              Estudava pelo YouTube e por alguns fóruns que existiam dentro da
-              internet, as interações eram simplesmente com HTML e um raro e
-              desconhecido CSS.
-            </p>
-            <p>
-              Dos 15 aos 17 anos (2013-2015), entrei em uma escola pública de
-              ensino técnico que foi onde estudei de maneira mais teórica,
-              conceitos iniciais sobre programação com PHP, Java e um pouco de
-              JavaScript, ali foi com certeza um lugar fantástico que contribuiu
-              bastante pro meu foco nos estudos técnicos. Nesse meio tempo, me
-              envolvi diretamente com comunidade com a 1 edição do Front In
-              Fortaleza, que em anos depois eu viria a{" "}
-              <a
-                href={`/talks/${language}/front-in-fortaleza-2016`}
-                style={{ textDecoration: "underline" }}
-              >
-                palestrar
-              </a>{" "}
-              em 2016 e até mesmo participar da{" "}
-              <a
-                href={`/talks/${language}/front-in-fortaleza-2018`}
-                style={{ textDecoration: "underline" }}
-              >
-                organização
-              </a>{" "}
-              em 2018.
+              Comecei a estudar programação com PHP, Java e um pouco de
+              JavaScript, com o tempo fui participando ativamente de comunidades
+              locais e regionais. Um dos eventos mais importantes no início foi
+              o Front In Fortaleza, de acordo com cada edição fui me envolvendo
+              mais com outras comunidades, participando em eventos nacionais e
+              aumentando gradualmente meu networking.
             </p>
             <img src="/images/about.jpg" alt="about banner image" />
             📸: <i>DevFest Santiago 2019, Chile.</i>
@@ -258,15 +236,13 @@ const AboutPage = () => {
               >
                 tenho passado por algumas empresas, projetos e tecnologias
                 interessantes.
-              </a>{" "}
-              Sempre claro focando em entrega, performance e qualidade.
+              </a>
             </p>
             <p>
-              Dentro dos quase ~5 anos de carreira, tenho trabalhado em grande
-              parte como front-end. Desde páginas responsivas até aplicações com
-              React Native, migrando aplicações para Progressive Web Apps, ou
-              criando algumas tools para NodeJS, etc, sempre tratando de seguir
-              boas práticas e entrega de valor como valores principais.
+              Dentro dos últimos 5 anos tenho trabalhado em grande parte como
+              front-end. Desde páginas responsivas, aplicações híbridas, nativas
+              com React Native, ou criando algumas tools para NodeJS, etc,
+              muitos deles para empresas do Brasil, EUA e Chile.
             </p>
             <p>
               Hoje, tenho estudado e trabalhado bastante com React/Angular,
@@ -280,28 +256,13 @@ const AboutPage = () => {
             <p>
               O Front In Fortaleza foi apenas o pontapé inicial sobre o que veio
               a ser minha relação com comunidade(s). No final de 2015 recebi um
-              convite do{" "}
-              <a
-                href="https://ythecombinator.space"
-                target="_blank"
-                style={{ textDecoration: "underline" }}
-              >
-                @ythecombinator
-              </a>{" "}
-              para apresentar{" "}
-              <a
-                href={`talks/${language}/1st-nodejs-ce-meetup`}
-                style={{ textDecoration: "underline" }}
-              >
-                minha primeira lightining-talk
-              </a>
-              . Foi uma experiência positiva e semanas depois fiz a segunda
-              apresentação.{" "}
+              convite para minha primeira lightining-talk. Foi uma experiência
+              positiva e que veio se tornando cada vez mais parte do meu
+              processo de aprendizagem. Na sessão de
               <a href="/talks" style={{ textDecoration: "underline" }}>
-                Você pode ver quase todas as apresentações que já tive a
-                oportunidade de compartilhar em alguns eventos que participei
+                palestras
               </a>{" "}
-              e ver um pouco da minha contribuição em comunidades.
+              têm um pouco do que já apresentei.
             </p>
             <img src="/images/devfest.jpg" alt="speaking banner image" />
             📸: <i>DevFest Nordeste 2016, Maceió/Brasil.</i>
@@ -314,9 +275,9 @@ const AboutPage = () => {
                 target="_blank"
                 style={{ textDecoration: "underline" }}
               >
-                Google Developers Group (GDG) Fortaleza
-              </a>
-              , um grupo voluntário de desenvolvedores que buscam organizar
+                Google Developers Group (GDG) Fortaleza,
+              </a>{" "}
+              um grupo voluntário de desenvolvedores que buscam organizar
               encontros com o principal intuito de discutir sobre tecnologia,
               compartilhar conhecimento e ajudar a comunidade a se especializar
               de forma colaborativa e rápida.
@@ -336,21 +297,8 @@ const AboutPage = () => {
               grandes amigos.
             </p>
             <p>
-              Obrigado por ler, espero que goste! Aqui vou compartilhar mais
-              detalhes sobre meus <a href="/posts">estudos</a>,{" "}
-              <a href="https://github.com/felipesousa" target="_blank">
-                projetos
-              </a>
-              , <a href="/talks">palestras</a> e{" "}
-              <a href="https://linkedin.com/in/luisfelipesousa" target="_blank">
-                carreira.
-              </a>
-            </p>
-            <p>
-              <a href="mailto:hi@felipesousa.space">
-                se preferir, você também pode me enviar um email.
-              </a>{" "}
-              📬
+              Espero que gostem, aqui é um coletivo de café e horas digitando -
+              essas são as coisas que mais gosto de fazer -.
             </p>
           </Content>
         </Layout>
