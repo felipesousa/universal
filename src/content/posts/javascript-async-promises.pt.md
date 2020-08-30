@@ -9,7 +9,7 @@ Esse post é o segundo de uma série de 3 posts para explicar e mostrar como tra
 
 Nesse artigo focarei nas Promises e como podemos utilizá-las, quais as regras e alguns exemplos para vermos na prática como elas funcionam.
 
-_Caso não tenha conferido o o primeiro artigo dessa série sobre JS Async onde falo sobre callbacks e como elas funcionam [basta acessar aqui.](https://www.felipesousa.space/posts/pt/javascript-async-callbacks)_
+_Caso não tenha conferido o primeiro artigo dessa série sobre JS Async onde falo sobre callbacks e como elas funcionam [basta acessar aqui.](https://www.felipesousa.space/posts/pt/javascript-async-callbacks)_
 
 # O que são Promises?
 
@@ -19,7 +19,23 @@ Assim como promessas do mundo real, as promessas dentro do JavaScript podem ou n
 
 ## Criando uma Promise
 
-As promesas possuem 2 etapas, a criação e o consumo; Em um primeiro exemplo vou criar uma promessa simples que exporta o valor dentro de um `setTimeout` depois de 5 segundos:
+As Promises possuem 2 passos: **criação** e **consumo**. Vejamos um exemplo básico para criar uma nova promessa:
+
+```javascript
+const myPromise = new Promise(function (resolve, reject) {
+  // do something
+  if (true) {
+    // ...
+    resolve(); // resolving the promise;
+  } else {
+    reject(); // rejecting the promise;
+  }
+});
+```
+
+Aqui estamos criando uma nova instância de classe Promise que recebe uma função como parâmetro, esta função aceita 2 métodos: `resolve` e `reject`, o método **resolve** que é responsável por capturar o valor de sucesso e **reject** que captura o erro se ele existir.
+
+Agora vamos criar uma nova função que retorna um fake payload em 5 segundos e adotá-la usando os conceitos de Promises:
 
 ```javascript
 function handlerPromise(resolve, reject) {
@@ -32,9 +48,9 @@ function handlerPromise(resolve, reject) {
 const myPromise = new Promise(handlerPromise);
 ```
 
-Inicialmente focaremos na variável `myPromise`, onde criamos uma nova instância da classe **Promise**, essa recebe uma função como parâmetro; Nesse exemplo estou passando a função `handlerPromise` que recebe 2 métodos para o tratamento dos valores dentro da promesa, o **resolve** que é responsável por capturar o valor de sucesso e **reject** que captura o erro caso exista.
+<br />
 
-Nesse caso estamos retornando o valor de **data** depois de 5 segundos da execução da promessa, nesse exemplo não existe um caso de erro para tratar, então vamos ver como consumir essa promessa e obter o valor de **data**.
+A função `handlerPromise` chama o método `resolve` após 5 segundos exportando a variável `data` como o valor para a promise.
 
 ## Consumindo uma Promise
 
