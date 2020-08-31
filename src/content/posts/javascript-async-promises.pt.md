@@ -143,7 +143,7 @@ Exemplo de como funciona o **_Promise.all()_**:
 
 ```javascript
 Promise.all([first, second]).then(function (payload) {
-  console.log(data); // ['200', '400'];
+  console.log(payload); // ['200', '400'];
 });
 ```
 
@@ -153,7 +153,7 @@ Exemplo de como funciona o **_Promise.race()_**:
 
 ```javascript
 Promise.race([first, second]).then(function (payload) {
-  console.log(data); // '200';
+  console.log(payload); // '200';
 });
 ```
 
