@@ -34,9 +34,7 @@ const IndexPage = () => {
         </SectionTitle>
         <SectionSubtitle>
           {utils.translations["home"]["first"][language]}{" "}
-          <a href="https://github.com/concretesolutions">
-            @concretelatinoamerica.
-          </a>
+          <a href="https://cornershopapp.com">@cornershopapp.</a>
           <br />
           {utils.translations["home"]["second"][language]}{" "}
         </SectionSubtitle>
