@@ -19,8 +19,8 @@ const AboutPage = () => {
           <Content>
             <h1>👋🏻</h1>
             <p>
-              Hi, my name is Felipe, front-end engineer at
-              @concretelatinoamerica and living in Santiago - Chile.
+              Hi, my name is Felipe, front-end engineer at @cornershopapp and
+              living in Santiago - Chile.
             </p>
             <p>
               First of all, a big thank you for visiting and dedicating your
@@ -136,8 +136,8 @@ const AboutPage = () => {
           <Content>
             <h1>👋🏻</h1>
             <p>
-              Olá, meu nome é Felipe, front-end engineer da
-              @concretelatinoamerica e morando em Santiago - Chile.
+              Olá, meu nome é Felipe, front-end engineer da @cornershopapp e
+              morando em Santiago - Chile.
             </p>
             <p>
               Antes de tudo, um grande obrigado por visitar e dedicar seu tempo
