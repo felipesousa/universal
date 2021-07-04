@@ -59,14 +59,10 @@ const Layout = ({ location, title, children }) => {
   const header = (
     <>
       {toggle}
-      <h2
-        style={{
-          ...scale(1),
-          marginBottom: 0,
-          marginTop: 0,
-          fontFamily: `Montserrat, sans-serif`,
-        }}
-      >
+      <nav style={{
+        display: "flex",
+        flexDirection: "column",
+      }}>
         <Link
           style={{
             boxShadow: `none`,
@@ -74,9 +70,41 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
-          {title}
+          Home
         </Link>
-      </h2>
+        <Link
+          style={{
+            boxShadow: `none`,
+            color: `inherit`,
+          }}
+          to={`/about`}
+        >
+          Sobre e Carreira
+        </Link>
+        <Link
+          style={{
+            boxShadow: `none`,
+            color: `inherit`,
+          }}
+          to={`/talks`}
+        >
+          Talks
+        </Link>
+        <Link
+          style={{
+            boxShadow: `none`,
+            color: `inherit`,
+          }}
+          to={`/`}
+        >
+          Posts
+        </Link>
+      </nav>
+      <div>
+        links:
+        
+      </div>
+
     </>
   )
 
@@ -95,12 +123,12 @@ const Layout = ({ location, title, children }) => {
           style={{ minHeight: 200 }}
         >
           {header}
+          <Footer />
         </div>
       </div>
 
       <div className="main-content relative">
         <main>{children}</main>
-        <Footer />
       </div>
     </div>
   )

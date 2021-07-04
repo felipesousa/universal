@@ -1,15 +1,15 @@
 module.exports = {
-  pathPrefix: "/leonids",
+  pathPrefix: "/",
   siteMetadata: {
-    title: `Leonids`,
+    title: `Felipe Sousa`,
     author: {
-      name: `@ry_zou`,
-      summary: `web dev`,
+      name: `@felipz_sousa`,
+      summary: `Tech Lead Developer.`,
     },
-    description: `A simple, fixed sidebar two columns Gatsby.js blog starter.`,
-    siteUrl: `https://renyuanz.github.io/leonids`,
+    description: `23 anos, Brasileiro, Tech Lead Developer na Cornershop e vivendo em Santiago no Chile.`,
+    siteUrl: `https://felipesousa.space`,
     social: {
-      twitter: `ry_zou`,
+      twitter: `felipz_sousa`,
     },
     defaultImage: "images/bg.jpeg",
   },
@@ -55,19 +55,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-62251910-1`,
+        trackingId: `UA-60406413-1`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ryz`,
-        short_name: `Ryz`,
+        name: `Felipe Sousa`,
+        short_name: `Felipe Sousa`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `fullscreen`,
         icon: `content/assets/gatsby-icon.png`,
       },
     },
