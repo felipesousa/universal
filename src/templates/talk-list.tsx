@@ -8,6 +8,7 @@ type PageContext = {
   currentPage: number
   numPages: number
 }
+
 type Data = {
   site: {
     siteMetadata: {
@@ -31,7 +32,7 @@ type Data = {
   }
 }
 
-const BlogIndex = ({
+const TalkList = ({
   data,
   location,
   pageContext,
@@ -87,7 +88,7 @@ const BlogIndex = ({
         >
           <li>
             {!isFirst && (
-              <Link to={`/talks${prevPage}`} rel="prev">
+              <Link to={`/${prevPage}`} rel="prev">
                 ← Previous Page
               </Link>
             )}
@@ -105,7 +106,7 @@ const BlogIndex = ({
   )
 }
 
-export default BlogIndex
+export default TalkList
 
 export const pageQuery = graphql`
   query talkPageQuery($skip: Int!, $limit: Int!) {
@@ -118,6 +119,7 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
+      filter: {frontmatter: {type: {eq: "talks" } } }
     ) {
       edges {
         node {

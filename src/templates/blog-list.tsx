@@ -23,7 +23,6 @@ type Data = {
           title: string
           date: string
           description: string
-          type: string
         }
         fields: {
           slug: string
@@ -52,9 +51,6 @@ const BlogIndex = ({
       <SEO title="All posts" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
-        const { type } = node.frontmatter
-
-        const prefixPage = type.includes("talks") ? `/talks` : ''
 
         return (
           <article key={node.fields.slug}>
@@ -64,8 +60,7 @@ const BlogIndex = ({
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                {type}: {" "}
-                <Link style={{ boxShadow: `none` }} to={`${prefixPage}${node.fields.slug}`}>
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
@@ -125,6 +120,7 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
+      filter: {frontmatter: {type: {eq: "posts" } } }
     ) {
       edges {
         node {

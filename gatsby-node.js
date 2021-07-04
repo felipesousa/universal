@@ -73,9 +73,9 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  // Create blog post list pages
   const postsPerPage = 5
   const numPages = Math.ceil(posts.length / postsPerPage)
+  const numTalkPages = Math.ceil(talks.length / postsPerPage)
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
@@ -97,7 +97,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
-        numPages,
+        numPages: numTalkPages,
         currentPage: i + 1,
       },
     })
