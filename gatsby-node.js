@@ -58,7 +58,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  talks?.forEach((talk, index) => {
+  talks.forEach((talk, index) => {
     const previous = index === talks.length - 1 ? null : talks[index + 1].node
     const next = index === 0 ? null : talks[index - 1].node
 
