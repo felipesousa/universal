@@ -1,7 +1,7 @@
 ---
 title: "Automatizando documentação para projetos TypeScript"
 date: "2020-03-21"
-description: "Automatizando e Typescript na mesma frase pode soar hype até demais, porém ambas não ganharam famas a toa, automatizar vem sendo cada vez mais buscado entre todas as camadas de produtos, desde um fluxo automatizado de envio de emails ou publicação de uma biblioteca no npm a partir de algum hook, etc. Independente do nível, automatizar _quase_ sempre vai ser uma ótima opção."
+description: "Automatizando e Typescript na mesma frase pode soar hype até demais, porém ambas não ganharam famas a toa, automatizar vem sendo cada vez mais buscado entre todas as camadas de produtos, desde um fluxo automatizado de envio de emails ou publicação de uma biblioteca no npm a partir de algum hook, etc. Independente do nível, automatizar quase sempre vai ser uma ótima opção."
 categories: [code, typescript, tooling]
 comments: true
 type: "posts"

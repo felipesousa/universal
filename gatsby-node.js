@@ -5,7 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  // const talkPost = path.resolve(`./src/templates/talk-post.js`)
+  const talkPost = path.resolve(`./src/templates/talk-post.js`)
   const result = await graphql(
     `
       {
@@ -58,24 +58,24 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  // talks?.forEach((talk, index) => {
-  //   const previous = index === talks.length - 1 ? null : talks[index + 1].node
-  //   const next = index === 0 ? null : talks[index - 1].node
+  talks?.forEach((talk, index) => {
+    const previous = index === talks.length - 1 ? null : talks[index + 1].node
+    const next = index === 0 ? null : talks[index - 1].node
 
-  //   createPage({
-  //     path: `talks${talk.node.fields.slug}`,
-  //     component: talkPost,
-  //     context: {
-  //       slug: talk.node.fields.slug,
-  //       previous,
-  //       next,
-  //     },
-  //   })
-  // })
+    createPage({
+      path: `talks${talk.node.fields.slug}`,
+      component: talkPost,
+      context: {
+        slug: talk.node.fields.slug,
+        previous,
+        next,
+      },
+    })
+  })
 
   const postsPerPage = 5
   const numPages = Math.ceil(posts.length / postsPerPage)
-  // const numTalkPages = Math.ceil(talks.length / postsPerPage)
+  const numTalkPages = Math.ceil(talks.length / postsPerPage)
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
@@ -90,18 +90,18 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  // Array.from({ length: numPages }).forEach((_, i) => {
-  //   createPage({
-  //     path: i === 0 ? `/talks` : `/talks/${i + 1}`,
-  //     component: path.resolve("./src/templates/talk-list.tsx"),
-  //     context: {
-  //       limit: postsPerPage,
-  //       skip: i * postsPerPage,
-  //       numPages: numTalkPages,
-  //       currentPage: i + 1,
-  //     },
-  //   })
-  // })
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/talks` : `/talks/${i + 1}`,
+      component: path.resolve("./src/templates/talk-list.tsx"),
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages: numTalkPages,
+        currentPage: i + 1,
+      },
+    })
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

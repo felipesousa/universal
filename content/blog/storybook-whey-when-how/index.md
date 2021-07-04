@@ -1,7 +1,7 @@
 ---
 title: "Storybook: Why, When and How (English)"
 date: "2019-06-29"
-description: "Applications based at components aren't news for nobody, libraries like React, VueJS, and Angular are basically our first option when we're creating a new project, it's because they are really good for us developers."
+description: "Applications based at components aren't news for nobody, libraries like React, VueJS, and Angular are basically our first option when we're creating a new project, it's because they are really good for us developers, but how can we improve our experiences when working with these tools?"
 categories: [code, tools, frontend]
 comments: true
 type: "posts"
