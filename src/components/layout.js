@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
+import Icon from "../components/icons";
 import { scale } from "../utils/typography"
 
 import Footer from "./footer"
@@ -20,24 +21,30 @@ const Layout = ({ location, title, children }) => {
             aria-label="theme-switch"
             className="leading-none p-1"
             onClick={() => toggleTheme(isDarkMode ? "light" : "dark")}
+            style={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+            }}
           >
-            {isDarkMode ? (
-              <svg
+            <p className="headerTheme">
+              {isDarkMode ? (
+                <svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                >
                 <path d="M12.2822 21.9999H12.1819C10.8075 21.9894 9.44895 21.7048 8.18586 21.1628C6.92278 20.6207 5.78054 19.8321 4.82604 18.8431C3.05606 16.9503 2.04993 14.469 2.00181 11.878C1.95369 9.28699 2.867 6.77001 4.56548 4.81279C5.65973 3.58648 7.03535 2.64418 8.57414 2.06686C8.75369 1.99777 8.94933 1.98182 9.1377 2.02091C9.32607 2.06001 9.49921 2.1525 9.63643 2.28733C9.76353 2.41693 9.85303 2.57862 9.89539 2.75513C9.93775 2.93163 9.93138 3.11633 9.87695 3.2895C9.32772 4.79368 9.21891 6.42332 9.56327 7.98717C9.90764 9.55102 10.6909 10.9842 11.8212 12.1186C12.9619 13.2453 14.3985 14.026 15.9646 14.37C17.5307 14.7141 19.1622 14.6076 20.6703 14.0628C20.8498 13.9996 21.0435 13.9888 21.2289 14.0317C21.4143 14.0746 21.5837 14.1694 21.7172 14.305C21.8507 14.4406 21.9428 14.6114 21.9828 14.7975C22.0228 14.9835 22.009 15.1771 21.943 15.3556C21.4311 16.7222 20.6313 17.9629 19.598 18.9934C18.6367 19.9518 17.4956 20.7108 16.2401 21.2267C14.9846 21.7427 13.6395 22.0054 12.2822 21.9999V21.9999Z"></path>
               </svg>
             ) : (
               <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M12 6C11.7463 6 11.503 5.89922 11.3236 5.71984C11.1443 5.54046 11.0435 5.29716 11.0435 5.04348V2.95652C11.0435 2.70284 11.1443 2.45954 11.3236 2.28016C11.503 2.10078 11.7463 2 12 2C12.2537 2 12.497 2.10078 12.6764 2.28016C12.8557 2.45954 12.9565 2.70284 12.9565 2.95652V5.04348C12.9565 5.29716 12.8557 5.54046 12.6764 5.71984C12.497 5.89922 12.2537 6 12 6Z"></path>
                 <path d="M12 22C11.7463 22 11.503 21.8992 11.3236 21.7198C11.1443 21.5405 11.0435 21.2972 11.0435 21.0435V18.9565C11.0435 18.7028 11.1443 18.4595 11.3236 18.2802C11.503 18.1008 11.7463 18 12 18C12.2537 18 12.497 18.1008 12.6764 18.2802C12.8557 18.4595 12.9565 18.7028 12.9565 18.9565V21.0435C12.9565 21.2972 12.8557 21.5405 12.6764 21.7198C12.497 21.8992 12.2537 22 12 22Z"></path>
@@ -50,6 +57,10 @@ const Layout = ({ location, title, children }) => {
                 <path d="M12 16.4348C11.1229 16.4348 10.2655 16.1747 9.53618 15.6874C8.80689 15.2001 8.23847 14.5075 7.90281 13.6971C7.56715 12.8868 7.47933 11.9951 7.65045 11.1348C7.82157 10.2746 8.24394 9.48435 8.86415 8.86414C9.48437 8.24392 10.2746 7.82155 11.1348 7.65043C11.9951 7.47931 12.8868 7.56714 13.6971 7.9028C14.5075 8.23845 15.2001 8.80687 15.6874 9.53617C16.1747 10.2655 16.4348 11.1229 16.4348 12C16.4334 13.1758 15.9657 14.303 15.1343 15.1343C14.303 15.9657 13.1758 16.4334 12 16.4348Z"></path>
               </svg>
             )}
+            <div style={{ width: '5px', height: '5px' }} />
+            {isDarkMode ? "remover tema escuro" : "aplicar tema escuro"}
+            </p>
+            
           </button>
         )
       }}
@@ -59,11 +70,34 @@ const Layout = ({ location, title, children }) => {
   const header = (
     <>
       {toggle}
-      <nav style={{
-        display: "flex",
-        flexDirection: "column",
+      
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'start'
       }}>
+        <div className="imageContainer">
+          <img src={'/profile.jpg'} alt="profile" />
+        </div>
+        <p style={{
+          padding: 0,
+          marginLeft: 0,
+          marginBottom: 0,
+          fontSize: '22px',
+          fontWeight: 700,
+        }}>Felipe Sousa</p>
+        <span style={{
+          fontSize: '16px',
+          fontStyle: 'italic',
+          marginTop: '5px',
+          fontWeight: 400,
+          marginBottom: '25px',
+          textAlign: 'left'
+        }}>Brasileiro & Tech Lead Developer. Gosto de criar e automatizar coisas, aqui tem um pouco do que eu me dedico a fazer. pt/en/es.</span>
+
+        <nav className="nav">
         <Link
+          activeClassName="menuActiveItem"
           style={{
             boxShadow: `none`,
             color: `inherit`,
@@ -73,6 +107,7 @@ const Layout = ({ location, title, children }) => {
           Home
         </Link>
         <Link
+          activeClassName="menuActiveItem"
           style={{
             boxShadow: `none`,
             color: `inherit`,
@@ -82,6 +117,7 @@ const Layout = ({ location, title, children }) => {
           Sobre e Carreira
         </Link>
         <Link
+          activeClassName="menuActiveItem"
           style={{
             boxShadow: `none`,
             color: `inherit`,
@@ -91,20 +127,31 @@ const Layout = ({ location, title, children }) => {
           Talks
         </Link>
         <Link
+          activeClassName="menuActiveItem"
           style={{
             boxShadow: `none`,
             color: `inherit`,
           }}
-          to={`/`}
+          to={`/talks`}
         >
-          Posts
+          A bit per day
         </Link>
+        <div className="icon_container">
+          <div className="icon_border">
+            <Icon name="LINKEDIN" />
+          </div>
+          <div className="icon_border">
+            <Icon name="GITHUB" />
+          </div>
+          <div className="icon_border">
+            <Icon name="EMAIL" />
+          </div>
+          <div className="icon_border">
+            <Icon name="TWITTER" />
+          </div>
+        </div>
       </nav>
-      <div>
-        links:
-        
       </div>
-
     </>
   )
 
@@ -119,7 +166,7 @@ const Layout = ({ location, title, children }) => {
     >
       <div className="sidebar">
         <div
-          className="md:h-screen p-4 flex flex-col justify-center items-center"
+          className="md:h-screen p-4 flex flex-col justify-between"
           style={{ minHeight: 200 }}
         >
           {header}
