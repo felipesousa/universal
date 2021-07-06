@@ -189,4 +189,8 @@ button {
   .sidebar {
     overflow: hidden;
   }
+
+  .main-content {
+    max-width: 100%;
+  }
 }
