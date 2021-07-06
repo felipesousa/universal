@@ -58,7 +58,6 @@ const Layout = ({ location, title, children }) => {
               </svg>
             )}
             <div style={{ width: '5px', height: '5px' }} />
-            {isDarkMode ? "remover tema escuro" : "aplicar tema escuro"}
             </p>
             
           </button>
@@ -68,10 +67,7 @@ const Layout = ({ location, title, children }) => {
   )
 
   const header = (
-    <>
-      {toggle}
-      
-      <div style={{
+    <div style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'start'
@@ -103,7 +99,7 @@ const Layout = ({ location, title, children }) => {
             color: `inherit`,
           }}
           to={`/`}
-        >
+          >
           Home
         </Link>
         <Link
@@ -113,7 +109,7 @@ const Layout = ({ location, title, children }) => {
             color: `inherit`,
           }}
           to={`/about`}
-        >
+          >
           Sobre e Carreira
         </Link>
         <Link
@@ -123,7 +119,7 @@ const Layout = ({ location, title, children }) => {
             color: `inherit`,
           }}
           to={`/talks`}
-        >
+          >
           Talks
         </Link>
         <Link
@@ -132,27 +128,29 @@ const Layout = ({ location, title, children }) => {
             boxShadow: `none`,
             color: `inherit`,
           }}
-          to={`/talks`}
-        >
+          to={`/abitperday`}
+          >
           A bit per day
         </Link>
         <div className="icon_container">
-          <div className="icon_border">
-            <Icon name="LINKEDIN" />
+          <div className="flex">
+            <div className="icon_border">
+              <Icon name="LINKEDIN" />
+            </div>
+            <div className="icon_border">
+              <Icon name="GITHUB" />
+            </div>
+            <div className="icon_border">
+              <Icon name="EMAIL" />
+            </div>
+            <div className="icon_border">
+              <Icon name="TWITTER" />
+            </div>
           </div>
-          <div className="icon_border">
-            <Icon name="GITHUB" />
-          </div>
-          <div className="icon_border">
-            <Icon name="EMAIL" />
-          </div>
-          <div className="icon_border">
-            <Icon name="TWITTER" />
-          </div>
+          {toggle}
         </div>
       </nav>
-      </div>
-    </>
+    </div>
   )
 
   return (
@@ -166,7 +164,7 @@ const Layout = ({ location, title, children }) => {
     >
       <div className="sidebar">
         <div
-          className="md:h-screen p-4 flex flex-col justify-between"
+          className="md:h-screen p-4 flex flex-col justify-center"
           style={{ minHeight: 200 }}
         >
           {header}
