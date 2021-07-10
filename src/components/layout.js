@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
-import Icon from "../components/icons";
+import Icon from "../components/icons"
 
 import Footer from "./footer"
 import "./global.css"
@@ -56,42 +56,51 @@ const Layout = ({ location, title, children }) => {
                   <path d="M12 16.4348C11.1229 16.4348 10.2655 16.1747 9.53618 15.6874C8.80689 15.2001 8.23847 14.5075 7.90281 13.6971C7.56715 12.8868 7.47933 11.9951 7.65045 11.1348C7.82157 10.2746 8.24394 9.48435 8.86415 8.86414C9.48437 8.24392 10.2746 7.82155 11.1348 7.65043C11.9951 7.47931 12.8868 7.56714 13.6971 7.9028C14.5075 8.23845 15.2001 8.80687 15.6874 9.53617C16.1747 10.2655 16.4348 11.1229 16.4348 12C16.4334 13.1758 15.9657 14.303 15.1343 15.1343C14.303 15.9657 13.1758 16.4334 12 16.4348Z"></path>
                 </svg>
               )}
-              <div style={{ width: '5px', height: '5px' }} />
+              <div style={{ width: "5px", height: "5px" }} />
             </p>
-
           </button>
         )
       }}
     </ThemeToggler>
   )
 
-  const goTo = (link, where) => window.open(link, where ? "" : "_blank");
+  const goTo = (link, where) => window.open(link, where ? "" : "_blank")
 
   const header = (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'start'
-    }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "start",
+      }}
+    >
       <div className="imageContainer">
-        <img src={'/profile.jpg'} alt="profile" />
+        <img src={"/profile.jpg"} alt="profile" />
       </div>
-      <p style={{
-        padding: 0,
-        marginLeft: 0,
-        marginBottom: 0,
-        fontSize: '22px',
-        fontWeight: 700,
-      }}>Felipe Sousa</p>
-      <span style={{
-        fontSize: '16px',
-        fontStyle: 'italic',
-        marginTop: '5px',
-        fontWeight: 400,
-        marginBottom: '25px',
-        textAlign: 'left'
-      }}>Brasileiro, 23 anos - Santiago/Chile  <br />
-        Tech Lead Developer na Cornershop</span>
+      <p
+        style={{
+          padding: 0,
+          marginLeft: 0,
+          marginBottom: 0,
+          fontSize: "22px",
+          fontWeight: 700,
+        }}
+      >
+        Felipe Sousa
+      </p>
+      <span
+        style={{
+          fontSize: "16px",
+          fontStyle: "italic",
+          marginTop: "5px",
+          fontWeight: 400,
+          marginBottom: "25px",
+          textAlign: "left",
+        }}
+      >
+        Brasileiro, 23 anos - Santiago/Chile <br />
+        Tech Lead Developer na Cornershop
+      </span>
 
       <nav className="nav">
         <Link
@@ -102,7 +111,7 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
-          Home
+          Início
         </Link>
         <Link
           activeClassName="menuActiveItem"
@@ -124,21 +133,38 @@ const Layout = ({ location, title, children }) => {
         >
           Talks
         </Link>
-        <a className="flex justify-center" href="https://abitperday.com" target="_blank" rel="noopener noreferrer">
+        <a
+          className="flex justify-center"
+          href="https://abitperday.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           A bit per day
         </a>
         <div className="icon_container">
           <div className="flex">
-            <div className="iconBorder" onClick={() => goTo("https://linkedin.com/in/luisfelipesousa")}>
+            <div
+              className="iconBorder"
+              onClick={() => goTo("https://linkedin.com/in/luisfelipesousa")}
+            >
               <Icon name="LINKEDIN" />
             </div>
-            <div className="iconBorder" onClick={() => goTo("https://github.com/felipesousa")}>
+            <div
+              className="iconBorder"
+              onClick={() => goTo("https://github.com/felipesousa")}
+            >
               <Icon name="GITHUB" />
             </div>
-            <div className="iconBorder" onClick={() => goTo("mailto:hi@felipesousa.space", true)}>
+            <div
+              className="iconBorder"
+              onClick={() => goTo("mailto:hi@felipesousa.space", true)}
+            >
               <Icon name="EMAIL" />
             </div>
-            <div className="iconBorder" onClick={() => goTo("https://twitter.com/felipz_sousa")}>
+            <div
+              className="iconBorder"
+              onClick={() => goTo("https://twitter.com/felipz_sousa")}
+            >
               <Icon name="TWITTER" />
             </div>
           </div>
