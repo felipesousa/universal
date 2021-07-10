@@ -4,14 +4,13 @@ module.exports = {
     title: `Felipe Sousa`,
     author: {
       name: `@felipz_sousa`,
-      summary: `Tech Lead Developer.`,
+      summary: `Brasileiro, 23 anos - Santiago/Chile | Tech Lead Developer na Cornershop`,
     },
     description: `23 anos, Brasileiro, Tech Lead Developer na Cornershop e vivendo em Santiago no Chile.`,
     siteUrl: `https://felipesousa.space`,
     social: {
       twitter: `felipz_sousa`,
     },
-    defaultImage: "images/bg.jpeg",
   },
   plugins: [
     {
@@ -66,7 +65,7 @@ module.exports = {
         short_name: `Felipe Sousa`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#ff6363`,
         display: `fullscreen`,
         icon: `content/assets/gatsby-icon.png`,
       },

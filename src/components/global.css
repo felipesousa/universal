@@ -112,7 +112,7 @@ blockquote {
   margin-top: 40px;
 }
 
-.icon_border {
+.iconBorder {
   width: 40px;
   height: 40px;
   border: 1px solid #b9b9b9;
@@ -121,6 +121,7 @@ blockquote {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 button {

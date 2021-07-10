@@ -48,7 +48,7 @@ const TalkList = ({
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All Talks" />
+      <SEO title="Todas as Talks" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
