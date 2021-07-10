@@ -1,5 +1,5 @@
 ---
-title: "Progresive Web Apps Done Right"
+title: "Progressive Web Apps Done Right"
 date: "2018-05-08"
 description: "Encontro promovido pelo Google Developers Group (GDG) Fortaleza para debater e criar atividades em conjunto com a comunidade de desenvolvimento front-end/back-end de Fortaleza. O encontro foi enfocado nas novidades do evento anual Google I/O e também uma roda de conversa sobre tecnologia, desenvolvimento, etc."
 categories: [code, javascript, nodejs, cms]
