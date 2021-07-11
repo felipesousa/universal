@@ -11,8 +11,8 @@ Esse post é o ultimo da série sobre JS Async, 3 posts para explicar e mostrar 
 
 Você pode conferir os outros 2 artigos anteriores:
 
-- <a href="https://www.felipesousa.space/posts/pt/javascript-async-promises" target="_blank">JS Async: Promises</a>
-- <a href="https://www.felipesousa.space/posts/pt/javascript-async-callbacks" target="_blank">JS Async: Callbacks</a>
+- <a href="https://www.felipesousa.space/javascript-async-promises" target="_blank">JS Async: Promises</a>
+- <a href="https://www.felipesousa.space/javascript-async-callbacks" target="_blank">JS Async: Callbacks</a>
 
 Hoje falaremos sobre o async/await e veremos alguns exemplos de como e o que podemos fazer com ele:
 
@@ -24,7 +24,7 @@ A keyword _async_ foi implementada na versão ES2017. Ela possibilita criarmos f
 async function myAsyncFunction() {}
 ```
 
-Algo importante e ainda mais interessante acerca dessa implementação é que toda `async` function retorna uma <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise</a>, significando que podemos utilizar todas as interfaces que já conhecemos no <a href="https://www.felipesousa.space/posts/pt/javascript-async-promises" target="_blank">artigo sobre promises</a>. Vejamos um exemplo para entender melhor:
+Algo importante e ainda mais interessante acerca dessa implementação é que toda `async` function retorna uma <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise</a>, significando que podemos utilizar todas as interfaces que já conhecemos no <a href="https://www.felipesousa.space/javascript-async-promises" target="_blank">artigo sobre promises</a>. Vejamos um exemplo para entender melhor:
 
 ```javascript
 async function myAsyncFunction() {

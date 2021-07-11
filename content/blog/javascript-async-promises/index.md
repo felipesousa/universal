@@ -11,7 +11,7 @@ Esse post é o segundo de uma série de 3 posts para explicar e mostrar como tra
 
 Nesse artigo focarei nas Promises e como podemos utilizá-las, quais as regras e alguns exemplos para vermos na prática como elas funcionam.
 
-_Caso não tenha conferido o primeiro artigo dessa série sobre JS Async onde falo sobre callbacks e como elas funcionam [basta acessar aqui.](https://www.felipesousa.space/posts/pt/javascript-async-callbacks)_
+_Caso não tenha conferido o primeiro artigo dessa série sobre JS Async onde falo sobre callbacks e como elas funcionam [basta acessar aqui.](https://www.felipesousa.space/javascript-async-callbacks)_
 
 # O que são Promises?
 
