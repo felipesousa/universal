@@ -1,21 +1,23 @@
 ---
-title: "Como usar mocks com Jest - parte 1"
+title: "Como usar mocks com Jest"
 date: "2021-08-12"
-description: "Jest é um framework pra testes em Javascript e possui diversas funcionalidades interessantes que nos ajudam a criar testes mais eficazes e simples de trabalhar, uma dessas features são os 'mocks' que nos permitem simular respostas e/ou comportamentos de métodos, módulos, requisições, etc."
+description: "Jest é um framework pra testes em Javascript e possui diversas funcionalidades interessantes que nos ajudam a criar testes mais eficazes e simples de trabalhar, uma dessas features são os mocks que nos permitem simular respostas e/ou comportamentos de métodos, módulos, requisições, etc."
 categories: [code, javascript, mocks, tests]
 comments: true
 type: "posts"
 ---
 
-Jest é um framework pra testes em Javascript e possui diversas funcionalidades interessantes que nos ajudam a criar testes mais eficazes e simples de trabalhar, uma dessas features são os 'mocks' que nos permitem simular respostas e/ou comportamentos de métodos, módulos, requisições, etc.
+Jest é um framework pra testes em Javascript e possui diversas funcionalidades interessantes que nos ajudam a criar testes mais eficazes e simples de trabalhar, uma dessas features são os mocks que nos permitem simular respostas e/ou comportamentos de métodos, módulos, requisições, etc.
 
 ### O que são mocks?
 
-Os testes como o próprio nome já diz, procura simular o comportamento de determinada atividade (seja função, módulo, serviço, componente, etc) para garantir que o comportamento esperado está implementando de maneira correta, os mocks são simuladores controlados para simular o uso de dependências ou funcionalidades dentro do objeto de testes; Em resumo podemos dizer que os mocks são interceptadores de respostas onde podemos simular manualmente tarefas para cobrir todos os nossos casos de testes.
+Os mocks são interceptors controlados para simular o uso de dependências ou funcionalidades dentro do objeto de testes (uma função, component, api global, etc);
 
 ### Quando utilizá-los?
 
-A forma como podemos determinar a necessidade de mockar dados aparece naturalmente dentro do desenvolvimento dos testes, vejamos 2 exemplos para contextualizar:
+A forma como podemos determinar a necessidade de utilizar mocks antes mesmo de criar um teste pode ser definida quando observamos a dependências que são necessárias para executar nosso objeto de testes.
+
+Vejamos os proximos 2 exemplos para ilustrar melhor o que quero dizer:
 
 #### Exemplo n.1 - Uma função para retornar os elementos únicos de um Array:
 
@@ -31,6 +33,10 @@ export function unique(elements = []) {
 }
 ```
 
+A função ocupa elementos que são criados dentro do próprio escopo ou aceito como parâmetros - como no caso da variável `elements` -, em casos como esse, testar a função fica muito mais simples pois temos tudo o que precisamos dentro da própria função.
+
+Vejamos agora outro caso onde estamos utilizando um módulo local mas que não faz parte do mesmo escopo:
+
 #### Exemplo n.2 - Uma função para retornar um número aleatório:
 
 ```javascript
@@ -38,16 +44,15 @@ export function unique(elements = []) {
 const utils = require("./utils")
 
 export function getNumber() {
-  const number = utils.getRandomNumber()
-  return `the random number is ${number}.`
+  const value = utils.getRandomNumber()
+  return `the random number is ${value}.`
 }
 ```
 
 <br />
 
-Agora analisando as duas funções - vamos relevar o fato de as funções fazerem atividades distintas - uma das principais diferenças **são o uso das dependências na função**: o exemplo n.1 possui dependências que são declaradas como parâmetros no momento da execução, já o exemplo n.2 possui dependência com o módulo local `utils` que não é declarado dentro do mesmo contexto - e sim, fora - o que cria uma dependência externa na nossa função e onde basicamente se observa a necessidade de **mockar** dados.
+Como podemos observar, a variável `value` utiliza o método `getRandomNumber` do módulo `utils` que é externo ao escopo de execução do nossa função, vejamos o que acontece quando executamos a função dentro de um cenário de teste simples:
 
-Agora vejamos o que resulta em caso de criarmos um teste para o exemplo n.2:
 
 ```javascript
 // getNumber.test.js
@@ -62,32 +67,45 @@ describe("Functions::GetNumber", () => {
 
 <br />
 
-o resultado da execução dispara um erro por conta do módulo `utils` que não foi encontrado:
-
+O resultado da execução do teste retorna o seguinte:
 <br />
 
 <div class="image-container">
   <img src="/images/mock-test-error.png" alt="mock test error" />
 </div>
 
-Isso significa que precisamos criar essas funções para serem executadas dentro do nossos testes e para isso é necessário criar os nossos mocks!
+O teste informa que não foi possível encontrar o método `getRandomNumber` de `undefined` e dispara um erro, nesse caso o módulo `undefined` deveria estar importando o módulo **utils** que estamos importando dentro do nosso arquivo `getNumber.js`, porém, dentro da execução dos nossos testes o processo de importação de módulos externos (por mais que sejam módulos locais) **não acontecem de modo automático e é necessário *simular* o resultado dessas importações manualmente**, em casos como esse os mocks são nossos melhores amigos.
 
 ### Como criar e utilizar os mocks?
 
 > O processo de instalação do Jest e como você pode implementar dentro da sua aplicação está muito bem documentado dentro da [página inicial do projeto](https://jestjs.io), nesse post focarei principalmente na configurações dos mocks para fins de facilitar a explicação.
 
-Existem diversas, realmente diversas formas de criar mocks dentro do Jest, algumas delas supre a necessidade de utilizar outras, nos posts focarei nas principais para os diferentes tipos de situações que podemos encontrar dentro do dia a dia de testes.
-
 #### Criando nosso primeiro mock
 
-Os mocks utilizam uma api do Jest chamada `mock` para serem criados, essa aceita função pode aceitar até 2 parâmetros, o primero e único obrigatório em alguns casos é o **path**: esse é caminho de onde está o módulo que vamos simular (importante lembrar que o caminho têm que ser relativo ao caminho importado dentro do objeto de testes que estamos trabalhando), o segundo é um **callback**: uma função que retorna o resultado que esperamos quando executarmos o nosso teste, vejamos o seguinte exemplo:
+Pois bem, seguiremos com o problema do exemplo anterior, como podemos solucionar o problema de importação do módulo *utils* dentro nosso teste?
+
+Para resolver esse problema precisamos voltar nosso arquivo `./getNumber.js` novamente, mais especificamente vamos procurar o caminho de onde estamos importando o módulo *utils* onde nesse caso é `./utils`. Com esse caminho vamos voltar dentro do nosso teste e adicionar o seguinte:
+
+```javascript
+jest.mock("./utils", function() {
+  return {
+    getRandomNumber: () => 66,
+  }
+})
+```
+
+O que estamos fazendo com essa sentença é declarando um mock que vai ***subscrever*** a importação do módulo que está no caminho *./utils* dentro do objeto de testes. O módulo `mock` do jest aceita 2 parâmetros básicos; O primeiro sendo o **caminho** que vamos subscrever dentro da execução do testes, O segundo é uma função que **deve retornar a mesma API que temos dentro do nosso módulo original**, nesse caso, estamos retornando a função `getRandomNumber` como uma função que retorna o valor 66 sempre.
+
+Dessa forma podemos subscrever o valor de *utils* dentro do nosso teste e executar sem problemas:
 
 ```javascript
 const { getNumber } from "./getNumber";
 
-jest.mock("./utils", () => ({
-  getRandomNumber: () => 66
-}))
+jest.mock("./utils", function() {
+  return {
+    getRandomNumber: () => 66
+  }
+})
 
 describe("Functions::GetNumber", () => {
   test("should return the number 66", () => {
@@ -108,8 +126,66 @@ O teste agora quando executado funciona como o esperado:
 
 <br />
 
-O que aconteceu é que agora quando o nosso teste executar nossa função e quando essa utilizar o módulo `utils` que está sendo importado do arquivo `./utils`, nossos mocks vão `subscrever` o resultado pelo que declaramos dentro da nossa função `jest.mock`. O que significa que SEMPRE que executarmos a função `utils.getRandomName` dentro do nosso teste, independemente da implementação original o valor retornado vai ser 66.
 
-Esse post cobre o conceito básico e o modelo mais simples de mocks que podemos encontrar dentro do dia a dia, outros modelos e mais exemplos serão explorados e publicados dentro dos próximos posts sobre testes e mocks.
+#### Retornando valores diferentes em cada execução
 
-Obrigado pela leitura!
+Imaginamos agora que fazemos uma pequena modificação dentro da nossa função `getNumber`, agora vamos executar a função 2x e retornar os valores dentro da mesma resposta, vejamos os seguinte:
+
+```javascript
+const utils = require("./utils")
+
+export function getNumber() {
+  const value = utils.getRandomNumber()
+  const value2 = utils.getRandomNumber()
+  return `your random numbers are ${value} and ${value2}`
+}
+```
+
+Como dito anteriormente, o valor sempre vai ser 66 quando executarmos a função `getRandomNumber` porém, se quisermos ou necessitarmos receber valores diferentes seria possível? e se é possível como seria?
+
+Bom, por sorte existe uma API do Jest muito importante e poderosa que extende ainda mais o poder dos mocks.
+
+##### JEST.FN()
+
+O módulo `fn` nos permite ter controles de funções, execuções, parâmetros e forçar comportamentos para que possamos simular nossos testes de maneira necessária; Para a solução do problema em questão vamos utilizar a função `mockImplementationOnce` porém vale a pena a investigação e o experimento para conhecer mais sobre o poder dos mocks e como eles podem lhe ajudar em casos adversos. [Conferir api completa do jest.fn().](https://jestjs.io/docs/mock-function-api)
+
+
+a função `mockImplementationOnce` cria um retorno que vai ser utilizado apenas uma vez, o que nos ajuda no caso que estamos procurando testar, vejamos o que precisamos fazer:
+
+```javascript
+import {getNumber} from "./getNumber";
+
+jest.mock("./utils", function() {
+  return {    
+    getRandomNumber: jest.fn()
+      .mockImplementationOnce(() => "21")
+      .mockImplementationOnce(() => "57"),
+  }
+})
+
+describe("Functions::GetNumber", () => {
+  test("should return the number 21 and 57", () => {
+    expect(getNumber()).toEqual("your random numbers are 21 and 57")
+  })
+})
+
+```
+
+Agora quando a função `getNumber` chamar a função `getRandomNumber` nas duas vezes, os mocks vão retornar valores distintos em cada uma das chamadas:
+
+
+<div class="image-container">
+  <img src="/images/mock-test-success-final.png" alt="mock test success using mockimplemetationonce method" />
+</div>
+
+<br />
+
+
+---
+
+Esse post cobre os conceitos básicos e exemplos práticos de como podemos testar nosso código com os recursos que o Jest oferece, dentro de outros artigos vamos explorar mais sobre outros casos onde os mocks são essenciais.
+
+Obrigado por ter acompanhado o post, espero que tenha gostado!
+
+🪂
+
