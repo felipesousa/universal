@@ -1,1 +1,3 @@
-Link: https://felipesousa.space
+## Felipe Sousa
+
+![Visualization of the codebase](./diagram.svg)
