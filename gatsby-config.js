@@ -4,9 +4,9 @@ module.exports = {
     title: `Felipe Sousa`,
     author: {
       name: `@felipz_sousa`,
-      summary: `Brasileiro, 23 anos - Santiago/Chile | Tech Lead Developer na Cornershop`,
+      summary: `Brasileiro, 24 anos | FrontEnd Engineer & Technical Lead`,
     },
-    description: `23 anos, Brasileiro, Tech Lead Developer na Cornershop e vivendo em Santiago no Chile.`,
+    description: `Brasileiro, 24 anos | FrontEnd Engineer & Technical Lead`,
     siteUrl: `https://felipesousa.space`,
     social: {
       twitter: `felipz_sousa`,

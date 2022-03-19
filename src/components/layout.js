@@ -86,7 +86,7 @@ const Layout = ({ location, title, children }) => {
           fontWeight: 700,
         }}
       >
-        Felipe Sousa
+        Felipe Sousa 
       </p>
       <span
         style={{
@@ -98,8 +98,9 @@ const Layout = ({ location, title, children }) => {
           textAlign: "left",
         }}
       >
-        Brasileiro, 23 anos - Santiago/Chile <br />
-        Tech Lead Developer na Cornershop
+        🇧🇷 👨🏻‍💻 📚 🚲
+        <br />
+        FrontEnd Engineer ⚡️ Technical Lead
       </span>
 
       <nav className="nav">

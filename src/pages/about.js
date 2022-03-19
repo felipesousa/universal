@@ -29,7 +29,7 @@ const AboutPage = () => {
       </ul>
       <h2 id="whoiam">Quem sou e o que gosto de fazer</h2>
       <p>
-        Olá, meu nome é Felipe Sousa, tenho 23 anos, nasci em Fortaleza-Brasil e
+        Olá, meu nome é Felipe Sousa, tenho 24 anos, nasci em Fortaleza-Brasil e
         desde 2019 moro em Santiago no Chile.
       </p>
       <p>
