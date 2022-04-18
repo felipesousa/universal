@@ -97,6 +97,7 @@ const Layout = ({ location, title, children }) => {
           marginBottom: "25px",
           textAlign: "left",
         }}
+        data-no-translation
       >
         🇧🇷 👨🏻‍💻 📚 🚲
         <br />
