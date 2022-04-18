@@ -159,7 +159,7 @@ const AboutPage = () => {
       <p>
         Para mais detalhes sobre o que eu estou fazendo e quais são meus
         próximos passos, eu sempre atualizo as novidades dentro do meu{" "}
-        <a href="https://linkedin.com/in/luisfelipesousa" target="_blank">
+        <a href="https://linkedin.com/in/luisfelipesousa" target="_blank" rel="noreferrer">
           LinkedIn
         </a>{" "}
         e também escrevo alguns artigos aqui na página. Obrigado pela leitura!
